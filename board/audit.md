@@ -523,6 +523,8 @@ UTC开始时间 2026-11-03T03:22:24.969765+00:00
 
 - 本地12项完整离线行为测试通过；随PR提供的3项专项回归测试通过，覆盖重导保留方案、损坏标记停止及新增标签保留。没有执行真实重导，避免改动现有状态。
 
+- 首次文件提交ab7d2fb264642e2a04a0528de4b7a4b8bba81d21已成功；其后CSV逐字节比对因原远端LF与本地BOM/CRLF格式差异停止。核对48行数据内容一致，未改动CSV；最终以原远端CSV blob SHA未变化作为验收。
+
 
 ### 原生项目读回结果
 
@@ -902,6 +904,48 @@ UTC开始时间 2026-11-03T03:22:24.969765+00:00
 - `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
 
 - `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/pulls/49` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/git/ref/heads/main` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/git/ref/heads/board/wechat-20261103-032234` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/git/commits/fbd46cf53505dcd0319f3ad00211981ebce8bc81` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/trees --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/commits --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/git/ref/heads/board/wechat-20261103-032234` → exit 0
+
+- `gh api --method PATCH repos/Fuyulin-hub/kanban/git/refs/heads/board/wechat-20261103-032234 --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api 'repos/Fuyulin-hub/kanban/git/trees/20878bf59f69e612343df3acb15c5d2863abb578?recursive=1'` → exit 0
+
+- `gh api 'repos/Fuyulin-hub/kanban/contents/board/issues.csv?ref=board/wechat-20261103-032234'` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/pulls/49` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/git/commits/ab7d2fb264642e2a04a0528de4b7a4b8bba81d21` → exit 0
+
+- `gh api 'repos/Fuyulin-hub/kanban/contents/board/issues.csv?ref=board/wechat-20261103-032234'` → exit 0
 
 - `gh api repos/Fuyulin-hub/kanban/pulls/49` → exit 0
 
