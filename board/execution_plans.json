@@ -1,0 +1,2005 @@
+{
+  "kind": "proposed_execution_plans",
+  "updated_on": "2026-11-03",
+  "notice": "Recommendations only; not accepted assignments or past group decisions.",
+  "tasks": {
+    "T01": {
+      "id": "T01",
+      "title": "[WeChat] Obtain a previous-year reference report",
+      "workstream": "Requirements & References",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Confirm whether the request was cancelled",
+        "If still needed, request a copy from someone authorized to share it",
+        "Record useful formatting examples without reusing their findings"
+      ],
+      "tools": "No additional library. Use a browser and PDF reader.",
+      "deliverable": "A reference list or a cancellation note.",
+      "acceptance": "Sources are traceable; previous-year data are never presented as this group's results.",
+      "discussion": "Is the reference still required, or was the request cancelled?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/1",
+      "recorded_owner": "Unassigned (original alias unresolved)",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "A later message may cancel the assignment. Confirm its scope before closing or deleting it.",
+      "evidence": [
+        {
+          "message_id": "S1-M006",
+          "translation": "Ask senior students for their report from last year.",
+          "time_anchor": "Oct 12, before 11:13 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S1-M009",
+          "translation": "Then forget it.",
+          "time_anchor": "Oct 12, before 11:13 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T02": {
+      "id": "T02",
+      "title": "[WeChat] Review the report content",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Xu Jiale",
+        "Fu Yulin"
+      ],
+      "steps": [
+        "Agree on the file and chapters to review",
+        "Check that questions, methods, data and conclusions match",
+        "Locate each issue by page and sentence, then ask the relevant member to verify it"
+      ],
+      "tools": "Use the existing Word/WPS or TeX editor; Python difflib is optional for comparisons.",
+      "deliverable": "A page-specific review list and revision comparison.",
+      "acceptance": "Preserve meaning, numbers, subheadings and every figure/table.",
+      "discussion": "Does the exclusion of Section 7.3 onward still apply? Who reviews each section?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/2",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "In progress",
+      "confidence": "Medium",
+      "review_reason": "The messages include both an individual review and a request for three people to check; no sole owner is established.",
+      "evidence": [
+        {
+          "message_id": "S1-M027",
+          "translation": "I am checking it and planning the figures.",
+          "time_anchor": "Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S1-M030",
+          "translation": "The three of us should check the content again.",
+          "time_anchor": "Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S1-M031",
+          "translation": "No need to review Section 7.3 onward.",
+          "time_anchor": "Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T03": {
+      "id": "T03",
+      "title": "[WeChat] Plan and refine the report figures",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "List the finding each research question needs to show",
+        "Check existing figures before proposing additions",
+        "Specify the result file, chart type and insertion point for each gap"
+      ],
+      "tools": "A spreadsheet is sufficient for the inventory; use Matplotlib when an existing Weka result needs plotting.",
+      "deliverable": "A figure inventory with purpose, source, location and proposed producer.",
+      "acceptance": "Each figure answers a clear question and uses the same result version.",
+      "discussion": "Which figures have editable source files and which need redrawing?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/3",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "In progress",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S1-M027",
+          "translation": "I am checking it and planning the figures.",
+          "time_anchor": "Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M001",
+          "translation": "I am now refining the figures and similar items.",
+          "time_anchor": "Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg"
+      ],
+      "status_column": "In Progress"
+    },
+    "T04": {
+      "id": "T04",
+      "title": "[WeChat] Revise the first three report chapters",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Resolve the difference between the first-three-chapters claim and the later first-chapter clarification",
+        "Confirm the paragraphs in scope",
+        "Make subjects, objects and logical links explicit without changing meaning"
+      ],
+      "tools": "Keep the existing Word/WPS or TeX workflow; no new library is required.",
+      "deliverable": "A paragraph-level revision record for the agreed chapters.",
+      "acceptance": "Preserve the original meaning, subheadings, numbers and all figures/tables.",
+      "discussion": "Is this a Chapter 1 revision or a review of Chapters 1–3?",
+      "dependencies": "Agree on the review scope in T02.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/4",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "In progress",
+      "confidence": "Medium",
+      "review_reason": "The initial claim covers three chapters, but a later clarification mainly covers Chapter 1. Full completion is not established.",
+      "evidence": [
+        {
+          "message_id": "S1-M048",
+          "translation": "I revised the first three chapters a little.",
+          "time_anchor": "Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S1-M054",
+          "translation": "I mainly revised Chapter 1 and marked some figure positions.",
+          "time_anchor": "Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T05": {
+      "id": "T05",
+      "title": "[WeChat] Mark figure insertion points in the report",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Check the existing marks against current chapter numbers",
+        "Verify that surrounding text refers to the correct figure",
+        "Check the links again after pagination changes"
+      ],
+      "tools": "Use native cross-references; PyMuPDF is optional for PDF page checks.",
+      "deliverable": "A figure-to-paragraph/page index for this completed task.",
+      "acceptance": "Keep the completed status; every mark points to the intended figure.",
+      "discussion": "Have later additions changed the figure numbering?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/5",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Completed",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S1-M054",
+          "translation": "I mainly revised Chapter 1 and marked some figure positions.",
+          "time_anchor": "Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Done"
+    },
+    "T06": {
+      "id": "T06",
+      "title": "[WeChat] Verify missingness in the real data",
+      "workstream": "Requirements & References",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Identify the source version and unit of analysis for each table",
+        "Count missing values and empty strings using applicable fields",
+        "Report counts, denominators and rates and compare them with the text"
+      ],
+      "tools": "Use pandas for missingness and grouping; use merge(validate=...) when checking join cardinality.",
+      "deliverable": "A reproducible missingness table and script.",
+      "acceptance": "Separate raw and cleaned data; specify the table, field, population and denominator.",
+      "discussion": "The alias in the original assignment remains unresolved; the proposed lead is a new recommendation.",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/6",
+      "recorded_owner": "Unassigned (original alias unresolved)",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The assigned alias has not been linked to a confirmed member. The later statement does not identify who performed the check.",
+      "evidence": [
+        {
+          "message_id": "S1-M049",
+          "translation": "Please check the missingness in the real data.",
+          "time_anchor": "Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S1-M058",
+          "translation": "The missingness seems fine.",
+          "time_anchor": "Oct 12, after 14:55 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T07": {
+      "id": "T07",
+      "title": "[WeChat] Add relevant illustrations to the first three chapters",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Review the figures already present",
+        "Identify a real explanatory gap in each section",
+        "Prefer an editable workflow or data-relationship diagram and ask the content lead to check it"
+      ],
+      "tools": "Use PowerPoint shapes; Graphviz is optional if an editable diagram source already exists.",
+      "deliverable": "Candidate explanatory diagrams and editable sources.",
+      "acceptance": "Keep existing figures and distinguish conceptual diagrams from empirical results.",
+      "discussion": "Would a research workflow or a data-source diagram explain the text better?",
+      "dependencies": "Use the figure gaps identified in T03.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/7",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The suggestion has no explicit sole claimant. Agreement alone does not establish ownership or completion.",
+      "evidence": [
+        {
+          "message_id": "S1-M061",
+          "translation": "There is a little too much text; perhaps AI could help add some relevant illustrations.",
+          "time_anchor": "Oct 12, after 14:55 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T08": {
+      "id": "T08",
+      "title": "[WeChat] Clarify the report wording about missing data",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Locate vague statements about excessive missing data",
+        "Specify which field is missing and what analysis is affected",
+        "Use the verified rate and denominator while retaining the limitation"
+      ],
+      "tools": "Use the existing editor; obtain numbers from the pandas checks in T06.",
+      "deliverable": "An original-versus-revised wording comparison.",
+      "acceptance": "Do not describe absent comments as corrupted orders or remove a real limitation.",
+      "discussion": "Does missingness mean no review body despite a rating, or a missing order?",
+      "dependencies": "Verify the statistical definitions in T06 first.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/8",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Not started",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S1-M065",
+          "translation": "Then I will change how I phrase it.",
+          "time_anchor": "Oct 12, after 14:55 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Todo"
+    },
+    "T09": {
+      "id": "T09",
+      "title": "[WeChat] Complete the first report compilation",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Retain the record of the first successful build",
+        "Open its output PDF in the existing environment",
+        "Check fonts, figures and equations"
+      ],
+      "tools": "Use the actual TeX compiler; PyMuPDF is optional for page rendering.",
+      "deliverable": "An output/log index for this completed task.",
+      "acceptance": "A first successful build does not prove final pagination or contents are correct.",
+      "discussion": "Does the first build use the same source as the final English version?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/9",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Completed",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S1-M040",
+          "translation": "I only compiled it once.",
+          "time_anchor": "Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg"
+      ],
+      "status_column": "Done"
+    },
+    "T10": {
+      "id": "T10",
+      "title": "[WeChat] Create the group presentation slides",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Zhang Xinyue",
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Structure the story around questions, methods, evidence and limitations",
+        "Use verified text and figures from the report",
+        "Give each slide one main point and add speaker notes"
+      ],
+      "tools": "Prefer PowerPoint/WPS; use python-pptx only for repetitive generation or checks.",
+      "deliverable": "An editable slide deck and exported PDF.",
+      "acceptance": "Numbers match the report and charts retain axes, legends and essential notes.",
+      "discussion": "What is the official time limit and which content must be shown?",
+      "dependencies": "Use the reviewed report and figure inventory from T02/T03.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/10",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "There is an intention to make slides, but the allocation and final completion are not established. Shared files alone are insufficient.",
+      "evidence": [
+        {
+          "message_id": "S1-M018",
+          "translation": "So I can make the PPT.",
+          "time_anchor": "Oct 12, after 11:13 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S2-M008",
+          "translation": "She will make the PPT next class, and the three of us can refine and format it.",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T11": {
+      "id": "T11",
+      "title": "[WeChat] Explain the division of work in the slides",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Zhang Xinyue",
+        "Xu Jiale",
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Create a work-allocation slide using the four confirmed names",
+        "Separate documented work from proposed next steps",
+        "Ask each member to verify their entry before presenting it"
+      ],
+      "tools": "A PowerPoint/WPS table is sufficient; no additional library.",
+      "deliverable": "A verified contribution and next-step slide.",
+      "acceptance": "Do not present recommendations as completed work or infer GitHub accounts.",
+      "discussion": "Which follow-up tasks will each member actually accept?",
+      "dependencies": "Use members.md and ask all four members to review it.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/11",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The suggestion received a response but no sole owner or completion report is established.",
+      "evidence": [
+        {
+          "message_id": "S2-M001",
+          "translation": "Should we leave the division of work out of the report and explain it in the PPT?",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T12": {
+      "id": "T12",
+      "title": "[WeChat] Draw the Chapter 7 implementation Gantt chart",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Split the plan into verifiable stages",
+        "Confirm dependencies and dates with the group",
+        "Plot the stages on one timeline and leave unknown dates pending"
+      ],
+      "tools": "Use Matplotlib barh or editable PowerPoint shapes.",
+      "deliverable": "A Chapter 7 Gantt chart and stage table.",
+      "acceptance": "The stages match the text; no dates are invented.",
+      "discussion": "The original assigned alias is unresolved. Should Xu Jiale take this task?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/12",
+      "recorded_owner": "Unassigned (original alias unresolved)",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S2-M004",
+          "translation": "Chapter 7, the implementation plan, needs a Gantt chart and a fishbone diagram.",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S2-M004",
+          "translation": "Could you draw them?",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg"
+      ],
+      "status_column": "Todo"
+    },
+    "T13": {
+      "id": "T13",
+      "title": "[WeChat] Design a dashboard prototype and share screenshots",
+      "workstream": "Website & Deployment",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue",
+        "Fu Yulin"
+      ],
+      "steps": [
+        "Confirm whether the page is a proposed interface or a display of existing results",
+        "Reuse the current HTML structure",
+        "Add questions, figures and limitations and capture desktop/mobile previews"
+      ],
+      "tools": "Use existing HTML/CSS/JavaScript; add Chart.js only if interactive charts are needed.",
+      "deliverable": "An accessible local prototype and preview screenshots.",
+      "acceptance": "Mark mock content clearly and use the report's result version; keep website deployment files out of this tracking repository.",
+      "discussion": "Confirm the original assignee and whether this is a prototype or a results page.",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/13",
+      "recorded_owner": "Unassigned (original alias unresolved)",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The originally assigned alias remains unresolved. A later file sender or editor is not automatically the original task owner.",
+      "evidence": [
+        {
+          "message_id": "S2-M006",
+          "translation": "Ask AI to design a frontend page showing the expected outcome.",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S2-M006",
+          "translation": "Use the report theme as much as possible and send a screenshot to the group.",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T14": {
+      "id": "T14",
+      "title": "[WeChat] Integrate the report chapters",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Freeze the chapter input versions",
+        "Unify terminology, figure numbers and cross-references",
+        "Check for missing or repeated sections and record the merge"
+      ],
+      "tools": "Use the current Word/WPS/TeX editor; hashlib is optional for version checks.",
+      "deliverable": "An integrated report and chapter merge record.",
+      "acceptance": "Keep all subheadings and figures; do not mix numbers from different versions.",
+      "discussion": "Which file is the single editing master?",
+      "dependencies": "Complete the relevant chapter reviews in T02/T04 first.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/14",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "In progress",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S2-M007",
+          "translation": "I am integrating the report now and will pass it on before the next class.",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M001",
+          "translation": "The first six chapters are ready; I am now refining the figures and similar items.",
+          "time_anchor": "Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg"
+      ],
+      "status_column": "In Progress"
+    },
+    "T15": {
+      "id": "T15",
+      "title": "[WeChat] Refine and format the presentation slides",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Xu Jiale",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Unify type sizes, fonts and colors",
+        "Balance text density and chart size",
+        "Check long titles and legends on the actual presentation device"
+      ],
+      "tools": "Use the PowerPoint/WPS master; python-pptx is optional for repetitive checks.",
+      "deliverable": "A formatted editable deck and playback check record.",
+      "acceptance": "Keep data visible and text readable at the projected aspect ratio.",
+      "discussion": "Who gives the final content, figure and speaker-note checks?",
+      "dependencies": "Start after T10 has a complete draft.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/15",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Three people were asked to collaborate; the source does not establish a sole owner.",
+      "evidence": [
+        {
+          "message_id": "S2-M008",
+          "translation": "She will make the PPT next class, and the three of us can refine and format it.",
+          "time_anchor": "Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T16": {
+      "id": "T16",
+      "title": "[WeChat] Verify the official submission deadline",
+      "workstream": "Requirements & References",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Fu Yulin"
+      ],
+      "steps": [
+        "Open the official course notice or assignment page",
+        "Check date, timezone, channel and filename rules",
+        "Record a traceable reference for the group"
+      ],
+      "tools": "Use the browser and course system; no additional library.",
+      "deliverable": "A submission-requirements checklist.",
+      "acceptance": "An uncertain chat statement about 23:59 is not an official deadline; do not reuse a prior-year notice.",
+      "discussion": "Where is the current official notice? The screenshot messages show no year.",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/16",
+      "recorded_owner": "Unassigned (original alias unresolved)",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The later deadline statement is uncertain. Keep 23:59 as a clue rather than an official deadline.",
+      "evidence": [
+        {
+          "message_id": "S2-M018",
+          "translation": "There is another thing.",
+          "time_anchor": "Oct 12, after 15:53 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S2-M019",
+          "translation": "Please check whether the teacher gave a specific submission time.",
+          "time_anchor": "Oct 12, after 15:53 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M017",
+          "translation": "I think it is due tonight.",
+          "time_anchor": "Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M018",
+          "translation": "23:59.",
+          "time_anchor": "Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T17": {
+      "id": "T17",
+      "title": "[WeChat] Improve the discussed fishbone diagram",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Retain all concepts from the original diagram",
+        "Align related branches and simplify labels",
+        "Check the revised diagram against Chapter 4"
+      ],
+      "tools": "Use editable PowerPoint shapes or the existing Graphviz source.",
+      "deliverable": "An improved fishbone diagram and editable source.",
+      "acceptance": "Do not present hypothesized factors as established causes.",
+      "discussion": "Is this the same figure as T27? If so, share one source while retaining both task records.",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/17",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S2-M049",
+          "translation": "As for the fishbone diagram...",
+          "time_anchor": "Oct 12, after 16:14 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S2-M051",
+          "translation": "I will make a few changes.",
+          "time_anchor": "Oct 12, after 16:14 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg"
+      ],
+      "status_column": "Todo"
+    },
+    "T18": {
+      "id": "T18",
+      "title": "[WeChat] Add Chapter 7 to the report",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Review the existing implementation plan and deliverables",
+        "Check that its figures match the text",
+        "Record the scope of any later additions"
+      ],
+      "tools": "Use the existing editor; no additional library.",
+      "deliverable": "A review record for the completed Chapter 7 addition.",
+      "acceptance": "Keep the completed status; adding a chapter does not complete its later charts or formatting.",
+      "discussion": "Does the current Chapter 7 match the schedule in T12?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/18",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Completed",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S3-M002",
+          "translation": "I do not think the instructor required Chapter 7.",
+          "time_anchor": "Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M004",
+          "translation": "So I added it.",
+          "time_anchor": "Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg"
+      ],
+      "status_column": "Done"
+    },
+    "T19": {
+      "id": "T19",
+      "title": "[WeChat] Update the dashboard layout and colors",
+      "workstream": "Website & Deployment",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Fu Yulin"
+      ],
+      "steps": [
+        "Check the modified page against the report theme",
+        "Verify text contrast and the meaning of chart colors",
+        "Open it on both desktop and mobile"
+      ],
+      "tools": "Use the current HTML/CSS and browser tools; no frontend rebuild is required.",
+      "deliverable": "A review record for the completed page/color update.",
+      "acceptance": "Keep the completed status; a color change does not prove public deployment is complete.",
+      "discussion": "Which local or hosted version is the editing master?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/19",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Completed",
+      "confidence": "High",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S3-M007",
+          "translation": "I made a few changes to the dashboard page.",
+          "time_anchor": "Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M010",
+          "translation": "I made a page and changed its colors.",
+          "time_anchor": "Oct 12, after 17:40 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg"
+      ],
+      "status_column": "Done"
+    },
+    "T20": {
+      "id": "T20",
+      "title": "[WeChat] Prepare the presentation script",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Zhang Xinyue",
+        "Xu Jiale",
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Write natural spoken notes for each slide's main point",
+        "Explain the data, method and limitations",
+        "Rehearse with timing and clear handover sentences"
+      ],
+      "tools": "Use slide notes or a text document; no additional library.",
+      "deliverable": "A slide-by-slide script, timing record and handover plan.",
+      "acceptance": "Do not turn associations into causal claims; acknowledge unverified results.",
+      "discussion": "How many people will speak and which section will each cover?",
+      "dependencies": "Stabilize the slide order in T10/T15 first.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/20",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S3-M023",
+          "translation": "Then I will prepare a script first.",
+          "time_anchor": "Oct 12, after 18:06 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T21": {
+      "id": "T21",
+      "title": "[WeChat] Review and clarify AI-style wording",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Mark abstract language, ambiguous references and long sentences",
+        "Make subjects, objects and reasoning explicit",
+        "Compare meaning before/after and ask another member to review"
+      ],
+      "tools": "Use tracked changes or a TeX diff; difflib is optional. No AI-detector score is needed.",
+      "deliverable": "A wording revision comparison.",
+      "acceptance": "Keep meaning, numbers, subheadings, figures/tables and the original level of uncertainty.",
+      "discussion": "Which sentences still take more than one reading to understand?",
+      "dependencies": "Use the master draft and content issues from T02/T14.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/21",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Several tasks were offered for two people to divide, followed by others expressing interest. No sole owner or completion is established.",
+      "evidence": [
+        {
+          "message_id": "S3-M031",
+          "translation": "Check the report manually again and remove some AI-style wording.",
+          "time_anchor": "Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M032",
+          "translation": "Could you two divide these tasks?",
+          "time_anchor": "Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M018",
+          "translation": "After your changes, I will check for more AI-style wording.",
+          "time_anchor": "Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M029",
+          "translation": "Yes, as long as the meaning stays the same.",
+          "time_anchor": "Oct 13, after 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T22": {
+      "id": "T22",
+      "title": "[WeChat] Identify and add missing report figures",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Compare each section's question with the existing figures",
+        "List only missing evidence or explanations",
+        "Specify the input, purpose and location before making each addition"
+      ],
+      "tools": "Use a figure inventory; Matplotlib for data charts and PowerPoint for conceptual diagrams.",
+      "deliverable": "An approved additions list and the resulting figures.",
+      "acceptance": "Retain all existing figures and provide a source for each addition.",
+      "discussion": "Which figures add necessary evidence and which only change the layout?",
+      "dependencies": "Confirm the figure inventory in T03.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/22",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S3-M031",
+          "translation": "Check where more figures are needed and add them.",
+          "time_anchor": "Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M017",
+          "translation": "I will see what other figures can be added.",
+          "time_anchor": "Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Todo"
+    },
+    "T23": {
+      "id": "T23",
+      "title": "[WeChat] Translate the report using the course terminology",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Build a bilingual glossary from the course materials",
+        "Translate paragraph by paragraph and compare with the source",
+        "Check numbers, negation, method names and limitations"
+      ],
+      "tools": "Use the current Word/WPS/TeX editor; re can help check numbers and terminology.",
+      "deliverable": "An English master draft, glossary and uncertainty list.",
+      "acceptance": "Preserve claim strength and use consistent terms such as low rating; explain retained Portuguese words.",
+      "discussion": "Do the course terms conflict with terminology already used in the project?",
+      "dependencies": "Stabilize the wording reviewed in T21 first.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/23",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "In progress",
+      "confidence": "Medium",
+      "review_reason": "The initial allocation is unresolved. A statement that other parts are English has no clear producer, and contents problems remain.",
+      "evidence": [
+        {
+          "message_id": "S3-M031",
+          "translation": "Translate the Chinese into English using the wording in the teacher's slides.",
+          "time_anchor": "Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M032",
+          "translation": "Could you two divide these tasks?",
+          "time_anchor": "Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M018",
+          "translation": "The table of contents will not convert to English.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M025",
+          "translation": "The rest is already in English.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T24": {
+      "id": "T24",
+      "title": "[WeChat] Improve the report formatting",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Unify body text, headings, headers, footers and captions",
+        "Fix large blank areas, floating figures and awkward page breaks",
+        "Export and inspect every PDF page"
+      ],
+      "tools": "Keep the existing TeX or Word/WPS workflow; PyMuPDF is optional for rendering.",
+      "deliverable": "A formatted source, PDF and unresolved-issues list.",
+      "acceptance": "Do not remove content or figures to eliminate whitespace; check cover, contents and fonts.",
+      "discussion": "Should large blank areas or background consistency be fixed first?",
+      "dependencies": "Use a stable integrated English draft from T14/T23.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/24",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "In progress",
+      "confidence": "Medium",
+      "review_reason": "The offer appears in a quoted message; later messages say the cover and whitespace still need work. A PDF attachment is not completion evidence.",
+      "evidence": [
+        {
+          "message_id": "S1-M002",
+          "translation": "I could improve the figures and formatting.",
+          "time_anchor": "Oct 12, before 11:13 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S3-M031",
+          "translation": "Improve the formatting of the entire report.",
+          "time_anchor": "Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S8-P001",
+          "translation": "I have not done the cover; there are a few blank areas I cannot remove. I will check again this afternoon.",
+          "time_anchor": "Oct 13, before 13:16 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T25": {
+      "id": "T25",
+      "title": "[WeChat] Reinsert the cover into the English report",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Confirm the English title, course and group details",
+        "Insert the selected cover asset",
+        "Check proportions, resolution and page-number continuity"
+      ],
+      "tools": "Use the current editor's image tools; no additional library.",
+      "deliverable": "The source with its English cover and a first-page preview.",
+      "acceptance": "Use the four confirmed names; a shared cover image alone is not proof of insertion.",
+      "discussion": "Which cover version is approved for the final report?",
+      "dependencies": "Confirm the English title in T23.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/25",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Only a cover image and a short caption appear later; no explicit insertion/completion report is present.",
+      "evidence": [
+        {
+          "message_id": "S4-M020",
+          "translation": "Once the English version is ready, I will insert it again.",
+          "time_anchor": "Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M021",
+          "translation": "Again.",
+          "time_anchor": "Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T26": {
+      "id": "T26",
+      "title": "[WeChat] Improve the risk-scoring workflow diagram",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Verify the actual inputs, outputs and point in time",
+        "Keep the meaning while aligning boxes and arrows",
+        "Ask the content lead to check every node"
+      ],
+      "tools": "Use native PowerPoint shapes or optional Graphviz; no new ML library is needed.",
+      "deliverable": "An editable risk-scoring workflow diagram.",
+      "acceptance": "Match the actual method; do not use future review text as an input to an earlier prediction.",
+      "discussion": "Does the figure describe a proposal or an implemented workflow? Label it accordingly.",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/26",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The adjacent image identifies the risk-score diagram, but the image itself is not completion evidence.",
+      "evidence": [
+        {
+          "message_id": "S4-M026",
+          "translation": "Could someone make this diagram look better?",
+          "time_anchor": "Oct 13, after 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M027",
+          "translation": "I will do it.",
+          "time_anchor": "Oct 13, after 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T27": {
+      "id": "T27",
+      "title": "[WeChat] Correct the fishbone diagram and move it to Chapter 4",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Check every branch against Chapter 4",
+        "Correct misplaced factors and placement",
+        "Insert the diagram and update the text reference"
+      ],
+      "tools": "Use PowerPoint or the existing fishbone source; no additional library.",
+      "deliverable": "The corrected Chapter 4 figure and insertion reference.",
+      "acceptance": "Keep its conceptual scope; do not treat it as causal proof.",
+      "discussion": "If Chapter 7 already has a Gantt chart, should its fishbone diagram be omitted?",
+      "dependencies": "Share the source with T17 and confirm the Chapter 4 version.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/27",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The brief change note and later files do not provide an explicit completion report under the original extraction rules.",
+      "evidence": [
+        {
+          "message_id": "S4-M003",
+          "translation": "The fishbone diagram seems wrong; I will fix it.",
+          "time_anchor": "Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M009",
+          "translation": "Put it in Chapter 4?",
+          "time_anchor": "Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M035",
+          "translation": "Move the fishbone diagram and add two preprocessing diagrams in Chapter 4.",
+          "time_anchor": "Oct 13, after 10:24 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T28": {
+      "id": "T28",
+      "title": "[WeChat] Add two preprocessing diagrams to Chapter 4",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "First confirm which two diagrams were intended",
+        "If unspecified, propose a table-join workflow and a sample-filtering workflow",
+        "Use the actual processing order and verified counts"
+      ],
+      "tools": "Use pandas to verify outputs; draw editable flows with PowerPoint or Graphviz.",
+      "deliverable": "A content confirmation note, two source diagrams and Chapter 4 locations.",
+      "acceptance": "The two topics are new proposals; do not estimate sample counts from images.",
+      "discussion": "The source does not name the two diagrams. What should they show?",
+      "dependencies": "Obtain the actual preprocessing steps and checks in T06.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/28",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The source mentions two additional diagrams without naming them or clearly establishing their producer/completion.",
+      "evidence": [
+        {
+          "message_id": "S4-M035",
+          "translation": "Move the fishbone diagram and add two preprocessing diagrams in Chapter 4.",
+          "time_anchor": "Oct 13, after 10:24 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T29": {
+      "id": "T29",
+      "title": "[WeChat] Visualize the order clusters",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Read the saved cluster assignments and feature definitions",
+        "Show cluster sizes and feature profiles",
+        "If a PCA view is needed, identify it as a display projection only"
+      ],
+      "tools": "Reuse the existing Weka SimpleKMeans results; summarize with pandas and plot with Matplotlib.",
+      "deliverable": "An order-cluster figure, profile table and result reference.",
+      "acceptance": "Cluster sizes sum to the analysis population; do not infer causes from the projection.",
+      "discussion": "Are features, scaling and the random seed recorded?",
+      "dependencies": "Obtain the same-version Weka output and sample definition.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/29",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The adjacent RQ2 label identifies the analysis. Shared figures and approval questions alone are not completion reports.",
+      "evidence": [
+        {
+          "message_id": "S4-M040",
+          "translation": "Please make visualizations for these three analyses.",
+          "time_anchor": "Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M041",
+          "translation": "I will do it.",
+          "time_anchor": "Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T30": {
+      "id": "T30",
+      "title": "[WeChat] Visualize category co-purchases",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Read the actual association-rule output",
+        "Check co-purchase counts, support, confidence and lift separately",
+        "Draw a readable bar chart and state multi-category-basket coverage"
+      ],
+      "tools": "Reuse the existing Weka association output; verify with pandas and plot with Matplotlib.",
+      "deliverable": "A co-purchase chart and rule-metric table.",
+      "acceptance": "State the support denominator; frequency is not lift; explain sparse multi-category coverage and weak associations.",
+      "discussion": "Which algorithm actually ran? Use the log rather than assuming Apriori.",
+      "dependencies": "Obtain the real basket data and rule output.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/30",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The adjacent RQ3 label identifies the analysis. Sending a figure alone does not establish completion.",
+      "evidence": [
+        {
+          "message_id": "S4-M040",
+          "translation": "Please make visualizations for these three analyses.",
+          "time_anchor": "Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M041",
+          "translation": "I will do it.",
+          "time_anchor": "Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T31": {
+      "id": "T31",
+      "title": "[WeChat] Visualize the Portuguese review analysis",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Confirm the text-bearing review sample and rating groups",
+        "Read the existing text-model output and select representative words",
+        "Preserve the meaning of negation and explain sample limitations"
+      ],
+      "tools": "Reuse the saved Weka TF-IDF/Naive Bayes pipeline; confirm the exact filter/classifier from its configuration. Use pandas and Matplotlib.",
+      "deliverable": "A Portuguese word figure, sample description and result index.",
+      "acceptance": "Do not infer causes from word frequency or use post-review analysis as pre-review prediction.",
+      "discussion": "Does the figure show frequency, distinguishing words or model weights?",
+      "dependencies": "Confirm the actual model and grouping; do not automatically retrain.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/31",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The adjacent RQ4 label identifies the analysis. Sending a figure alone does not establish completion.",
+      "evidence": [
+        {
+          "message_id": "S4-M040",
+          "translation": "Please make visualizations for these three analyses.",
+          "time_anchor": "Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S4-M041",
+          "translation": "I will do it.",
+          "time_anchor": "Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T32": {
+      "id": "T32",
+      "title": "[WeChat] Adapt the figures to the slide layout",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Determine the available slide area",
+        "Prefer re-exporting at a suitable aspect ratio or splitting across slides",
+        "If cropping is necessary, retain axes, legends, titles and sample notes"
+      ],
+      "tools": "Prefer the original plotting tool or PowerPoint crop tools; no additional image library.",
+      "deliverable": "Slide-ready figures with references to the complete originals.",
+      "acceptance": "Do not crop data or limitations; labels must be readable in playback.",
+      "discussion": "Would splitting three figures across slides be clearer?",
+      "dependencies": "Obtain complete figures from T29–T31.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/32",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Low",
+      "review_reason": "An offer to try is not completion; the intended placement is unclear. No sole owner was established in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S6-M006",
+          "translation": "Try cropping it to see whether it fits.",
+          "time_anchor": "Oct 13, before 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M008",
+          "translation": "I will try.",
+          "time_anchor": "Oct 13, before 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T33": {
+      "id": "T33",
+      "title": "[WeChat] Publish the dashboard for external access",
+      "workstream": "Website & Deployment",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Fu Yulin",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Confirm the source files and hosting account",
+        "Use an existing approved hosting workflow with the correct entry file",
+        "Check desktop, mobile and a signed-out browser and save the results"
+      ],
+      "tools": "Use the existing static HTML/CSS/JavaScript and confirmed hosting platform, such as the existing Cloudflare Pages setup.",
+      "deliverable": "A site URL, deployed-version reference and access-check record.",
+      "acceptance": "External access and resources work; posting a URL alone is not full acceptance.",
+      "discussion": "The original assigned alias is unresolved. Who controls the hosting account and source?",
+      "dependencies": "Confirm the page and English content versions in T13/T19/T23.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/33",
+      "recorded_owner": "Unassigned (original alias unresolved)",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The original assigned alias is unresolved. Links and access feedback exist, but no explicit deployer completion report is established.",
+      "evidence": [
+        {
+          "message_id": "S6-M014",
+          "translation": "[A participant was tagged.]",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M020",
+          "translation": "Make this website accessible to other people.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M035",
+          "translation": "GitHub should be fine.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M011",
+          "translation": "This one works.",
+          "time_anchor": "Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M026",
+          "translation": "It works on a computer too.",
+          "time_anchor": "Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T34": {
+      "id": "T34",
+      "title": "[WeChat] Fix the English table of contents",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Establish whether the master source is TeX or Word",
+        "Use the source's heading structure and automatic contents mechanism",
+        "Check English titles, levels and page numbers"
+      ],
+      "tools": "For TeX use the actual compiler/latexmk; for Word/WPS use heading styles and refresh the contents.",
+      "deliverable": "A correct English contents page and reproducible instructions.",
+      "acceptance": "Every entry matches a heading; do not mix Word-generated and TeX-generated contents.",
+      "discussion": "Which output is the final submission master?",
+      "dependencies": "Use the English titles and complete source from T23/T35.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/34",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "In progress",
+      "confidence": "Medium",
+      "review_reason": "Messages describe WPS attempts and the English contents problem, but do not establish a sole owner of the repair.",
+      "evidence": [
+        {
+          "message_id": "S6-M018",
+          "translation": "The table of contents will not convert to English.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M026",
+          "translation": "I have been generating the table of contents with WPS.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T35": {
+      "id": "T35",
+      "title": "[WeChat] Provide the English report LaTeX source",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue",
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Collect the matching tex, figures, bibliography and required dependencies",
+        "Identify the entry file and build command",
+        "Verify that the source corresponds to the shared PDF"
+      ],
+      "tools": "Use pathlib, zipfile and hashlib if an automated inventory is useful; no third-party package is required.",
+      "deliverable": "A buildable source package and file inventory.",
+      "acceptance": "Do not omit figures or required dependencies; exclude chat files and credentials.",
+      "discussion": "Does the shared tex file have all its dependencies, and who has the full version?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/35",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The reply context and a tex attachment do not establish a sole owner or completion of a complete source handover.",
+      "evidence": [
+        {
+          "message_id": "S6-M028",
+          "translation": "Just send me the tex file.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M031",
+          "translation": "Okay, wait a moment.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T36": {
+      "id": "T36",
+      "title": "[WeChat] Recompile to resolve the table of contents",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Run the appropriate build command in the current environment",
+        "Continue as required until contents and references stabilize",
+        "Review warnings and PDF page numbers"
+      ],
+      "tools": "Use the existing MiKTeX/TeX Live setup and optional latexmk; follow warnings rather than assuming two passes always suffice.",
+      "deliverable": "A final PDF, build log and contents check record.",
+      "acceptance": "No unresolved references or missing figures; record enough environment details to reproduce the build.",
+      "discussion": "Are bibliography or cross-reference passes still needed?",
+      "dependencies": "Complete the contents configuration and source package in T34/T35.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/36",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The source says another compilation is needed but establishes no sole owner. T09 only records the first build.",
+      "evidence": [
+        {
+          "message_id": "S6-M039",
+          "translation": "The contents need two compilations.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M041",
+          "translation": "I have the tex file, but I have not compiled it.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T37": {
+      "id": "T37",
+      "title": "[WeChat] Review the English report and source before formatting",
+      "workstream": "Report & Translation",
+      "suggested_lead": "Zhang Xinyue",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Xu Jiale"
+      ],
+      "steps": [
+        "Match the PDF and source versions",
+        "Check terms, figure numbers, sample counts and limitations",
+        "Resolve content problems before handing over for formatting"
+      ],
+      "tools": "Use the existing editor and PDF reader; PyMuPDF/difflib can help locate changes.",
+      "deliverable": "A review checklist and handover record.",
+      "acceptance": "Keep content and layout review distinct and list unresolved items.",
+      "discussion": "Which English ambiguities require checking the original draft?",
+      "dependencies": "Use the English draft and source from T23/T35.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/37",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Two people are to review together; no sole owner is established.",
+      "evidence": [
+        {
+          "message_id": "S6-M029",
+          "translation": "Another member and I will check it; if it looks fine, she can format it.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S6-M044",
+          "translation": "We will check it.",
+          "time_anchor": "Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T38": {
+      "id": "T38",
+      "title": "[WeChat] Create the missingness visualization",
+      "workstream": "Data & Figures",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Read the verified missingness table",
+        "Plot field-level missingness and show basket coverage separately",
+        "Explain the practical effect beside each chart"
+      ],
+      "tools": "Use pandas for calculation and a Matplotlib horizontal bar chart; no extra charting framework.",
+      "deliverable": "Missingness and coverage figures with reproducible tables.",
+      "acceptance": "Different denominators remain separate; do not copy historical percentages into another report version.",
+      "discussion": "Does the current report use the same denominator as the earlier chat figures?",
+      "dependencies": "Resolve T06 definitions and keep wording consistent with T08.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/38",
+      "recorded_owner": "Zhang Xinyue",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Later images are excluded from completion inference. The second metric is not invented as a separate source task.",
+      "evidence": [
+        {
+          "message_id": "S7-M028",
+          "translation": "This needs a visualization.",
+          "time_anchor": "Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M032",
+          "translation": "There is only a missingness figure.",
+          "time_anchor": "Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M033",
+          "translation": "Then I will do it.",
+          "time_anchor": "Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T39": {
+      "id": "T39",
+      "title": "[WeChat] Verify how many members must submit the assignment",
+      "workstream": "Requirements & References",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Fu Yulin"
+      ],
+      "steps": [
+        "Distinguish submission count from presentation attendance",
+        "Check the formal assignment instructions",
+        "If unclear, ask the instructor and record the reply"
+      ],
+      "tools": "Use the course page and browser; no additional library.",
+      "deliverable": "A checklist for submitter count, presenter count and required channels.",
+      "acceptance": "Uncertain chat statements or other groups' behavior are not official requirements.",
+      "discussion": "Is one representative submission sufficient, and is presenter count specified separately?",
+      "dependencies": "Obtain the official requirements in T16.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/39",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Uncertain wording and a plan to ask later do not establish that the requirements were verified.",
+      "evidence": [
+        {
+          "message_id": "S7-M034",
+          "translation": "Please check the requirements.",
+          "time_anchor": "Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M039",
+          "translation": "The requirements do not say.",
+          "time_anchor": "Oct 13, after 12:01 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M040",
+          "translation": "But I think one person submitting is enough.",
+          "time_anchor": "Oct 13, after 12:01 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S7-M041",
+          "translation": "Let us ask this afternoon; it is due in the evening anyway.",
+          "time_anchor": "Oct 13, after 12:01 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T40": {
+      "id": "T40",
+      "title": "[WeChat] Submit the Project Proposal by email",
+      "workstream": "Submission & Delivery",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Verify the official email requirement and final package",
+        "Confirm the actual sender and recipient",
+        "After actual sending, record timestamp, attachment version and evidence"
+      ],
+      "tools": "Use the existing email client; zipfile/hashlib are optional for package checks.",
+      "deliverable": "A pre-send checklist; add submission evidence only after sending.",
+      "acceptance": "Do not mark complete before actual sending; this plan does not send email.",
+      "discussion": "Who sends it, who is copied, and what subject/filename is required?",
+      "dependencies": "Confirm T16/T39 and validate the final files in T36.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/40",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "High",
+      "review_reason": "No sender or explicit sent confirmation is recorded. The email statement is an instruction, not proof of submission.",
+      "evidence": [
+        {
+          "message_id": "S8-M008",
+          "translation": "This Project Proposal must be sent to the instructor by email.",
+          "time_anchor": "Oct 13, after 15:34 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T41": {
+      "id": "T41",
+      "title": "[WeChat] Confirm and follow the Moodle submission process",
+      "workstream": "Submission & Delivery",
+      "suggested_lead": "Wang Siqi",
+      "suggested_collaborators": [
+        "Fu Yulin"
+      ],
+      "steps": [
+        "Check whether Moodle is still required by the current official notice",
+        "If required, verify the entry, package and confirmation screen",
+        "Record the platform's success evidence after submitting"
+      ],
+      "tools": "Use the browser and Moodle; no additional library.",
+      "deliverable": "A channel decision and, if applicable, platform submission evidence.",
+      "acceptance": "A suggestion to use both channels is not an official dual-submission requirement.",
+      "discussion": "Does the later email instruction supersede Moodle or supplement it?",
+      "dependencies": "Resolve channels and submitter count in T16/T39.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/41",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Low",
+      "review_reason": "Dual submission is suggested, while a later notice mentions email only. Whether Moodle is required and who submits remain unresolved.",
+      "evidence": [
+        {
+          "message_id": "S7-M021",
+          "translation": "We might as well submit through both channels.",
+          "time_anchor": "Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S8-M008",
+          "translation": "This Project Proposal must be sent to the instructor by email.",
+          "time_anchor": "Oct 13, after 15:34 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T42": {
+      "id": "T42",
+      "title": "[WeChat] Shorten captions for the new figures",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Identify the new captions rather than deleting notes globally",
+        "Keep the explanation, sample, units and essential limitations",
+        "Remove repetition and review each figure again"
+      ],
+      "tools": "Use the current editor; no additional library.",
+      "deliverable": "A caption comparison and revised PDF.",
+      "acceptance": "A reader can understand the figure and its denominator without losing essential limitations.",
+      "discussion": "Which two edits were referenced, and were all new captions covered?",
+      "dependencies": "Confirm the additions list in T22.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/42",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Statements about changing the captions are ambiguous promises rather than explicit finished-work reports.",
+      "evidence": [
+        {
+          "message_id": "S8-M012",
+          "translation": "The captions for the newly added figures should be a little shorter.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S8-M015",
+          "translation": "Okay, I will change them again.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S8-M020",
+          "translation": "I will change those two first.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T43": {
+      "id": "T43",
+      "title": "[WeChat] Remove the four indicated parenthetical passages",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Locate the four specific passages in the source image",
+        "Distinguish explanatory notes from equations or citations",
+        "Change only those four and check the resulting grammar"
+      ],
+      "tools": "Use tracked changes or the original TeX editor; do not globally remove parentheses.",
+      "deliverable": "A four-location before/after comparison.",
+      "acceptance": "Keep citations, formulas, intervals and unrelated parentheses intact.",
+      "discussion": "Which four locations were indicated, and do they still exist in the current version?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/43",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The four locations must be found in the source screenshot; the later wording does not unambiguously confirm completion.",
+      "evidence": [
+        {
+          "message_id": "S8-M014",
+          "translation": "These four parenthetical parts need to go.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S8-M015",
+          "translation": "Okay, I will change them again.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S8-M020",
+          "translation": "I will change those two first.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T44": {
+      "id": "T44",
+      "title": "[WeChat] Choose a report background that matches the cover",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi",
+        "Zhang Xinyue"
+      ],
+      "steps": [
+        "Review the shared candidates and permission to use them",
+        "Compare pale teal/white or similarly light options",
+        "Test them on a body-text page for contrast and distraction"
+      ],
+      "tools": "Use the existing editor's preview; no new library or generated image is required.",
+      "deliverable": "A candidate comparison and final selection record.",
+      "acceptance": "Do not obstruct text or treat a shared candidate as an adopted background.",
+      "discussion": "Who approves the final choice, and how should cover consistency balance readability?",
+      "dependencies": "Confirm the current working version before starting.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/44",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "Several people searched for backgrounds. Trying candidates does not establish a final selection or sole owner.",
+      "evidence": [
+        {
+          "message_id": "S8-M045",
+          "translation": "Please find a background image.",
+          "time_anchor": "Oct 13, after 16:38 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S9-M017",
+          "translation": "Prefer a pale teal and white background that does not obscure the text.",
+          "time_anchor": "Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S9-M026",
+          "translation": "You two look for a background.",
+          "time_anchor": "Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S9-M034",
+          "translation": "I will look for one that matches the cover.",
+          "time_anchor": "Oct 13, after 16:49 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S9-M045",
+          "translation": "I will try them all.",
+          "time_anchor": "Oct 13, after 16:55 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T45": {
+      "id": "T45",
+      "title": "[WeChat] Test candidate backgrounds in the report",
+      "workstream": "Formatting & Compilation",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Insert a candidate in a copy or background layer",
+        "Test dense text, figure and contents pages",
+        "Export and check the PDF for obstruction and file size"
+      ],
+      "tools": "Use Word/WPS page backgrounds or the existing TeX background mechanism.",
+      "deliverable": "A trial PDF and comparable sample pages.",
+      "acceptance": "Keep every original figure complete and preserve text readability.",
+      "discussion": "Would backgrounds on divider pages alone work better?",
+      "dependencies": "Select candidates in T44 first.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/45",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S8-M018",
+          "translation": "I will try inserting it in a moment.",
+          "time_anchor": "Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Todo"
+    },
+    "T46": {
+      "id": "T46",
+      "title": "[WeChat] Prepare evidence-based answers using the slides",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Xu Jiale",
+      "suggested_collaborators": [
+        "Fu Yulin",
+        "Zhang Xinyue",
+        "Wang Siqi"
+      ],
+      "steps": [
+        "List likely questions for each slide",
+        "Link each answer to a report page, figure or experiment record",
+        "Practice explaining the limits of unverified results"
+      ],
+      "tools": "Use the existing chat tool or a plain document; no API integration or Q&A system is required.",
+      "deliverable": "A question–answer–evidence index.",
+      "acceptance": "Generated answers are not evidence and must not create results.",
+      "discussion": "Which questions can be answered from evidence and which remain unverified?",
+      "dependencies": "Use the stable slides and review results from T10/T37.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/46",
+      "recorded_owner": "Xu Jiale",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "None identified in the original extraction.",
+      "evidence": [
+        {
+          "message_id": "S8-M039",
+          "translation": "Could you send the PPT? I will give it to AI first so it can help answer questions later.",
+          "time_anchor": "Oct 13, after 16:26 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg"
+      ],
+      "status_column": "Todo"
+    },
+    "T47": {
+      "id": "T47",
+      "title": "[WeChat] Add the dashboard link to the slides",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Insert the confirmed final URL on the appropriate slide",
+        "Test it in slideshow mode",
+        "Prepare offline screenshots or a backup demonstration"
+      ],
+      "tools": "Use PowerPoint/WPS hyperlinks and browser checks; no additional library.",
+      "deliverable": "A deck with a tested link and offline backup.",
+      "acceptance": "The URL targets the approved version and contains no local path; network availability remains a separate check.",
+      "discussion": "What will be shown if the venue has no usable network?",
+      "dependencies": "Confirm the site URL and deck version in T33/T15.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/47",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The omission is explicit, but there is no later confirmation that the link was added.",
+      "evidence": [
+        {
+          "message_id": "S9-M006",
+          "translation": "I forgot to put the link in the PPT.",
+          "time_anchor": "Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    },
+    "T48": {
+      "id": "T48",
+      "title": "[WeChat] Arrange and deliver the group presentation",
+      "workstream": "Slides & Presentation",
+      "suggested_lead": "Fu Yulin",
+      "suggested_collaborators": [
+        "Zhang Xinyue",
+        "Xu Jiale",
+        "Wang Siqi"
+      ],
+      "steps": [
+        "Confirm the presenter list against the formal requirements",
+        "Assign opening, content, demonstration and handovers",
+        "Rehearse with timing and check equipment, files and backups"
+      ],
+      "tools": "Use the slides, a timer and a checklist; no additional library.",
+      "deliverable": "A presenter list, segment allocation and demonstration checklist.",
+      "acceptance": "Do not assume all four must present; actual attendance/presentation evidence is needed for completion.",
+      "discussion": "What was the final arrangement after the messages about three presenters and an individual volunteer?",
+      "dependencies": "Resolve presenter count in T39 and prepare T20/T46/T47.",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/48",
+      "recorded_owner": "Unassigned",
+      "recorded_status": "Not started",
+      "confidence": "Medium",
+      "review_reason": "The messages mention three presenters and a later individual offer. The final arrangement and actual presentation are unconfirmed.",
+      "evidence": [
+        {
+          "message_id": "S8-M043",
+          "translation": "Then the three of us will present.",
+          "time_anchor": "Oct 13, after 16:38 (nearby time anchor, not an exact message timestamp; year not shown)"
+        },
+        {
+          "message_id": "S9-M024",
+          "translation": "I will present.",
+          "time_anchor": "Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown)"
+        }
+      ],
+      "sources": [
+        "Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg",
+        "Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg"
+      ],
+      "status_column": "Needs Review"
+    }
+  }
+}

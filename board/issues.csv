@@ -1,0 +1,1574 @@
+title,body,labels,status_column
+[WeChat] Obtain a previous-year reference report,"## Recorded owner
+
+Unassigned (original alias unresolved)
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Ask senior students for their report from last year.""
+  - Message: S1-M006. Time: Oct 12, before 11:13 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Then forget it.""
+  - Message: S1-M009. Time: Oct 12, before 11:13 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+A later message may cancel the assignment. Confirm its scope before closing or deleting it.
+
+<!-- wechat-task:T01 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Review the report content,"## Recorded owner
+
+Unassigned
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I am checking it and planning the figures.""
+  - Message: S1-M027. Time: Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""The three of us should check the content again.""
+  - Message: S1-M030. Time: Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""No need to review Section 7.3 onward.""
+  - Message: S1-M031. Time: Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The messages include both an individual review and a request for three people to check; no sole owner is established.
+
+<!-- wechat-task:T02 -->
+","needs-review,source:wechat,status:in-progress",Needs Review
+[WeChat] Plan and refine the report figures,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I am checking it and planning the figures.""
+  - Message: S1-M027. Time: Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I am now refining the figures and similar items.""
+  - Message: S3-M001. Time: Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T03 -->
+","source:wechat,status:in-progress",In Progress
+[WeChat] Revise the first three report chapters,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I revised the first three chapters a little.""
+  - Message: S1-M048. Time: Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I mainly revised Chapter 1 and marked some figure positions.""
+  - Message: S1-M054. Time: Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The initial claim covers three chapters, but a later clarification mainly covers Chapter 1. Full completion is not established.
+
+<!-- wechat-task:T04 -->
+","needs-review,source:wechat,status:in-progress",Needs Review
+[WeChat] Mark figure insertion points in the report,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Completed
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I mainly revised Chapter 1 and marked some figure positions.""
+  - Message: S1-M054. Time: Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T05 -->
+","source:wechat,status:completed",Done
+[WeChat] Verify missingness in the real data,"## Recorded owner
+
+Unassigned (original alias unresolved)
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Please check the missingness in the real data.""
+  - Message: S1-M049. Time: Oct 12, after 14:35 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""The missingness seems fine.""
+  - Message: S1-M058. Time: Oct 12, after 14:55 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The assigned alias has not been linked to a confirmed member. The later statement does not identify who performed the check.
+
+<!-- wechat-task:T06 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Add relevant illustrations to the first three chapters,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""There is a little too much text; perhaps AI could help add some relevant illustrations.""
+  - Message: S1-M061. Time: Oct 12, after 14:55 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The suggestion has no explicit sole claimant. Agreement alone does not establish ownership or completion.
+
+<!-- wechat-task:T07 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Clarify the report wording about missing data,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Then I will change how I phrase it.""
+  - Message: S1-M065. Time: Oct 12, after 14:55 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T08 -->
+","source:wechat,status:unfinished",Todo
+[WeChat] Complete the first report compilation,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Completed
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I only compiled it once.""
+  - Message: S1-M040. Time: Oct 12, after 12:26 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T09 -->
+","source:wechat,status:completed",Done
+[WeChat] Create the group presentation slides,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""So I can make the PPT.""
+  - Message: S1-M018. Time: Oct 12, after 11:13 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""She will make the PPT next class, and the three of us can refine and format it.""
+  - Message: S2-M008. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+There is an intention to make slides, but the allocation and final completion are not established. Shared files alone are insufficient.
+
+<!-- wechat-task:T10 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Explain the division of work in the slides,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Should we leave the division of work out of the report and explain it in the PPT?""
+  - Message: S2-M001. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The suggestion received a response but no sole owner or completion report is established.
+
+<!-- wechat-task:T11 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Draw the Chapter 7 implementation Gantt chart,"## Recorded owner
+
+Unassigned (original alias unresolved)
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Chapter 7, the implementation plan, needs a Gantt chart and a fishbone diagram.""
+  - Message: S2-M004. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Could you draw them?""
+  - Message: S2-M004. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T12 -->
+","source:wechat,status:unfinished",Todo
+[WeChat] Design a dashboard prototype and share screenshots,"## Recorded owner
+
+Unassigned (original alias unresolved)
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Ask AI to design a frontend page showing the expected outcome.""
+  - Message: S2-M006. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Use the report theme as much as possible and send a screenshot to the group.""
+  - Message: S2-M006. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The originally assigned alias remains unresolved. A later file sender or editor is not automatically the original task owner.
+
+<!-- wechat-task:T13 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Integrate the report chapters,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I am integrating the report now and will pass it on before the next class.""
+  - Message: S2-M007. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""The first six chapters are ready; I am now refining the figures and similar items.""
+  - Message: S3-M001. Time: Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T14 -->
+","source:wechat,status:in-progress",In Progress
+[WeChat] Refine and format the presentation slides,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""She will make the PPT next class, and the three of us can refine and format it.""
+  - Message: S2-M008. Time: Oct 12, before 15:46 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Three people were asked to collaborate; the source does not establish a sole owner.
+
+<!-- wechat-task:T15 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Verify the official submission deadline,"## Recorded owner
+
+Unassigned (original alias unresolved)
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""There is another thing.""
+  - Message: S2-M018. Time: Oct 12, after 15:53 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Please check whether the teacher gave a specific submission time.""
+  - Message: S2-M019. Time: Oct 12, after 15:53 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I think it is due tonight.""
+  - Message: S7-M017. Time: Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""23:59.""
+  - Message: S7-M018. Time: Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The later deadline statement is uncertain. Keep 23:59 as a clue rather than an official deadline.
+
+<!-- wechat-task:T16 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Improve the discussed fishbone diagram,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""As for the fishbone diagram...""
+  - Message: S2-M049. Time: Oct 12, after 16:14 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will make a few changes.""
+  - Message: S2-M051. Time: Oct 12, after 16:14 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T17 -->
+","source:wechat,status:unfinished",Todo
+[WeChat] Add Chapter 7 to the report,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Completed
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I do not think the instructor required Chapter 7.""
+  - Message: S3-M002. Time: Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""So I added it.""
+  - Message: S3-M004. Time: Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T18 -->
+","source:wechat,status:completed",Done
+[WeChat] Update the dashboard layout and colors,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Completed
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I made a few changes to the dashboard page.""
+  - Message: S3-M007. Time: Oct 12, before 17:36 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I made a page and changed its colors.""
+  - Message: S3-M010. Time: Oct 12, after 17:40 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T19 -->
+","source:wechat,status:completed",Done
+[WeChat] Prepare the presentation script,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Then I will prepare a script first.""
+  - Message: S3-M023. Time: Oct 12, after 18:06 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T20 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Review and clarify AI-style wording,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Check the report manually again and remove some AI-style wording.""
+  - Message: S3-M031. Time: Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Could you two divide these tasks?""
+  - Message: S3-M032. Time: Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""After your changes, I will check for more AI-style wording.""
+  - Message: S4-M018. Time: Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Yes, as long as the meaning stays the same.""
+  - Message: S4-M029. Time: Oct 13, after 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Several tasks were offered for two people to divide, followed by others expressing interest. No sole owner or completion is established.
+
+<!-- wechat-task:T21 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Identify and add missing report figures,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Check where more figures are needed and add them.""
+  - Message: S3-M031. Time: Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will see what other figures can be added.""
+  - Message: S4-M017. Time: Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T22 -->
+","source:wechat,status:unfinished",Todo
+[WeChat] Translate the report using the course terminology,"## Recorded owner
+
+Unassigned
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Translate the Chinese into English using the wording in the teacher's slides.""
+  - Message: S3-M031. Time: Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Could you two divide these tasks?""
+  - Message: S3-M032. Time: Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""The table of contents will not convert to English.""
+  - Message: S6-M018. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""The rest is already in English.""
+  - Message: S6-M025. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The initial allocation is unresolved. A statement that other parts are English has no clear producer, and contents problems remain.
+
+<!-- wechat-task:T23 -->
+","needs-review,source:wechat,status:in-progress",Needs Review
+[WeChat] Improve the report formatting,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I could improve the figures and formatting.""
+  - Message: S1-M002. Time: Oct 12, before 11:13 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Improve the formatting of the entire report.""
+  - Message: S3-M031. Time: Oct 13, after 09:05 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I have not done the cover; there are a few blank areas I cannot remove. I will check again this afternoon.""
+  - Message: S8-P001. Time: Oct 13, before 13:16 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The offer appears in a quoted message; later messages say the cover and whitespace still need work. A PDF attachment is not completion evidence.
+
+<!-- wechat-task:T24 -->
+","needs-review,source:wechat,status:in-progress",Needs Review
+[WeChat] Reinsert the cover into the English report,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Once the English version is ready, I will insert it again.""
+  - Message: S4-M020. Time: Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Again.""
+  - Message: S4-M021. Time: Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Only a cover image and a short caption appear later; no explicit insertion/completion report is present.
+
+<!-- wechat-task:T25 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Improve the risk-scoring workflow diagram,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Could someone make this diagram look better?""
+  - Message: S4-M026. Time: Oct 13, after 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will do it.""
+  - Message: S4-M027. Time: Oct 13, after 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The adjacent image identifies the risk-score diagram, but the image itself is not completion evidence.
+
+<!-- wechat-task:T26 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Correct the fishbone diagram and move it to Chapter 4,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""The fishbone diagram seems wrong; I will fix it.""
+  - Message: S4-M003. Time: Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Put it in Chapter 4?""
+  - Message: S4-M009. Time: Oct 13, before 09:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Move the fishbone diagram and add two preprocessing diagrams in Chapter 4.""
+  - Message: S4-M035. Time: Oct 13, after 10:24 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The brief change note and later files do not provide an explicit completion report under the original extraction rules.
+
+<!-- wechat-task:T27 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Add two preprocessing diagrams to Chapter 4,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Move the fishbone diagram and add two preprocessing diagrams in Chapter 4.""
+  - Message: S4-M035. Time: Oct 13, after 10:24 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The source mentions two additional diagrams without naming them or clearly establishing their producer/completion.
+
+<!-- wechat-task:T28 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Visualize the order clusters,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Please make visualizations for these three analyses.""
+  - Message: S4-M040. Time: Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will do it.""
+  - Message: S4-M041. Time: Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The adjacent RQ2 label identifies the analysis. Shared figures and approval questions alone are not completion reports.
+
+<!-- wechat-task:T29 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Visualize category co-purchases,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Please make visualizations for these three analyses.""
+  - Message: S4-M040. Time: Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will do it.""
+  - Message: S4-M041. Time: Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The adjacent RQ3 label identifies the analysis. Sending a figure alone does not establish completion.
+
+<!-- wechat-task:T30 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Visualize the Portuguese review analysis,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Please make visualizations for these three analyses.""
+  - Message: S4-M040. Time: Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will do it.""
+  - Message: S4-M041. Time: Oct 13, after 10:37 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The adjacent RQ4 label identifies the analysis. Sending a figure alone does not establish completion.
+
+<!-- wechat-task:T31 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Adapt the figures to the slide layout,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Try cropping it to see whether it fits.""
+  - Message: S6-M006. Time: Oct 13, before 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will try.""
+  - Message: S6-M008. Time: Oct 13, before 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+
+## Confidence
+
+Low
+
+## Review reason
+
+An offer to try is not completion; the intended placement is unclear. No sole owner was established in the original extraction.
+
+<!-- wechat-task:T32 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Publish the dashboard for external access,"## Recorded owner
+
+Unassigned (original alias unresolved)
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""[A participant was tagged.]""
+  - Message: S6-M014. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Make this website accessible to other people.""
+  - Message: S6-M020. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""GitHub should be fine.""
+  - Message: S6-M035. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""This one works.""
+  - Message: S7-M011. Time: Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""It works on a computer too.""
+  - Message: S7-M026. Time: Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The original assigned alias is unresolved. Links and access feedback exist, but no explicit deployer completion report is established.
+
+<!-- wechat-task:T33 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Fix the English table of contents,"## Recorded owner
+
+Unassigned
+
+## Status
+
+In progress
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""The table of contents will not convert to English.""
+  - Message: S6-M018. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I have been generating the table of contents with WPS.""
+  - Message: S6-M026. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Messages describe WPS attempts and the English contents problem, but do not establish a sole owner of the repair.
+
+<!-- wechat-task:T34 -->
+","needs-review,source:wechat,status:in-progress",Needs Review
+[WeChat] Provide the English report LaTeX source,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Just send me the tex file.""
+  - Message: S6-M028. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Okay, wait a moment.""
+  - Message: S6-M031. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The reply context and a tex attachment do not establish a sole owner or completion of a complete source handover.
+
+<!-- wechat-task:T35 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Recompile to resolve the table of contents,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""The contents need two compilations.""
+  - Message: S6-M039. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I have the tex file, but I have not compiled it.""
+  - Message: S6-M041. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The source says another compilation is needed but establishes no sole owner. T09 only records the first build.
+
+<!-- wechat-task:T36 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Review the English report and source before formatting,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Another member and I will check it; if it looks fine, she can format it.""
+  - Message: S6-M029. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""We will check it.""
+  - Message: S6-M044. Time: Oct 13, after 11:17 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Two people are to review together; no sole owner is established.
+
+<!-- wechat-task:T37 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Create the missingness visualization,"## Recorded owner
+
+Zhang Xinyue
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""This needs a visualization.""
+  - Message: S7-M028. Time: Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""There is only a missingness figure.""
+  - Message: S7-M032. Time: Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Then I will do it.""
+  - Message: S7-M033. Time: Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Later images are excluded from completion inference. The second metric is not invented as a separate source task.
+
+<!-- wechat-task:T38 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Verify how many members must submit the assignment,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Please check the requirements.""
+  - Message: S7-M034. Time: Oct 13, after 11:52 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""The requirements do not say.""
+  - Message: S7-M039. Time: Oct 13, after 12:01 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""But I think one person submitting is enough.""
+  - Message: S7-M040. Time: Oct 13, after 12:01 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Let us ask this afternoon; it is due in the evening anyway.""
+  - Message: S7-M041. Time: Oct 13, after 12:01 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Uncertain wording and a plan to ask later do not establish that the requirements were verified.
+
+<!-- wechat-task:T39 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Submit the Project Proposal by email,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""This Project Proposal must be sent to the instructor by email.""
+  - Message: S8-M008. Time: Oct 13, after 15:34 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+High
+
+## Review reason
+
+No sender or explicit sent confirmation is recorded. The email statement is an instruction, not proof of submission.
+
+<!-- wechat-task:T40 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Confirm and follow the Moodle submission process,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""We might as well submit through both channels.""
+  - Message: S7-M021. Time: Oct 13, after 11:41 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""This Project Proposal must be sent to the instructor by email.""
+  - Message: S8-M008. Time: Oct 13, after 15:34 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+Low
+
+## Review reason
+
+Dual submission is suggested, while a later notice mentions email only. Whether Moodle is required and who submits remain unresolved.
+
+<!-- wechat-task:T41 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Shorten captions for the new figures,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""The captions for the newly added figures should be a little shorter.""
+  - Message: S8-M012. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Okay, I will change them again.""
+  - Message: S8-M015. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will change those two first.""
+  - Message: S8-M020. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Statements about changing the captions are ambiguous promises rather than explicit finished-work reports.
+
+<!-- wechat-task:T42 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Remove the four indicated parenthetical passages,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""These four parenthetical parts need to go.""
+  - Message: S8-M014. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Okay, I will change them again.""
+  - Message: S8-M015. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will change those two first.""
+  - Message: S8-M020. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The four locations must be found in the source screenshot; the later wording does not unambiguously confirm completion.
+
+<!-- wechat-task:T43 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Choose a report background that matches the cover,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Please find a background image.""
+  - Message: S8-M045. Time: Oct 13, after 16:38 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""Prefer a pale teal and white background that does not obscure the text.""
+  - Message: S9-M017. Time: Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""You two look for a background.""
+  - Message: S9-M026. Time: Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will look for one that matches the cover.""
+  - Message: S9-M034. Time: Oct 13, after 16:49 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will try them all.""
+  - Message: S9-M045. Time: Oct 13, after 16:55 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+Several people searched for backgrounds. Trying candidates does not establish a final selection or sole owner.
+
+<!-- wechat-task:T44 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Test candidate backgrounds in the report,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I will try inserting it in a moment.""
+  - Message: S8-M018. Time: Oct 13, after 15:51 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T45 -->
+","source:wechat,status:unfinished",Todo
+[WeChat] Prepare evidence-based answers using the slides,"## Recorded owner
+
+Xu Jiale
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Could you send the PPT? I will give it to AI first so it can help answer questions later.""
+  - Message: S8-M039. Time: Oct 13, after 16:26 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+None identified in the original extraction.
+
+<!-- wechat-task:T46 -->
+","source:wechat,status:unfinished",Todo
+[WeChat] Add the dashboard link to the slides,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""I forgot to put the link in the PPT.""
+  - Message: S9-M006. Time: Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The omission is explicit, but there is no later confirmation that the link was added.
+
+<!-- wechat-task:T47 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
+[WeChat] Arrange and deliver the group presentation,"## Recorded owner
+
+Unassigned
+
+## Status
+
+Not started
+
+## Evidence
+
+The excerpts below are English translations of the source messages. Message IDs and nearby time anchors are retained for checking; they are not new completion reports.
+
+- ""Then the three of us will present.""
+  - Message: S8-M043. Time: Oct 13, after 16:38 (nearby time anchor, not an exact message timestamp; year not shown).
+
+- ""I will present.""
+  - Message: S9-M024. Time: Oct 13, before 16:49 (nearby time anchor, not an exact message timestamp; year not shown).
+
+## Source files
+
+- Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg
+- Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg
+
+## Confidence
+
+Medium
+
+## Review reason
+
+The messages mention three presenters and a later individual offer. The final arrangement and actual presentation are unconfirmed.
+
+<!-- wechat-task:T48 -->
+","needs-review,source:wechat,status:unfinished",Needs Review
