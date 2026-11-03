@@ -501,3 +501,418 @@ UTC开始时间 2026-11-03T03:22:24.969765+00:00
 读回验证：48个Issue；待确认36；assignee均为空；Status四列与本地CSV逐项一致；PR仅包含5个board文件；main仍为批准的README初始化提交。
 
 最后一次清单与审计文件的回写提交，其SHA和成功结果保存在PR提交历史及PR描述中，避免审计文件自引用自身提交。
+
+
+<!-- ENRICHMENT_AUDIT_START -->
+
+## 2026-11-03：补充工作板块、四人身份与逐项建议
+
+- 授权依据：用户要求继续添加板块、各任务的做法及库，并区分四人的工作；随后确认张馨月、徐佳乐、王思琦、付玉琳四人身份，明确允许使用四人完整姓名。手机号继续隐藏。
+
+- 沿用已有官方gh OAuth登录，未使用或保存聊天中出现的PAT；没有改变GitHub assignee。
+
+- 在48个原Issue末尾添加有独立标记的身份补充和建议；没有创建虚构的新任务或假冒成员发布评论。
+
+- 分成7个工作板块，创建4个个人建议视图；新增工作板块、建议执行人、原文负责人、证据发言者4字段。全部新ID由API读取。
+
+- 网络中途发生TLS握手和连接超时。每次失败后先读取项目现状，再只补尚缺字段/筛选设置；未重新创建Issue或重复追加方案。
+
+- 一次多类型GraphQL introspection受服务端最多两次字段查询限制，后拆为小批只读查询；没有因此改变权限或身份。
+
+- 原CSV继续作为初始群聊提取记录；execution_plans.json单独保存建议。import_board.py增加保留方案和成员后续备注的合并逻辑。
+
+- 本地12项完整离线行为测试通过；随PR提供的3项专项回归测试通过，覆盖重导保留方案、损坏标记停止及新增标签保留。没有执行真实重导，避免改动现有状态。
+
+
+### 原生项目读回结果
+
+
+- 48个Issue、48个Project项；每项有且只有1段方案；原Issue标题、前缀证据、state和assignee保持。
+
+- Status：Todo 6 / In Progress 2 / Done 4 / 待确认36。原始事实已完成4 / 未完成44；needs-review36是交叉维度。
+
+- 48项×4个自定义字段逐项核对；11个新增视图均为原生BOARD_LAYOUT并按Status分列，标签筛选值已读回。
+
+- 48项均有具体步骤、工具、建议牵头、协作、交付物、验收标准、前置条件和讨论题。
+
+- 未重跑实验、修改报告或原始截图、部署站点、发送邮件或提交课程作业。
+
+
+### 结构和任务更新日志
+
+
+- 创建字段 工作板块 PVTSSF_lAHOC3MSJ84Bp7xgzhoVSnY
+
+- 创建字段 建议执行人 PVTSSF_lAHOC3MSJ84Bp7xgzhoVSnc
+
+- 创建字段 原文负责人 PVTF_lAHOC3MSJ84Bp7xgzhoVSng
+
+- 创建字段 证据发言者 PVTF_lAHOC3MSJ84Bp7xgzhoVSnk
+
+- 创建标签 module:资料与需求核对
+
+- 创建标签 module:报告正文与翻译
+
+- 创建标签 module:数据图表与实验
+
+- 创建标签 module:文档排版与编译
+
+- 创建标签 module:PPT与答辩
+
+- 创建标签 module:网页与部署
+
+- 创建标签 module:提交与交付
+
+- 创建标签 建议执行人:张馨月
+
+- 创建标签 建议执行人:徐佳乐
+
+- 创建标签 建议执行人:王思琦
+
+- 创建标签 建议执行人:付玉琳
+
+- updateIssue batch 1—6: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 7—12: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 13—18: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 19—24: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 25—30: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 31—36: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 37—42: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 43—48: m0,m1,m2,m3,m4,m5 成功
+
+- 48项Issue方案就绪，本次更新48项；未设置assignee或修改状态
+
+- updateProjectV2ItemFieldValue batch 1—6: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 7—12: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 13—18: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 19—24: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 25—30: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 31—36: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 37—42: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 43—48: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 49—54: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 55—60: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 61—66: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 67—72: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 73—78: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 79—84: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 85—90: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 91—96: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 97—102: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 103—108: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 109—114: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 115—120: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 121—126: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 127—132: m0,m1,m2,m3,m4,m5 成功
+
+- updateIssue batch 1—1: m0 成功
+
+- 48项Issue方案就绪，本次更新1项；未设置assignee或修改状态
+
+- updateProjectV2ItemFieldValue batch 1—6: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 7—12: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 13—18: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 19—24: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 25—30: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 31—36: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 37—42: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 43—48: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 49—54: m0,m1,m2,m3,m4,m5 成功
+
+- updateProjectV2ItemFieldValue batch 55—60: m0,m1,m2,m3,m4,m5 成功
+
+- 创建视图 资料与需求核对 #3
+
+- 设置视图筛选 资料与需求核对 label:"module:资料与需求核对"
+
+- 创建视图 报告正文与翻译 #4
+
+- 设置视图筛选 报告正文与翻译 label:"module:报告正文与翻译"
+
+- 创建视图 数据图表与实验 #5
+
+- 设置视图筛选 数据图表与实验 label:"module:数据图表与实验"
+
+- 创建视图 文档排版与编译 #6
+
+- 设置视图筛选 文档排版与编译 label:"module:文档排版与编译"
+
+- 创建视图 PPT与答辩 #7
+
+- 设置视图筛选 PPT与答辩 label:"module:PPT与答辩"
+
+- 创建视图 网页与部署 #8
+
+- 设置视图筛选 网页与部署 label:"module:网页与部署"
+
+- 创建视图 提交与交付 #9
+
+- 设置视图筛选 提交与交付 label:"module:提交与交付"
+
+- 创建视图 张馨月的建议任务 #10
+
+- 设置视图筛选 张馨月的建议任务 label:"建议执行人:张馨月"
+
+- 创建视图 徐佳乐的建议任务 #11
+
+- 48项Issue方案就绪，本次更新0项；未设置assignee或修改状态
+
+- 设置视图筛选 徐佳乐的建议任务 label:"建议执行人:徐佳乐"
+
+- 创建视图 王思琦的建议任务 #12
+
+- 设置视图筛选 王思琦的建议任务 label:"建议执行人:王思琦"
+
+- 创建视图 付玉琳的建议任务 #13
+
+- 设置视图筛选 付玉琳的建议任务 label:"建议执行人:付玉琳"
+
+- 总视图显示新增成员与板块字段 View 1
+
+- 总视图显示新增成员与板块字段 群聊任务看板
+
+- 读回核对通过：48项、4字段、11新增视图，原证据/状态/assignee保持，列数{"待确认": 36, "In Progress": 2, "Done": 4, "Todo": 6}
+
+
+### gh命令结果
+
+
+以下逐条记录本次gh调用的退出结果；--input是本地结构化请求文件，日志只记录操作类型，不复制完整聊天或凭据。
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 1；gh: Introspection fields may only be used 2 times, but some fields were used more than that: __Type.inputFields (5) / 
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api 'repos/Fuyulin-hub/kanban/labels?per_page=100'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST repos/Fuyulin-hub/kanban/labels --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 1；Post "https://api.github.com/graphql": net/http: TLS handshake timeout / 
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api 'repos/Fuyulin-hub/kanban/labels?per_page=100'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 1；Post "https://api.github.com/graphql": dial tcp 20.205.243.168:443: i/o timeout / 
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api 'repos/Fuyulin-hub/kanban/labels?per_page=100'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api --method POST graphql --input 'work\enrichment_payload.json'` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/pulls/49` → exit 0
+
+- `gh api repos/Fuyulin-hub/kanban/git/ref/heads/main` → exit 0
+
+
+### 文档提交方式
+
+
+- 更新现有PR #49的功能分支board/wechat-20261103-032234；不再次初始化main、不合并PR。
+
+- 通过同一gh登录态调用Git数据API写入board文件，创建新tree和commit，以force=false更新功能分支。每次更新前核对branch head，保留base tree上的其他文件。
+
+- 提交后将核对PR文件范围、远端内容哈希与main未变化；提交SHA及读回结果存入PR描述和本地交付回执，避免审计文件自引用。

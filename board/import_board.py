@@ -69,6 +69,23 @@ def normalize_body(body):
     return (body or '').replace('\r\n', '\n').rstrip('\n')
 
 
+def merge_execution_plan(generated, old_body):
+    """Keep the separately reviewed plan when reimporting original chat evidence."""
+    start = '<!-- execution-plan:start -->'
+    end = '<!-- execution-plan:end -->'
+    if start in generated:
+        return generated
+    old_body = old_body or ''
+    if start not in old_body and end not in old_body:
+        return generated
+    if old_body.count(start) != 1 or old_body.count(end) != 1:
+        raise ValueError('执行方案标记缺失或重复，停止以免覆盖人工内容')
+    begin = old_body.index(start)
+    if old_body.index(end) < begin:
+        raise ValueError('执行方案标记顺序错误')
+    return generated.rstrip() + '\n\n' + old_body[begin:]
+
+
 def desired_labels(old, row):
     return (label_set(old) - MANAGED) | set(row['labels'].split(','))
 
@@ -303,12 +320,13 @@ def main(argv=None):
                 wanted = actual
             else:
                 body_file = target / '.issue-body.tmp'
-                body_file.write_text(row['body'], encoding='utf-8')
+                wanted_body = merge_execution_plan(row['body'], (old or {}).get('body'))
+                body_file.write_text(wanted_body, encoding='utf-8')
                 try:
                     if old:
                         url = old['html_url']
                         change = []
-                        if normalize_body(old.get('body')) != normalize_body(row['body']):
+                        if normalize_body(old.get('body')) != normalize_body(wanted_body):
                             change += ['--body-file', str(body_file)]
                         want_labels = desired_labels(old, row)
                         for name in sorted(want_labels - label_set(old)):

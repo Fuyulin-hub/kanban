@@ -1,0 +1,1301 @@
+{
+  "kind": "proposed_execution_plans",
+  "created_on": "2026-11-03",
+  "notice": "建议分工尚未认领；不代表历史讨论决定；GitHub assignee未映射。",
+  "tasks": {
+    "T01": {
+      "module": "资料与需求核对",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先确认“那算了”是否代表取消",
+        "如仍需要，只向有权分享的学长学姐索取",
+        "记录可参考的格式与不可照搬的内容"
+      ],
+      "tools": "无需新增库；浏览器、PDF阅读器即可。",
+      "deliverable": "参考资料清单或取消说明",
+      "acceptance": "来源可追溯；不把往年数据、结论当成本组结果。",
+      "discussion": "还需参考报告，还是已取消？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T01",
+      "title": "获取上一年的参考报告",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/1",
+      "original_owner": "@秋雨",
+      "original_owner_display": "@秋雨",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T02": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦",
+        "徐佳乐",
+        "付玉琳"
+      ],
+      "steps": [
+        "确定本次审阅文件和章节范围",
+        "逐段检查研究问题、方法、数据与结论是否对应",
+        "把疑点定位到页码和原句，由相关成员确认"
+      ],
+      "tools": "Word/WPS或TeX原编辑器；可选Python difflib比较修订，不需要引入写作框架。",
+      "deliverable": "带页码的问题清单及修订对照",
+      "acceptance": "数据有出处；表述不改变原意；保留小标题和全部图表。",
+      "discussion": "原文说7.3以后用于核对，本轮是否仍排除？四人分别复核哪部分？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T02",
+      "title": "核对报告正文内容",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/2",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "进行中"
+    },
+    "T03": {
+      "module": "数据图表与实验",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "列出每个研究问题需要读者看懂的结论",
+        "检查已有图是否已经覆盖",
+        "只对缺口提出图型、输入结果文件和插入位置"
+      ],
+      "tools": "Excel清单即可；需要重绘数据图时用Matplotlib，优先复用现有Weka结果。",
+      "deliverable": "图表目录：研究问题、图号、数据来源、位置、制作人",
+      "acceptance": "每张图解释一个明确问题；图中数值能回到同版本结果。",
+      "discussion": "哪些图已有可编辑源文件，哪些确实需要重画？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T03",
+      "title": "规划并细化报告图表",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/3",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "进行中"
+    },
+    "T04": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦"
+      ],
+      "steps": [
+        "对照“前三章改了”与“基本只改第一章”的范围差异",
+        "先确认要改的段落",
+        "按背景→问题→本项目做法改清楚每句话的主语和对象"
+      ],
+      "tools": "沿用Word/WPS或TeX；无需新增库。",
+      "deliverable": "前三章逐段修订记录",
+      "acceptance": "意思、章节标题、数字和图表均保留；范围差异有说明。",
+      "discussion": "本任务是第一章修订，还是前三章整体检查？",
+      "dependencies": "先落实T02的审阅范围。",
+      "id": "T04",
+      "title": "修订报告前三章",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/4",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "进行中"
+    },
+    "T05": {
+      "module": "数据图表与实验",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "复核已标注的位置与当前章号是否一致",
+        "检查正文在图前或图后是否有明确引用",
+        "确认跨页后仍能找到对应图"
+      ],
+      "tools": "原编辑器交叉引用；PyMuPDF可选用于PDF页码检查。",
+      "deliverable": "图号—段落—页码对照表（已完成任务的复核）",
+      "acceptance": "已有完成状态保持；每个插入位置对应实际图表。",
+      "discussion": "后续新增图是否改变了旧图编号？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T05",
+      "title": "标注报告图表的插入位置",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/5",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "已完成"
+    },
+    "T06": {
+      "module": "资料与需求核对",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "确认使用的原始数据版本与每张表的统计单位",
+        "分别统计空值、空字符串及适用字段",
+        "输出缺失数、分母和比例并与正文逐项对照"
+      ],
+      "tools": "pandas负责isna和分组核查；必要时用merge(validate=...)检查联表基数；不凭截图抄数。",
+      "deliverable": "可复算的缺失率表与统计脚本",
+      "acceptance": "每项比例均写清表、字段、样本范围、分母；原始与清洗后数据分开。",
+      "discussion": "王sq对应哪位尚未确认；本建议由王思琦牵头，不据此认定别名。",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T06",
+      "title": "核查真实数据的缺失率",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/6",
+      "original_owner": "王sq",
+      "original_owner_display": "王sq",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "待开始"
+    },
+    "T07": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先检查前三章已有图",
+        "列出每段文字真正需要的辅助元素",
+        "优先补可编辑的研究流程或数据关系示意，交给正文负责人确认"
+      ],
+      "tools": "PowerPoint原生形状即可；可选Graphviz制作关系图；无须新增分析模型。",
+      "deliverable": "与前三章对应的候选示意图及源文件",
+      "acceptance": "不删已有图；装饰不掩盖正文；概念图不伪装成实验结果。",
+      "discussion": "需要解释研究流程还是数据来源，避免为填空而加图。",
+      "dependencies": "T03确认图表缺口。",
+      "id": "T07",
+      "title": "在报告前三章补充相关元素的图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/7",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T08": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦"
+      ],
+      "steps": [
+        "找到“数据缺失太多”等含糊句",
+        "明确是评论正文、标题或其他字段缺失",
+        "解释这会影响哪项分析，并给出经核对的比例和分母"
+      ],
+      "tools": "Word/WPS或TeX；数字来自T06的pandas统计，不需要语言分析库。",
+      "deliverable": "缺失表述的原句—改句对照",
+      "acceptance": "不把无评论解释为数据损坏；不为改善观感删去真实限制。",
+      "discussion": "缺失是无文本但有评分，还是整条订单不存在？",
+      "dependencies": "T06统计口径核对后更新数字。",
+      "id": "T08",
+      "title": "调整报告中数据缺失的表述",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/8",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T09": {
+      "module": "文档排版与编译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦"
+      ],
+      "steps": [
+        "保留首次成功编译记录",
+        "在现有环境打开输出PDF",
+        "复核字体、图片和公式是否正常"
+      ],
+      "tools": "沿用实际TeX编译器；PyMuPDF可选用于逐页渲染检查。",
+      "deliverable": "首次编译输出与日志索引（已完成任务的复核）",
+      "acceptance": "不将首次编译等同于目录与最终排版全部完成。",
+      "discussion": "首次编译用的源文件与最终英文版是否一致？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T09",
+      "title": "完成报告的首次编译",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/9",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "已完成"
+    },
+    "T10": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "张馨月",
+        "徐佳乐"
+      ],
+      "steps": [
+        "按研究问题→方法→证据→限制确定讲述顺序",
+        "从已核对报告提取结论和图",
+        "每页写一个核心信息并加讲稿备注"
+      ],
+      "tools": "优先PowerPoint/WPS；批量生成才考虑python-pptx；无需换整套演示工具。",
+      "deliverable": "可编辑PPT及导出PDF",
+      "acceptance": "图表、数字与报告一致；正文可读；保留原图的坐标轴、图例和必要注释。",
+      "discussion": "正式汇报时长、页数和必须展示的内容是什么？",
+      "dependencies": "T02正文、T03图表目录基本稳定。",
+      "id": "T10",
+      "title": "制作小组汇报PPT",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/10",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T11": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "张馨月",
+        "徐佳乐",
+        "王思琦"
+      ],
+      "steps": [
+        "用四人全名建立分工页",
+        "分别列已证实参与、尚未确认事项和本次建议",
+        "由本人核对后再写进正式汇报"
+      ],
+      "tools": "PowerPoint/WPS表格即可，无需新增库。",
+      "deliverable": "四人贡献与后续分工页",
+      "acceptance": "不把本次建议写成已经完成；没有GitHub用户名映射时不设置assignee。",
+      "discussion": "每人愿意认领哪些后续任务？哪些别名仍需确认？",
+      "dependencies": "参考board/members.md并由四人核对。",
+      "id": "T11",
+      "title": "在PPT中说明人员分工",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/11",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T12": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "将实施计划拆成可验收阶段",
+        "与成员确认先后依赖和时间",
+        "用统一时间轴绘制甘特图，未定日期留为待定"
+      ],
+      "tools": "Matplotlib barh可画甘特条；PowerPoint形状也可，沿用可编辑源文件。",
+      "deliverable": "第七章甘特图及阶段表",
+      "acceptance": "阶段、依赖与报告文字一致；不虚构截止日期。",
+      "discussion": "@Xx-LE身份未映射；本次建议是否由徐佳乐承接？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T12",
+      "title": "绘制第七章项目实施计划甘特图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/12",
+      "original_owner": "@Xx-LE",
+      "original_owner_display": "@Xx-LE",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T13": {
+      "module": "网页与部署",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月",
+        "付玉琳"
+      ],
+      "steps": [
+        "先确认网页是预期效果展示还是已有分析结果页",
+        "沿用现有HTML结构",
+        "补齐研究问题、图表及限制说明并截图反馈"
+      ],
+      "tools": "HTML/CSS/JavaScript；只有需要交互图时才加Chart.js，不默认引入React。",
+      "deliverable": "可打开的网页草稿与电脑/手机截图",
+      "acceptance": "示意内容有标识；真实数据与报告同版本；本看板仓库不混入网页部署文件。",
+      "discussion": "@秋雨身份未映射；先确认原任务认领人和网页用途。",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T13",
+      "title": "为计划提交物设计可视化前端网页并提供截图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/13",
+      "original_owner": "@秋雨",
+      "original_owner_display": "@秋雨",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T14": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦",
+        "徐佳乐"
+      ],
+      "steps": [
+        "先冻结各章输入版本",
+        "统一术语、图号和交叉引用",
+        "按目录检查漏章与重复内容并保存合并记录"
+      ],
+      "tools": "原Word/WPS/TeX工具；标准库hashlib可选记录版本指纹，无需文档重建框架。",
+      "deliverable": "完整报告及章节合并清单",
+      "acceptance": "小标题和全部图表保留；没有不同版本数字混用。",
+      "discussion": "以哪个文件为唯一编辑主稿？",
+      "dependencies": "T02、T04和各章审阅基本完成。",
+      "id": "T14",
+      "title": "整合各章形成完整报告",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/14",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "进行中"
+    },
+    "T15": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "徐佳乐",
+        "张馨月"
+      ],
+      "steps": [
+        "统一PPT字体、字号与配色",
+        "调整文字密度和图表占比",
+        "在实际播放设备上检查长标题与图例"
+      ],
+      "tools": "PowerPoint/WPS母版；python-pptx仅用于批量检查时可选。",
+      "deliverable": "排版后的可编辑PPT与播放检查记录",
+      "acceptance": "不因排版裁掉数据；所有页在投影比例下可读。",
+      "discussion": "正文、图表、讲稿分别由谁最后把关？",
+      "dependencies": "T10形成初稿后进行。",
+      "id": "T15",
+      "title": "细化并排版汇报PPT",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/15",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T16": {
+      "module": "资料与需求核对",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "付玉琳"
+      ],
+      "steps": [
+        "打开老师正式通知或课程页面",
+        "核对日期、时区、提交渠道和命名规则",
+        "保存要求的定位信息供全组查看"
+      ],
+      "tools": "浏览器和课程系统即可，无需新增库。",
+      "deliverable": "提交要求核对表",
+      "acceptance": "“好像23:59”不能直接作为确定截止时间；不使用旧年份截图代替当前要求。",
+      "discussion": "截图年份未显示，当前课程要求在哪条正式通知？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T16",
+      "title": "查找老师规定的具体提交时间",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/16",
+      "original_owner": "@秋雨",
+      "original_owner_display": "@秋雨",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T17": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先保留原图全部概念",
+        "把同层原因和分支对齐",
+        "将文字改清楚并与第四章论述核对"
+      ],
+      "tools": "PowerPoint可编辑形状；已有Graphviz源文件则沿用，无需绘图库叠加。",
+      "deliverable": "美化鱼骨图及源文件",
+      "acceptance": "不把假设性因素画成已经证实的因果关系。",
+      "discussion": "与T27是同一张图吗？若是，保留两个任务记录但共享一个源文件。",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T17",
+      "title": "美化已讨论的鱼骨图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/17",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T18": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "对照现有第七章检查实施计划和交付物",
+        "确认图表与文字吻合",
+        "把后续新增内容的范围记入修订记录"
+      ],
+      "tools": "原编辑器即可，无需新增库。",
+      "deliverable": "第七章核对记录（已完成任务的复核）",
+      "acceptance": "保留已完成状态；不将补章等同于后续甘特图、排版都完成。",
+      "discussion": "第七章当前版本与T12时间计划是否一致？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T18",
+      "title": "在报告中补充第七章",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/18",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "已完成"
+    },
+    "T19": {
+      "module": "网页与部署",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦",
+        "付玉琳"
+      ],
+      "steps": [
+        "复核已修改网页的配色与报告主题",
+        "检查文字对比和图表配色含义",
+        "分别在电脑和手机上打开"
+      ],
+      "tools": "现有HTML/CSS与浏览器开发工具；不要求重建前端。",
+      "deliverable": "网页配色复核记录（已完成任务的复核）",
+      "acceptance": "保持已有完成状态；不以配色修改证明网站已经正式部署。",
+      "discussion": "后续修改以本地文件还是线上版本为准？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T19",
+      "title": "修改可视化网页及配色",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/19",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "已完成"
+    },
+    "T20": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "张馨月",
+        "徐佳乐",
+        "王思琦"
+      ],
+      "steps": [
+        "按每页核心信息写自然口语稿",
+        "逐项解释数据、方法和限制",
+        "试讲计时并标出交接句"
+      ],
+      "tools": "PowerPoint备注或普通文档，无需新增库。",
+      "deliverable": "逐页讲稿、计时与交接表",
+      "acceptance": "不把相关性讲成因果；遇到未验证结果明确说明。",
+      "discussion": "最终由几人讲，每人负责哪一段？",
+      "dependencies": "T10与T15的页序稳定后编写。",
+      "id": "T20",
+      "title": "准备课堂汇报稿",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/20",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）"
+      ],
+      "original_status": "待开始"
+    },
+    "T21": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "圈出抽象词、指代不明和过长句",
+        "补清主语、对象与前后逻辑",
+        "逐句对照修改前后含义并交叉审阅"
+      ],
+      "tools": "Word/WPS修订或TeX diff；Python difflib可选；无需AI检测分数作为验收。",
+      "deliverable": "表达修改对照表",
+      "acceptance": "意思不变；不改小标题；保留全部图表、数字和原有不确定性。",
+      "discussion": "哪些句子读一遍仍不明白？优先改这些句子。",
+      "dependencies": "T02定位问题，T14确定主稿。",
+      "id": "T21",
+      "title": "再次人工检查并改写报告的AI式表达",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/21",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "待开始"
+    },
+    "T22": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "逐节比对研究问题与已有图表",
+        "只登记未覆盖的证据或解释需求",
+        "为每张拟新增图写输入、用途、位置后再制作"
+      ],
+      "tools": "图表清单；数据图用Matplotlib，示意图用PowerPoint即可。",
+      "deliverable": "图表补充清单与经确认的新增图",
+      "acceptance": "所有已有图保留；新增图有数据或概念来源。",
+      "discussion": "哪些图是必要证据，哪些仅改善排版？",
+      "dependencies": "T03先确定图表目录。",
+      "id": "T22",
+      "title": "检查报告还需要哪些图表并补入",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/22",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T23": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先建立中英术语表并对照老师课件",
+        "按段落翻译后与中文逐条核对",
+        "检查数字、否定、方法名称及限制是否完整"
+      ],
+      "tools": "Word/WPS或TeX原工具；re可选核查数字/术语；不需要专门机器翻译库。",
+      "deliverable": "英文主稿、术语表和疑义清单",
+      "acceptance": "不改事实强度；low rating等核心术语统一；葡语原词保留说明。",
+      "discussion": "课件的标准用词与项目现有术语有无冲突？",
+      "dependencies": "T21中文表述基本稳定后进行。",
+      "id": "T23",
+      "title": "按老师课件措辞将报告翻译为英文",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/23",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "进行中"
+    },
+    "T24": {
+      "module": "文档排版与编译",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "统一正文、标题、页眉页脚与图注格式",
+        "先修空白页、浮动图和跨页断裂",
+        "导出PDF逐页核对"
+      ],
+      "tools": "沿用TeX或Word/WPS排版；PyMuPDF可选用于PDF渲染检查。",
+      "deliverable": "排版主稿、PDF与未解决问题列表",
+      "acceptance": "不删段落或图表来消除空白；封面、目录、字体都需检查后才能确认完成。",
+      "discussion": "优先解决大块空白还是统一背景？",
+      "dependencies": "T14、T23形成稳定主稿。",
+      "id": "T24",
+      "title": "美化并排版整份报告",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/24",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "待确认"
+      ],
+      "original_status": "进行中"
+    },
+    "T25": {
+      "module": "文档排版与编译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "核对英文标题、课程和组别信息",
+        "使用确认的封面素材重新放置",
+        "检查比例、清晰度和页码衔接"
+      ],
+      "tools": "原编辑器插图功能；无需新增库。",
+      "deliverable": "插入英文封面的主稿及首屏预览",
+      "acceptance": "姓名使用四人确认全名；封面文字与报告一致；不凭已发图片认定已插入。",
+      "discussion": "候选封面哪一版是最终授权使用的版本？",
+      "dependencies": "T23英文标题确定。",
+      "id": "T25",
+      "title": "在英文报告中重新插入封面",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/25",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T26": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先确认风险评分流程实际输入、输出和使用时点",
+        "沿用流程含义重新排齐图形与箭头",
+        "请内容负责人逐节点核对"
+      ],
+      "tools": "PowerPoint原生形状；可选Graphviz；无需新增机器学习库。",
+      "deliverable": "可编辑风险评分流程图",
+      "acceptance": "步骤与实际方法一致；预测阶段不使用预测时尚不可得的评论文本。",
+      "discussion": "图表达的是拟议方案还是已运行流程？必须注明。",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T26",
+      "title": "美化所指的风险评分流程图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/26",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T27": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "与第四章逐条核对鱼骨分支",
+        "修正错归类和位置",
+        "插入第四章并更新正文引用"
+      ],
+      "tools": "PowerPoint或已有鱼骨图源文件；无需新增库。",
+      "deliverable": "第四章修正版鱼骨图及插入位置",
+      "acceptance": "保留概念范围；不将因素示意当作因果证明。",
+      "discussion": "第七章已有甘特图时是否不再放鱼骨图？",
+      "dependencies": "与T17共享图源；插入前确认第四章版本。",
+      "id": "T27",
+      "title": "修正鱼骨图内容并调整至第四章",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/27",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "徐佳乐（小蛋糕）",
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T28": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "先确认原文所说两张图具体是什么",
+        "若尚无定义，建议候选为多表合并流程和样本筛选流程",
+        "用真实处理顺序和各步样本数制作"
+      ],
+      "tools": "pandas核对处理结果；PowerPoint流程图或Graphviz绘制。",
+      "deliverable": "两张图的内容确认单、源文件和第四章位置",
+      "acceptance": "候选内容明确标为本次建议；样本数来自脚本，不能从截图估计。",
+      "discussion": "原文没有列出两图名称，需确认后再制作。",
+      "dependencies": "T06统计与实际预处理流程可用。",
+      "id": "T28",
+      "title": "在第四章补充两张数据预处理图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/28",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T29": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "读取已有订单聚类结果与特征说明",
+        "展示各簇规模和特征差异",
+        "需要二维投影时标清PCA仅用于展示"
+      ],
+      "tools": "沿用Weka SimpleKMeans结果；pandas汇总、Matplotlib绘图；不为美化重训模型。",
+      "deliverable": "订单分群图、簇画像表及数据来源",
+      "acceptance": "簇大小合计与分析样本一致；投影重叠不被解释为模型失效或因果关系。",
+      "discussion": "聚类用的特征、标准化方式和随机种子是否已记录？",
+      "dependencies": "先取得同版本Weka输出和实际样本口径。",
+      "id": "T29",
+      "title": "制作订单分群的可视化图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/29",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T30": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "读取实际使用的关联分析输出",
+        "分别校验共购次数、support、confidence与lift",
+        "画可读的条形图并注明多品类篮子覆盖范围"
+      ],
+      "tools": "沿用现有Weka关联分析结果；pandas核对指标、Matplotlib绘图。",
+      "deliverable": "类别联购图与规则指标表",
+      "acceptance": "support分母明确；高频不等于高lift；弱关联和稀少多品类篮子需说明。",
+      "discussion": "算法是实际运行的Apriori还是其他方法？以日志为准。",
+      "dependencies": "取得真实篮子数据和原始规则输出。",
+      "id": "T30",
+      "title": "制作类别联购的可视化图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/30",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T31": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "核对有正文的葡语评论样本与评分分组",
+        "读取现有词向量/分类结果并展示代表词",
+        "保留否定词语义和样本限制"
+      ],
+      "tools": "沿用已保存的Weka TF-IDF/朴素贝叶斯流程，具体过滤器和分类器变体以实际配置为准；pandas、Matplotlib整理图表。",
+      "deliverable": "葡语评论词图、样本说明和模型结果索引",
+      "acceptance": "不从词频推断因果；训练/评估划分一致；评论分析不混作评论出现前预测。",
+      "discussion": "展示词频、区分词还是模型权重？图标题要准确对应。",
+      "dependencies": "先核对实际模型与分组口径，不预设重新训练。",
+      "id": "T31",
+      "title": "制作葡语评论分析的可视化图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/31",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T32": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "先确定PPT图框尺寸",
+        "优先从源图调整长宽比或拆成多页",
+        "必要裁切时保留坐标轴、图例、标题和样本注释"
+      ],
+      "tools": "优先原绘图库重新导出或PowerPoint裁剪；无需新增图像库。",
+      "deliverable": "PPT适配图及完整原图索引",
+      "acceptance": "不截断数值、坐标或限制说明；实际播放时标签可读。",
+      "discussion": "一页放三图还是拆页更清楚？",
+      "dependencies": "T29—T31有完整图后进行。",
+      "id": "T32",
+      "title": "裁切图表以适配PPT版面",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/32",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "徐佳乐（小蛋糕）",
+        "付玉琳（右侧发言者，引用称(-1, 0)）"
+      ],
+      "original_status": "待开始"
+    },
+    "T33": {
+      "module": "网页与部署",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "付玉琳",
+        "张馨月"
+      ],
+      "steps": [
+        "确认现有网站源文件和托管账号",
+        "沿用可用托管方案发布正确入口",
+        "电脑、手机及未登录浏览器分别测试并保存结果"
+      ],
+      "tools": "现有静态HTML/CSS/JS；沿用已确认的Cloudflare Pages或其他现有平台；无需后端框架。",
+      "deliverable": "站点地址、部署版本与访问检查表",
+      "acceptance": "能从外部网络打开；链接和资源无缺失；不把群中发URL直接当作全部验收完成。",
+      "discussion": "@秋雨仍未确认；谁有实际托管账号和源文件？",
+      "dependencies": "T13/T19网页版本与T23英文内容确认。",
+      "id": "T33",
+      "title": "将可视化网页部署为他人可访问的网站",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/33",
+      "original_owner": "@秋雨",
+      "original_owner_display": "@秋雨",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T34": {
+      "module": "文档排版与编译",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "确定英文主稿是TeX还是Word",
+        "用标题结构和自动目录生成机制处理",
+        "检查英文章名、层级与页码"
+      ],
+      "tools": "TeX用原编译器/latexmk；Word/WPS用标题样式和更新目录；不手打目录。",
+      "deliverable": "正确的英文目录和可复现操作说明",
+      "acceptance": "目录条目与正文标题逐项对应；不混用WPS目录与TeX源文件的生成过程。",
+      "discussion": "最终提交以TeX编译版还是Word导出版为准？",
+      "dependencies": "T23英文标题及T35源码可用。",
+      "id": "T34",
+      "title": "处理英文报告的目录生成问题",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/34",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "进行中"
+    },
+    "T35": {
+      "module": "文档排版与编译",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月",
+        "徐佳乐"
+      ],
+      "steps": [
+        "收集同一版本tex、图片和参考文献等必要依赖",
+        "标明入口文件与编译方式",
+        "核对源码和发出的PDF是否对应"
+      ],
+      "tools": "Python pathlib/zipfile/hashlib可选做清单与校验；无需新增第三方库。",
+      "deliverable": "可编译源码包及文件清单",
+      "acceptance": "不只提供单个tex却遗漏图片；不上传原始聊天或凭据。",
+      "discussion": "群中已发tex是否包含全部依赖，谁保存了完整版本？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T35",
+      "title": "提供英文报告的LaTeX源码",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/35",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "待开始"
+    },
+    "T36": {
+      "module": "文档排版与编译",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "徐佳乐"
+      ],
+      "steps": [
+        "在现有环境运行正确的编译命令",
+        "按日志继续编译至引用与目录稳定",
+        "检查警告和最终PDF页码"
+      ],
+      "tools": "现有MiKTeX/TeX Live及latexmk；手动编译时按日志补足轮次，不固定两遍必成功。",
+      "deliverable": "最终PDF、编译日志与目录检查记录",
+      "acceptance": "无未解析引用或丢图；在清楚记录的环境可以复现。",
+      "discussion": "是否还有参考文献或交叉引用需要额外编译？",
+      "dependencies": "T34目录配置与T35源码包就绪。",
+      "id": "T36",
+      "title": "进行二次编译以生成报告目录",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/36",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "待开始"
+    },
+    "T37": {
+      "module": "报告正文与翻译",
+      "suggested_lead": "张馨月",
+      "suggested_collaborators": [
+        "王思琦",
+        "徐佳乐"
+      ],
+      "steps": [
+        "先核对英文PDF与源码版本",
+        "检查术语、图号、样本数和限制表述",
+        "解决内容问题后再交给排版负责人"
+      ],
+      "tools": "原编辑器、PDF阅读器；PyMuPDF或difflib用于定位差异时可选。",
+      "deliverable": "英文主稿审阅清单与交接记录",
+      "acceptance": "内容审阅和版式审阅分别留痕；所有未解决问题列出，不凭文件发出认定通过。",
+      "discussion": "英文版哪些疑点必须先回到中文原稿确认？",
+      "dependencies": "T23英文初稿与T35源码可用。",
+      "id": "T37",
+      "title": "在美化前检查英文报告及源码",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/37",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T38": {
+      "module": "数据图表与实验",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "先读取经核对的缺失率表",
+        "按字段画缺失比例图，另行展示多品类篮子覆盖率",
+        "在图旁说明对分析的实际影响"
+      ],
+      "tools": "pandas计算；Matplotlib横向条形图即可，无需额外图表框架。",
+      "deliverable": "缺失率图、覆盖率图及可复算数表",
+      "acceptance": "两个不同分母不能合并成同一比例；不直接沿用不同报告阶段的58.73%或0.76%。",
+      "discussion": "当前报告版本的分母与群图是否相同？",
+      "dependencies": "T06口径确认；与T08保持一致。",
+      "id": "T38",
+      "title": "制作缺失率的可视化",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/38",
+      "original_owner": "果果5.14",
+      "original_owner_display": "张馨月（果果5.14）",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）",
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T39": {
+      "module": "资料与需求核对",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "付玉琳"
+      ],
+      "steps": [
+        "区分“几个人提交”与“几个人上台”",
+        "查正式作业说明",
+        "不明确时向老师确认并记录答复"
+      ],
+      "tools": "课程页面和浏览器即可，无需新增库。",
+      "deliverable": "提交人数、展示人数、提交流程对照表",
+      "acceptance": "不把“好像一个人交”或其他组做法当成正式要求。",
+      "discussion": "一人代表提交还是每人提交？展示人数是否另有规定？",
+      "dependencies": "T16正式要求可用。",
+      "id": "T39",
+      "title": "核实小组作业由几人提交",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/39",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "王思琦（含数字昵称已脱敏）"
+      ],
+      "original_status": "待开始"
+    },
+    "T40": {
+      "module": "提交与交付",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先核对正式邮件提交要求和最终包",
+        "确认实际发送人及收件地址",
+        "发送后记录发送时间、附件版本和可核对回执"
+      ],
+      "tools": "现有邮箱客户端；zipfile/hashlib可选检查附件；无需邮件自动发送库。",
+      "deliverable": "待发送检查单；实际发送后才补提交凭据",
+      "acceptance": "未实际发送前不得改成已完成；本次只制定方案，不代发邮件。",
+      "discussion": "由谁发、抄送谁、邮件标题和附件命名是什么？",
+      "dependencies": "T16/T39要求确认，T36最终文件验收。",
+      "id": "T40",
+      "title": "通过邮件提交Project Proposal",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/40",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T41": {
+      "module": "提交与交付",
+      "suggested_lead": "王思琦",
+      "suggested_collaborators": [
+        "付玉琳"
+      ],
+      "steps": [
+        "先查当前正式要求是否仍需Moodle",
+        "如需要再核对入口、文件和确认页面",
+        "提交后记录平台成功凭据"
+      ],
+      "tools": "浏览器/Moodle即可，无需新增库。",
+      "deliverable": "渠道确认记录；如适用则附平台提交凭据",
+      "acceptance": "不因“两个都交得了”自动要求双渠道；没有平台凭据不判完成。",
+      "discussion": "后来通知邮件提交后，Moodle是否仍为必选？",
+      "dependencies": "T16/T39先解决渠道和人数。",
+      "id": "T41",
+      "title": "确认并执行Moodle提交流程",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/41",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    },
+    "T42": {
+      "module": "文档排版与编译",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "定位新增图注而非批量删所有注释",
+        "保留图解释、样本、单位和必要限制",
+        "压缩重复正文后逐图复核"
+      ],
+      "tools": "原编辑器即可，无需新增库。",
+      "deliverable": "图注修改对照表及新版PDF",
+      "acceptance": "读者单看图和图注仍知道画的是什么；不能删掉关键分母与限制。",
+      "discussion": "“那俩改了”具体是哪两项，是否覆盖全部新图注？",
+      "dependencies": "T22新增图列表确定。",
+      "id": "T42",
+      "title": "精简新增图表的图注",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/42",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T43": {
+      "module": "文档排版与编译",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "张馨月"
+      ],
+      "steps": [
+        "先定位原图指出的四个括号和对应文字",
+        "逐处确认只是说明性括注还是公式/引用",
+        "仅修改这四处并检查语法"
+      ],
+      "tools": "Word/WPS修订或TeX原编辑器；禁止全局删除括号，无需新增库。",
+      "deliverable": "四处修改的位置与前后对照",
+      "acceptance": "不误删参考文献、公式、统计区间或其他括号。",
+      "discussion": "截图指的是哪四处？现版本仍存在吗？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T43",
+      "title": "删除报告中所指的四个括号",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/43",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T44": {
+      "module": "文档排版与编译",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦",
+        "张馨月"
+      ],
+      "steps": [
+        "收集已发候选并核对使用权",
+        "按封面风格选择浅蓝绿或浅色背景",
+        "放在正文样页比较文字对比与视觉干扰"
+      ],
+      "tools": "原编辑器预览即可，无需新增库或必须生成图片。",
+      "deliverable": "背景候选对比与最终选择记录",
+      "acceptance": "不挡字；不用背景填满所有空白；不据候选图发出认定已采用。",
+      "discussion": "更重视与封面一致还是正文清晰？候选由谁最后确认？",
+      "dependencies": "无硬性依赖；先核对当前版本。",
+      "id": "T44",
+      "title": "寻找并选择与封面协调的报告背景图",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/44",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）",
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T45": {
+      "module": "文档排版与编译",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "王思琦"
+      ],
+      "steps": [
+        "在副本或页面背景层插入候选",
+        "测试文字密集页、图表页和目录页",
+        "导出PDF检查遮挡与文件大小"
+      ],
+      "tools": "Word/WPS页面背景或现有TeX背景机制；无需新增库。",
+      "deliverable": "带背景的试排PDF与对照样页",
+      "acceptance": "每张原图仍完整；背景不改变内容区域和可读性。",
+      "discussion": "是否只在分隔页用背景更适合当前报告？",
+      "dependencies": "T44确定候选后试排。",
+      "id": "T45",
+      "title": "将候选背景插入报告试排",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/45",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T46": {
+      "module": "PPT与答辩",
+      "suggested_lead": "徐佳乐",
+      "suggested_collaborators": [
+        "付玉琳",
+        "张馨月",
+        "王思琦"
+      ],
+      "steps": [
+        "按PPT每页列可能问题",
+        "每个回答指向报告页码、图或实验记录",
+        "练习回答未验证结果时说明边界"
+      ],
+      "tools": "现有对话工具或普通文档即可；无需接入API或搭建问答系统。",
+      "deliverable": "问题—回答—证据索引表",
+      "acceptance": "辅助回答不能创造结果；不把模型生成答案当证据。",
+      "discussion": "哪些问题最可能被问到，哪些只能承认尚未验证？",
+      "dependencies": "T10最终PPT、T37内容核对可用。",
+      "id": "T46",
+      "title": "用汇报PPT准备辅助答疑",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/46",
+      "original_owner": "小蛋糕",
+      "original_owner_display": "徐佳乐（小蛋糕）",
+      "evidence_speakers": [
+        "徐佳乐（小蛋糕）"
+      ],
+      "original_status": "待开始"
+    },
+    "T47": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "王思琦"
+      ],
+      "steps": [
+        "将最终确认的网址加入合适页面",
+        "在播放模式点击测试",
+        "准备离线截图或演示备份并记明线上版本"
+      ],
+      "tools": "PowerPoint/WPS超链接；浏览器测试即可，无需新增库。",
+      "deliverable": "带可用链接的PPT及离线备用页",
+      "acceptance": "链接指向已确认站点；不因有链接就认为网络稳定；不泄露本地路径。",
+      "discussion": "演示现场网络不通时展示哪一份备用内容？",
+      "dependencies": "T33站点地址和T15演示版本确认。",
+      "id": "T47",
+      "title": "将网页链接加入汇报PPT",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/47",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "付玉琳（右侧发言者，引用称(-1, 0)）"
+      ],
+      "original_status": "待开始"
+    },
+    "T48": {
+      "module": "PPT与答辩",
+      "suggested_lead": "付玉琳",
+      "suggested_collaborators": [
+        "张馨月",
+        "徐佳乐",
+        "王思琦"
+      ],
+      "steps": [
+        "按正式要求确认上台名单",
+        "安排开场、内容、演示和交接",
+        "试讲计时并确认设备、文件与备用方案"
+      ],
+      "tools": "PPT、计时器和普通清单即可，无需新增库。",
+      "deliverable": "上台名单、分段安排和演示检查表",
+      "acceptance": "不自动认为四人都要上台；实际出席与汇报记录才证明完成。",
+      "discussion": "群里“三个上去”与“我上”的最终安排是什么？",
+      "dependencies": "T39展示人数明确；T20/T46/T47准备完成。",
+      "id": "T48",
+      "title": "安排并参加课堂小组汇报",
+      "issue": "https://github.com/Fuyulin-hub/kanban/issues/48",
+      "original_owner": "未指派",
+      "original_owner_display": "未指派",
+      "evidence_speakers": [
+        "张馨月（果果5.14）"
+      ],
+      "original_status": "待开始"
+    }
+  }
+}

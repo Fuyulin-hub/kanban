@@ -235,3 +235,48 @@ Project：https://github.com/users/Fuyulin-hub/projects/2
 
 
 记录与脚本PR：https://github.com/Fuyulin-hub/kanban/pull/49
+
+
+<!-- ENRICHMENT_SUMMARY_START -->
+
+## 2026-11-03补充：板块、四人身份与执行建议
+
+用户已确认四人完整姓名并允许公开使用。原始任务表和待确认理由保留首轮提取措辞；右侧发言者身份已由本次补充解决，但不据此自动认定任务完成。
+
+[四人成员及工作记录](members.md) · [48项执行手册](task_playbook.md) · [工具与库](tools.md) · [机器可读建议](execution_plans.json)
+
+新增字段：工作板块、建议执行人、原文负责人、证据发言者。建议执行人与真实GitHub指派分开，所有assignee仍为空。
+
+| 工作板块 | 任务数 | 原生看板视图 |
+| --- | --- | --- |
+| 资料与需求核对 | 4 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/3) |
+| 报告正文与翻译 | 8 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/4) |
+| 数据图表与实验 | 13 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/5) |
+| 文档排版与编译 | 10 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/6) |
+| PPT与答辩 | 8 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/7) |
+| 网页与部署 | 3 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/8) |
+| 提交与交付 | 2 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/9) |
+| 建议执行人 | 建议牵头数 | 个人视图 |
+| --- | --- | --- |
+| 张馨月 | 11 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/10) |
+| 徐佳乐 | 17 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/11) |
+| 王思琦 | 13 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/12) |
+| 付玉琳 | 7 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/13) |
+
+### 本次主观判断和待确认项
+
+1. 将48项归为7个工作板块是本次整理，不是原群聊的栏目设置。
+
+2. 四人的角色、建议牵头人、协作人、步骤、工具、交付物、验收、依赖关系及讨论题均由Codex补充，尚未由成员认领；未伪造四人对话或发布评论。
+
+3. 个人视图包含已完成任务的复核建议，不等于新增待办量。建议数量不是工时、贡献或能力排名。
+
+4. @秋雨、@Xx-LE、王sq与四人的映射仍待确认；不按缩写、姓氏、仓库名自动推断。
+
+5. T28的两种预处理图只是候选；鱼骨图、风险图和PCA图的解释边界是本次给出的制作建议。
+
+6. 未新增源消息或群聊任务，跳过统计仍为327条（重复6条另计）；48个Issue与原状态分布保持。needs-review仍为36，身份确认后是否解除需按每项剩余疑点再审。
+
+7. 未重跑实验、编辑报告、发送邮件、提交作业或部署网站；本次交付是可讨论和验收的任务方案。
+
+<!-- ENRICHMENT_SUMMARY_END -->
