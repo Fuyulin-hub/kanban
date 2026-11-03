@@ -232,3 +232,6 @@ Project：https://github.com/users/Fuyulin-hub/projects/2
 看板视图：https://github.com/users/Fuyulin-hub/projects/2/views/2
 
 实际列数：Todo 6，In Progress 2，Done 4，待确认36。
+
+
+记录与脚本PR：https://github.com/Fuyulin-hub/kanban/pull/49

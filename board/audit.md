@@ -460,3 +460,44 @@ UTC开始时间 2026-11-03T03:22:24.969765+00:00
 ## Git传输失败后的提交恢复
 
 48条Issue及其Status已全部创建并读回。git push因github.com:443连接失败退出128，尚未创建PR。后续使用已通过预检的同一个gh登录态，经GitHub Git数据接口将同样5个board文件写入功能分支，然后创建PR。未更换身份、未重建Issue、未推送任务文件到main。
+
+## GitHub接口恢复结果
+
+- `gh api 'repos/Fuyulin-hub/kanban/issues?state=all&per_page=100'` → exit 0
+  - 48条记录
+- `gh project item-list 2 --owner Fuyulin-hub --format json --limit 100` → exit 0
+  - {"keys": ["items", "totalCount"]}
+- `gh api repos/Fuyulin-hub/kanban/git/ref/heads/main` → exit 0
+  - {"ref": "refs/heads/main"}
+- `gh api repos/Fuyulin-hub/kanban/git/commits/ebcc3033b2d2c9ca7eba4bb63849377521eefb5a` → exit 0
+  - {"sha": "ebcc3033b2d2c9ca7eba4bb63849377521eefb5a", "html_url": "https://github.com/Fuyulin-hub/kanban/commit/ebcc3033b2d2c9ca7eba4bb63849377521eefb5a"}
+- `gh api repos/Fuyulin-hub/kanban/git/matching-refs/heads/board/` → exit 0
+  - 0条记录
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "a32e4c4547e70a4d5b2e3a3c538754137a66deb5"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "dc934b5c37c736d0cefa20d6dc63f5ef0d5b7d49"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "1c56edd0be3969561ef1a9d9a2330398f23242e9"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "a5af88fdfb0492abab623077ff8aee24a57c7078"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/blobs --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "03bb8f098a6a34ea4f1a5b642a865dac0a063028"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/trees --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "8e8d7ba984960d8eaa63386e6de7681b2ffbe9da"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/commits --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"sha": "feb35bf897415fdcf6de991696c53941c2c5e874", "html_url": "https://github.com/Fuyulin-hub/kanban/commit/feb35bf897415fdcf6de991696c53941c2c5e874"}
+- `gh api --method POST repos/Fuyulin-hub/kanban/git/refs --input 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\gh_publish_payload.json'` → exit 0
+  - {"ref": "refs/heads/board/wechat-20261103-032234"}
+- `gh pr create --repo Fuyulin-hub/kanban --base main --head board/wechat-20261103-032234 --title '群聊任务看板与判定依据' --body-file 'C:\Users\ASUS\Documents\Codex\2026-11-03\new-chat\work\native_pr_body.md'` → exit 0
+  - https://github.com/Fuyulin-hub/kanban/pull/49
+- `gh api 'repos/Fuyulin-hub/kanban/pulls/49/files?per_page=100'` → exit 0
+  - 5条记录
+- `gh api repos/Fuyulin-hub/kanban/git/ref/heads/main` → exit 0
+  - {"ref": "refs/heads/main"}
+
+实际PR：https://github.com/Fuyulin-hub/kanban/pull/49
+
+读回验证：48个Issue；待确认36；assignee均为空；Status四列与本地CSV逐项一致；PR仅包含5个board文件；main仍为批准的README初始化提交。
+
+最后一次清单与审计文件的回写提交，其SHA和成功结果保存在PR提交历史及PR描述中，避免审计文件自引用自身提交。
