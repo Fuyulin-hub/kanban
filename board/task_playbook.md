@@ -1,1077 +1,1073 @@
-# 逐项执行手册
+# Task execution playbook
 
-本手册覆盖现有48项Issue，不新增虚构的群聊任务。所有执行步骤、工具选择、协作安排、前置依赖和讨论题均为2026-11-03按用户要求新增的建议，不代表历史聊天里已经达成共识。
+These plans are proposals added for discussion. Source status, evidence and uncertainty remain in each issue. Completed tasks use review checklists and are not reopened.
 
-[总看板](https://github.com/users/Fuyulin-hub/projects/2/views/2) · [四人成员说明](members.md) · [工具与库](tools.md)
+## Requirements & References
 
-原始证据、完成状态与needs-review判断保留在每个Issue上方；4项已完成任务的步骤仅用于复核，不重新开启。计划项不得据此自动改成In Progress或Done。
+### [T01: Obtain a previous-year reference report](https://github.com/Fuyulin-hub/kanban/issues/1)
 
-## 资料与需求核对
+Recorded status: Not started. Recorded owner: Unassigned (original alias unresolved).
 
-### [T01 获取上一年的参考报告](https://github.com/Fuyulin-hub/kanban/issues/1)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：@秋雨。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：王思琦牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Confirm whether the request was cancelled.
+2. If still needed, request a copy from someone authorized to share it.
+3. Record useful formatting examples without reusing their findings.
 
-**怎么做**：
+**Tools and libraries:** No additional library. Use a browser and PDF reader.
 
-1. 先确认“那算了”是否代表取消。
-2. 如仍需要，只向有权分享的学长学姐索取。
-3. 记录可参考的格式与不可照搬的内容。
+**Deliverable:** A reference list or a cancellation note.
 
-**工具与库**：无需新增库；浏览器、PDF阅读器即可。
+**Acceptance:** Sources are traceable; previous-year data are never presented as this group's results.
 
-**交付物**：参考资料清单或取消说明。
+**Discussion:** Is the reference still required, or was the request cancelled?
 
-**验收标准**：来源可追溯；不把往年数据、结论当成本组结果。
+### [T06: Verify missingness in the real data](https://github.com/Fuyulin-hub/kanban/issues/6)
 
-**建议讨论**：还需参考报告，还是已取消？
+Recorded status: Not started. Recorded owner: Unassigned (original alias unresolved).
 
-### [T06 核查真实数据的缺失率](https://github.com/Fuyulin-hub/kanban/issues/6)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：王sq。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：王思琦牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Identify the source version and unit of analysis for each table.
+2. Count missing values and empty strings using applicable fields.
+3. Report counts, denominators and rates and compare them with the text.
 
-**怎么做**：
+**Tools and libraries:** Use pandas for missingness and grouping; use merge(validate=...) when checking join cardinality.
 
-1. 确认使用的原始数据版本与每张表的统计单位。
-2. 分别统计空值、空字符串及适用字段。
-3. 输出缺失数、分母和比例并与正文逐项对照。
+**Deliverable:** A reproducible missingness table and script.
 
-**工具与库**：pandas负责isna和分组核查；必要时用merge(validate=...)检查联表基数；不凭截图抄数。
+**Acceptance:** Separate raw and cleaned data; specify the table, field, population and denominator.
 
-**交付物**：可复算的缺失率表与统计脚本。
+**Discussion:** The alias in the original assignment remains unresolved; the proposed lead is a new recommendation.
 
-**验收标准**：每项比例均写清表、字段、样本范围、分母；原始与清洗后数据分开。
+### [T16: Verify the official submission deadline](https://github.com/Fuyulin-hub/kanban/issues/16)
 
-**建议讨论**：王sq对应哪位尚未确认；本建议由王思琦牵头，不据此认定别名。
+Recorded status: Not started. Recorded owner: Unassigned (original alias unresolved).
 
-### [T16 查找老师规定的具体提交时间](https://github.com/Fuyulin-hub/kanban/issues/16)
+Proposed lead: Wang Siqi. Proposed collaborators: Fu Yulin.
 
-原文状态：待开始；原文负责人：@秋雨。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：王思琦牵头；协作：付玉琳。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Open the official course notice or assignment page.
+2. Check date, timezone, channel and filename rules.
+3. Record a traceable reference for the group.
 
-**怎么做**：
+**Tools and libraries:** Use the browser and course system; no additional library.
 
-1. 打开老师正式通知或课程页面。
-2. 核对日期、时区、提交渠道和命名规则。
-3. 保存要求的定位信息供全组查看。
+**Deliverable:** A submission-requirements checklist.
 
-**工具与库**：浏览器和课程系统即可，无需新增库。
+**Acceptance:** An uncertain chat statement about 23:59 is not an official deadline; do not reuse a prior-year notice.
 
-**交付物**：提交要求核对表。
+**Discussion:** Where is the current official notice? The screenshot messages show no year.
 
-**验收标准**：“好像23:59”不能直接作为确定截止时间；不使用旧年份截图代替当前要求。
+### [T39: Verify how many members must submit the assignment](https://github.com/Fuyulin-hub/kanban/issues/39)
 
-**建议讨论**：截图年份未显示，当前课程要求在哪条正式通知？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T39 核实小组作业由几人提交](https://github.com/Fuyulin-hub/kanban/issues/39)
+Proposed lead: Wang Siqi. Proposed collaborators: Fu Yulin.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Obtain the official requirements in T16.
 
-**建议分工**：王思琦牵头；协作：付玉琳。
+**Steps**
 
-**前置条件**：T16正式要求可用。
+1. Distinguish submission count from presentation attendance.
+2. Check the formal assignment instructions.
+3. If unclear, ask the instructor and record the reply.
 
-**怎么做**：
+**Tools and libraries:** Use the course page and browser; no additional library.
 
-1. 区分“几个人提交”与“几个人上台”。
-2. 查正式作业说明。
-3. 不明确时向老师确认并记录答复。
+**Deliverable:** A checklist for submitter count, presenter count and required channels.
 
-**工具与库**：课程页面和浏览器即可，无需新增库。
+**Acceptance:** Uncertain chat statements or other groups' behavior are not official requirements.
 
-**交付物**：提交人数、展示人数、提交流程对照表。
+**Discussion:** Is one representative submission sufficient, and is presenter count specified separately?
 
-**验收标准**：不把“好像一个人交”或其他组做法当成正式要求。
+## Report & Translation
 
-**建议讨论**：一人代表提交还是每人提交？展示人数是否另有规定？
+### [T02: Review the report content](https://github.com/Fuyulin-hub/kanban/issues/2)
 
-## 报告正文与翻译
+Recorded status: In progress. Recorded owner: Unassigned.
 
-### [T02 核对报告正文内容](https://github.com/Fuyulin-hub/kanban/issues/2)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi, Xu Jiale, Fu Yulin.
 
-原文状态：进行中；原文负责人：未指派。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：张馨月牵头；协作：王思琦、徐佳乐、付玉琳。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Agree on the file and chapters to review.
+2. Check that questions, methods, data and conclusions match.
+3. Locate each issue by page and sentence, then ask the relevant member to verify it.
 
-**怎么做**：
+**Tools and libraries:** Use the existing Word/WPS or TeX editor; Python difflib is optional for comparisons.
 
-1. 确定本次审阅文件和章节范围。
-2. 逐段检查研究问题、方法、数据与结论是否对应。
-3. 把疑点定位到页码和原句，由相关成员确认。
+**Deliverable:** A page-specific review list and revision comparison.
 
-**工具与库**：Word/WPS或TeX原编辑器；可选Python difflib比较修订，不需要引入写作框架。
+**Acceptance:** Preserve meaning, numbers, subheadings and every figure/table.
 
-**交付物**：带页码的问题清单及修订对照。
+**Discussion:** Does the exclusion of Section 7.3 onward still apply? Who reviews each section?
 
-**验收标准**：数据有出处；表述不改变原意；保留小标题和全部图表。
+### [T04: Revise the first three report chapters](https://github.com/Fuyulin-hub/kanban/issues/4)
 
-**建议讨论**：原文说7.3以后用于核对，本轮是否仍排除？四人分别复核哪部分？
+Recorded status: In progress. Recorded owner: Zhang Xinyue.
 
-### [T04 修订报告前三章](https://github.com/Fuyulin-hub/kanban/issues/4)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi.
 
-原文状态：进行中；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Agree on the review scope in T02.
 
-**建议分工**：张馨月牵头；协作：王思琦。
+**Steps**
 
-**前置条件**：先落实T02的审阅范围。
+1. Resolve the difference between the first-three-chapters claim and the later first-chapter clarification.
+2. Confirm the paragraphs in scope.
+3. Make subjects, objects and logical links explicit without changing meaning.
 
-**怎么做**：
+**Tools and libraries:** Keep the existing Word/WPS or TeX workflow; no new library is required.
 
-1. 对照“前三章改了”与“基本只改第一章”的范围差异。
-2. 先确认要改的段落。
-3. 按背景→问题→本项目做法改清楚每句话的主语和对象。
+**Deliverable:** A paragraph-level revision record for the agreed chapters.
 
-**工具与库**：沿用Word/WPS或TeX；无需新增库。
+**Acceptance:** Preserve the original meaning, subheadings, numbers and all figures/tables.
 
-**交付物**：前三章逐段修订记录。
+**Discussion:** Is this a Chapter 1 revision or a review of Chapters 1–3?
 
-**验收标准**：意思、章节标题、数字和图表均保留；范围差异有说明。
+### [T08: Clarify the report wording about missing data](https://github.com/Fuyulin-hub/kanban/issues/8)
 
-**建议讨论**：本任务是第一章修订，还是前三章整体检查？
+Recorded status: Not started. Recorded owner: Zhang Xinyue.
 
-### [T08 调整报告中数据缺失的表述](https://github.com/Fuyulin-hub/kanban/issues/8)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi.
 
-原文状态：待开始；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Verify the statistical definitions in T06 first.
 
-**建议分工**：张馨月牵头；协作：王思琦。
+**Steps**
 
-**前置条件**：T06统计口径核对后更新数字。
+1. Locate vague statements about excessive missing data.
+2. Specify which field is missing and what analysis is affected.
+3. Use the verified rate and denominator while retaining the limitation.
 
-**怎么做**：
+**Tools and libraries:** Use the existing editor; obtain numbers from the pandas checks in T06.
 
-1. 找到“数据缺失太多”等含糊句。
-2. 明确是评论正文、标题或其他字段缺失。
-3. 解释这会影响哪项分析，并给出经核对的比例和分母。
+**Deliverable:** An original-versus-revised wording comparison.
 
-**工具与库**：Word/WPS或TeX；数字来自T06的pandas统计，不需要语言分析库。
+**Acceptance:** Do not describe absent comments as corrupted orders or remove a real limitation.
 
-**交付物**：缺失表述的原句—改句对照。
+**Discussion:** Does missingness mean no review body despite a rating, or a missing order?
 
-**验收标准**：不把无评论解释为数据损坏；不为改善观感删去真实限制。
+### [T14: Integrate the report chapters](https://github.com/Fuyulin-hub/kanban/issues/14)
 
-**建议讨论**：缺失是无文本但有评分，还是整条订单不存在？
+Recorded status: In progress. Recorded owner: Zhang Xinyue.
 
-### [T14 整合各章形成完整报告](https://github.com/Fuyulin-hub/kanban/issues/14)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi, Xu Jiale.
 
-原文状态：进行中；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Complete the relevant chapter reviews in T02/T04 first.
 
-**建议分工**：张馨月牵头；协作：王思琦、徐佳乐。
+**Steps**
 
-**前置条件**：T02、T04和各章审阅基本完成。
+1. Freeze the chapter input versions.
+2. Unify terminology, figure numbers and cross-references.
+3. Check for missing or repeated sections and record the merge.
 
-**怎么做**：
+**Tools and libraries:** Use the current Word/WPS/TeX editor; hashlib is optional for version checks.
 
-1. 先冻结各章输入版本。
-2. 统一术语、图号和交叉引用。
-3. 按目录检查漏章与重复内容并保存合并记录。
+**Deliverable:** An integrated report and chapter merge record.
 
-**工具与库**：原Word/WPS/TeX工具；标准库hashlib可选记录版本指纹，无需文档重建框架。
+**Acceptance:** Keep all subheadings and figures; do not mix numbers from different versions.
 
-**交付物**：完整报告及章节合并清单。
+**Discussion:** Which file is the single editing master?
 
-**验收标准**：小标题和全部图表保留；没有不同版本数字混用。
+### [T18: Add Chapter 7 to the report](https://github.com/Fuyulin-hub/kanban/issues/18)
 
-**建议讨论**：以哪个文件为唯一编辑主稿？
+Recorded status: Completed. Recorded owner: Zhang Xinyue.
 
-### [T18 在报告中补充第七章](https://github.com/Fuyulin-hub/kanban/issues/18)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Xu Jiale.
 
-原文状态：已完成；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：张馨月牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Review the existing implementation plan and deliverables.
+2. Check that its figures match the text.
+3. Record the scope of any later additions.
 
-**怎么做**：
+**Tools and libraries:** Use the existing editor; no additional library.
 
-1. 对照现有第七章检查实施计划和交付物。
-2. 确认图表与文字吻合。
-3. 把后续新增内容的范围记入修订记录。
+**Deliverable:** A review record for the completed Chapter 7 addition.
 
-**工具与库**：原编辑器即可，无需新增库。
+**Acceptance:** Keep the completed status; adding a chapter does not complete its later charts or formatting.
 
-**交付物**：第七章核对记录（已完成任务的复核）。
+**Discussion:** Does the current Chapter 7 match the schedule in T12?
 
-**验收标准**：保留已完成状态；不将补章等同于后续甘特图、排版都完成。
+### [T21: Review and clarify AI-style wording](https://github.com/Fuyulin-hub/kanban/issues/21)
 
-**建议讨论**：第七章当前版本与T12时间计划是否一致？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T21 再次人工检查并改写报告的AI式表达](https://github.com/Fuyulin-hub/kanban/issues/21)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Use the master draft and content issues from T02/T14.
 
-**建议分工**：王思琦牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：T02定位问题，T14确定主稿。
+1. Mark abstract language, ambiguous references and long sentences.
+2. Make subjects, objects and reasoning explicit.
+3. Compare meaning before/after and ask another member to review.
 
-**怎么做**：
+**Tools and libraries:** Use tracked changes or a TeX diff; difflib is optional. No AI-detector score is needed.
 
-1. 圈出抽象词、指代不明和过长句。
-2. 补清主语、对象与前后逻辑。
-3. 逐句对照修改前后含义并交叉审阅。
+**Deliverable:** A wording revision comparison.
 
-**工具与库**：Word/WPS修订或TeX diff；Python difflib可选；无需AI检测分数作为验收。
+**Acceptance:** Keep meaning, numbers, subheadings, figures/tables and the original level of uncertainty.
 
-**交付物**：表达修改对照表。
+**Discussion:** Which sentences still take more than one reading to understand?
 
-**验收标准**：意思不变；不改小标题；保留全部图表、数字和原有不确定性。
+### [T23: Translate the report using the course terminology](https://github.com/Fuyulin-hub/kanban/issues/23)
 
-**建议讨论**：哪些句子读一遍仍不明白？优先改这些句子。
+Recorded status: In progress. Recorded owner: Unassigned.
 
-### [T23 按老师课件措辞将报告翻译为英文](https://github.com/Fuyulin-hub/kanban/issues/23)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue.
 
-原文状态：进行中；原文负责人：未指派。
+**Prerequisites:** Stabilize the wording reviewed in T21 first.
 
-**建议分工**：王思琦牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：T21中文表述基本稳定后进行。
+1. Build a bilingual glossary from the course materials.
+2. Translate paragraph by paragraph and compare with the source.
+3. Check numbers, negation, method names and limitations.
 
-**怎么做**：
+**Tools and libraries:** Use the current Word/WPS/TeX editor; re can help check numbers and terminology.
 
-1. 先建立中英术语表并对照老师课件。
-2. 按段落翻译后与中文逐条核对。
-3. 检查数字、否定、方法名称及限制是否完整。
+**Deliverable:** An English master draft, glossary and uncertainty list.
 
-**工具与库**：Word/WPS或TeX原工具；re可选核查数字/术语；不需要专门机器翻译库。
+**Acceptance:** Preserve claim strength and use consistent terms such as low rating; explain retained Portuguese words.
 
-**交付物**：英文主稿、术语表和疑义清单。
+**Discussion:** Do the course terms conflict with terminology already used in the project?
 
-**验收标准**：不改事实强度；low rating等核心术语统一；葡语原词保留说明。
+### [T37: Review the English report and source before formatting](https://github.com/Fuyulin-hub/kanban/issues/37)
 
-**建议讨论**：课件的标准用词与项目现有术语有无冲突？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T37 在美化前检查英文报告及源码](https://github.com/Fuyulin-hub/kanban/issues/37)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi, Xu Jiale.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Use the English draft and source from T23/T35.
 
-**建议分工**：张馨月牵头；协作：王思琦、徐佳乐。
+**Steps**
 
-**前置条件**：T23英文初稿与T35源码可用。
+1. Match the PDF and source versions.
+2. Check terms, figure numbers, sample counts and limitations.
+3. Resolve content problems before handing over for formatting.
 
-**怎么做**：
+**Tools and libraries:** Use the existing editor and PDF reader; PyMuPDF/difflib can help locate changes.
 
-1. 先核对英文PDF与源码版本。
-2. 检查术语、图号、样本数和限制表述。
-3. 解决内容问题后再交给排版负责人。
+**Deliverable:** A review checklist and handover record.
 
-**工具与库**：原编辑器、PDF阅读器；PyMuPDF或difflib用于定位差异时可选。
+**Acceptance:** Keep content and layout review distinct and list unresolved items.
 
-**交付物**：英文主稿审阅清单与交接记录。
+**Discussion:** Which English ambiguities require checking the original draft?
 
-**验收标准**：内容审阅和版式审阅分别留痕；所有未解决问题列出，不凭文件发出认定通过。
+## Data & Figures
 
-**建议讨论**：英文版哪些疑点必须先回到中文原稿确认？
+### [T03: Plan and refine the report figures](https://github.com/Fuyulin-hub/kanban/issues/3)
 
-## 数据图表与实验
+Recorded status: In progress. Recorded owner: Zhang Xinyue.
 
-### [T03 规划并细化报告图表](https://github.com/Fuyulin-hub/kanban/issues/3)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Xu Jiale.
 
-原文状态：进行中；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：张馨月牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. List the finding each research question needs to show.
+2. Check existing figures before proposing additions.
+3. Specify the result file, chart type and insertion point for each gap.
 
-**怎么做**：
+**Tools and libraries:** A spreadsheet is sufficient for the inventory; use Matplotlib when an existing Weka result needs plotting.
 
-1. 列出每个研究问题需要读者看懂的结论。
-2. 检查已有图是否已经覆盖。
-3. 只对缺口提出图型、输入结果文件和插入位置。
+**Deliverable:** A figure inventory with purpose, source, location and proposed producer.
 
-**工具与库**：Excel清单即可；需要重绘数据图时用Matplotlib，优先复用现有Weka结果。
+**Acceptance:** Each figure answers a clear question and uses the same result version.
 
-**交付物**：图表目录：研究问题、图号、数据来源、位置、制作人。
+**Discussion:** Which figures have editable source files and which need redrawing?
 
-**验收标准**：每张图解释一个明确问题；图中数值能回到同版本结果。
+### [T05: Mark figure insertion points in the report](https://github.com/Fuyulin-hub/kanban/issues/5)
 
-**建议讨论**：哪些图已有可编辑源文件，哪些确实需要重画？
+Recorded status: Completed. Recorded owner: Zhang Xinyue.
 
-### [T05 标注报告图表的插入位置](https://github.com/Fuyulin-hub/kanban/issues/5)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Xu Jiale.
 
-原文状态：已完成；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：张馨月牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Check the existing marks against current chapter numbers.
+2. Verify that surrounding text refers to the correct figure.
+3. Check the links again after pagination changes.
 
-**怎么做**：
+**Tools and libraries:** Use native cross-references; PyMuPDF is optional for PDF page checks.
 
-1. 复核已标注的位置与当前章号是否一致。
-2. 检查正文在图前或图后是否有明确引用。
-3. 确认跨页后仍能找到对应图。
+**Deliverable:** A figure-to-paragraph/page index for this completed task.
 
-**工具与库**：原编辑器交叉引用；PyMuPDF可选用于PDF页码检查。
+**Acceptance:** Keep the completed status; every mark points to the intended figure.
 
-**交付物**：图号—段落—页码对照表（已完成任务的复核）。
+**Discussion:** Have later additions changed the figure numbering?
 
-**验收标准**：已有完成状态保持；每个插入位置对应实际图表。
+### [T07: Add relevant illustrations to the first three chapters](https://github.com/Fuyulin-hub/kanban/issues/7)
 
-**建议讨论**：后续新增图是否改变了旧图编号？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T07 在报告前三章补充相关元素的图](https://github.com/Fuyulin-hub/kanban/issues/7)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Use the figure gaps identified in T03.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：T03确认图表缺口。
+1. Review the figures already present.
+2. Identify a real explanatory gap in each section.
+3. Prefer an editable workflow or data-relationship diagram and ask the content lead to check it.
 
-**怎么做**：
+**Tools and libraries:** Use PowerPoint shapes; Graphviz is optional if an editable diagram source already exists.
 
-1. 先检查前三章已有图。
-2. 列出每段文字真正需要的辅助元素。
-3. 优先补可编辑的研究流程或数据关系示意，交给正文负责人确认。
+**Deliverable:** Candidate explanatory diagrams and editable sources.
 
-**工具与库**：PowerPoint原生形状即可；可选Graphviz制作关系图；无须新增分析模型。
+**Acceptance:** Keep existing figures and distinguish conceptual diagrams from empirical results.
 
-**交付物**：与前三章对应的候选示意图及源文件。
+**Discussion:** Would a research workflow or a data-source diagram explain the text better?
 
-**验收标准**：不删已有图；装饰不掩盖正文；概念图不伪装成实验结果。
+### [T12: Draw the Chapter 7 implementation Gantt chart](https://github.com/Fuyulin-hub/kanban/issues/12)
 
-**建议讨论**：需要解释研究流程还是数据来源，避免为填空而加图。
+Recorded status: Not started. Recorded owner: Unassigned (original alias unresolved).
 
-### [T12 绘制第七章项目实施计划甘特图](https://github.com/Fuyulin-hub/kanban/issues/12)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：@Xx-LE。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Split the plan into verifiable stages.
+2. Confirm dependencies and dates with the group.
+3. Plot the stages on one timeline and leave unknown dates pending.
 
-**怎么做**：
+**Tools and libraries:** Use Matplotlib barh or editable PowerPoint shapes.
 
-1. 将实施计划拆成可验收阶段。
-2. 与成员确认先后依赖和时间。
-3. 用统一时间轴绘制甘特图，未定日期留为待定。
+**Deliverable:** A Chapter 7 Gantt chart and stage table.
 
-**工具与库**：Matplotlib barh可画甘特条；PowerPoint形状也可，沿用可编辑源文件。
+**Acceptance:** The stages match the text; no dates are invented.
 
-**交付物**：第七章甘特图及阶段表。
+**Discussion:** The original assigned alias is unresolved. Should Xu Jiale take this task?
 
-**验收标准**：阶段、依赖与报告文字一致；不虚构截止日期。
+### [T17: Improve the discussed fishbone diagram](https://github.com/Fuyulin-hub/kanban/issues/17)
 
-**建议讨论**：@Xx-LE身份未映射；本次建议是否由徐佳乐承接？
+Recorded status: Not started. Recorded owner: Zhang Xinyue.
 
-### [T17 美化已讨论的鱼骨图](https://github.com/Fuyulin-hub/kanban/issues/17)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Retain all concepts from the original diagram.
+2. Align related branches and simplify labels.
+3. Check the revised diagram against Chapter 4.
 
-**怎么做**：
+**Tools and libraries:** Use editable PowerPoint shapes or the existing Graphviz source.
 
-1. 先保留原图全部概念。
-2. 把同层原因和分支对齐。
-3. 将文字改清楚并与第四章论述核对。
+**Deliverable:** An improved fishbone diagram and editable source.
 
-**工具与库**：PowerPoint可编辑形状；已有Graphviz源文件则沿用，无需绘图库叠加。
+**Acceptance:** Do not present hypothesized factors as established causes.
 
-**交付物**：美化鱼骨图及源文件。
+**Discussion:** Is this the same figure as T27? If so, share one source while retaining both task records.
 
-**验收标准**：不把假设性因素画成已经证实的因果关系。
+### [T22: Identify and add missing report figures](https://github.com/Fuyulin-hub/kanban/issues/22)
 
-**建议讨论**：与T27是同一张图吗？若是，保留两个任务记录但共享一个源文件。
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T22 检查报告还需要哪些图表并补入](https://github.com/Fuyulin-hub/kanban/issues/22)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Confirm the figure inventory in T03.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：T03先确定图表目录。
+1. Compare each section's question with the existing figures.
+2. List only missing evidence or explanations.
+3. Specify the input, purpose and location before making each addition.
 
-**怎么做**：
+**Tools and libraries:** Use a figure inventory; Matplotlib for data charts and PowerPoint for conceptual diagrams.
 
-1. 逐节比对研究问题与已有图表。
-2. 只登记未覆盖的证据或解释需求。
-3. 为每张拟新增图写输入、用途、位置后再制作。
+**Deliverable:** An approved additions list and the resulting figures.
 
-**工具与库**：图表清单；数据图用Matplotlib，示意图用PowerPoint即可。
+**Acceptance:** Retain all existing figures and provide a source for each addition.
 
-**交付物**：图表补充清单与经确认的新增图。
+**Discussion:** Which figures add necessary evidence and which only change the layout?
 
-**验收标准**：所有已有图保留；新增图有数据或概念来源。
+### [T26: Improve the risk-scoring workflow diagram](https://github.com/Fuyulin-hub/kanban/issues/26)
 
-**建议讨论**：哪些图是必要证据，哪些仅改善排版？
+Recorded status: Not started. Recorded owner: Zhang Xinyue.
 
-### [T26 美化所指的风险评分流程图](https://github.com/Fuyulin-hub/kanban/issues/26)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Verify the actual inputs, outputs and point in time.
+2. Keep the meaning while aligning boxes and arrows.
+3. Ask the content lead to check every node.
 
-**怎么做**：
+**Tools and libraries:** Use native PowerPoint shapes or optional Graphviz; no new ML library is needed.
 
-1. 先确认风险评分流程实际输入、输出和使用时点。
-2. 沿用流程含义重新排齐图形与箭头。
-3. 请内容负责人逐节点核对。
+**Deliverable:** An editable risk-scoring workflow diagram.
 
-**工具与库**：PowerPoint原生形状；可选Graphviz；无需新增机器学习库。
+**Acceptance:** Match the actual method; do not use future review text as an input to an earlier prediction.
 
-**交付物**：可编辑风险评分流程图。
+**Discussion:** Does the figure describe a proposal or an implemented workflow? Label it accordingly.
 
-**验收标准**：步骤与实际方法一致；预测阶段不使用预测时尚不可得的评论文本。
+### [T27: Correct the fishbone diagram and move it to Chapter 4](https://github.com/Fuyulin-hub/kanban/issues/27)
 
-**建议讨论**：图表达的是拟议方案还是已运行流程？必须注明。
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T27 修正鱼骨图内容并调整至第四章](https://github.com/Fuyulin-hub/kanban/issues/27)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Share the source with T17 and confirm the Chapter 4 version.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：与T17共享图源；插入前确认第四章版本。
+1. Check every branch against Chapter 4.
+2. Correct misplaced factors and placement.
+3. Insert the diagram and update the text reference.
 
-**怎么做**：
+**Tools and libraries:** Use PowerPoint or the existing fishbone source; no additional library.
 
-1. 与第四章逐条核对鱼骨分支。
-2. 修正错归类和位置。
-3. 插入第四章并更新正文引用。
+**Deliverable:** The corrected Chapter 4 figure and insertion reference.
 
-**工具与库**：PowerPoint或已有鱼骨图源文件；无需新增库。
+**Acceptance:** Keep its conceptual scope; do not treat it as causal proof.
 
-**交付物**：第四章修正版鱼骨图及插入位置。
+**Discussion:** If Chapter 7 already has a Gantt chart, should its fishbone diagram be omitted?
 
-**验收标准**：保留概念范围；不将因素示意当作因果证明。
+### [T28: Add two preprocessing diagrams to Chapter 4](https://github.com/Fuyulin-hub/kanban/issues/28)
 
-**建议讨论**：第七章已有甘特图时是否不再放鱼骨图？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T28 在第四章补充两张数据预处理图](https://github.com/Fuyulin-hub/kanban/issues/28)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Obtain the actual preprocessing steps and checks in T06.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：T06统计与实际预处理流程可用。
+1. First confirm which two diagrams were intended.
+2. If unspecified, propose a table-join workflow and a sample-filtering workflow.
+3. Use the actual processing order and verified counts.
 
-**怎么做**：
+**Tools and libraries:** Use pandas to verify outputs; draw editable flows with PowerPoint or Graphviz.
 
-1. 先确认原文所说两张图具体是什么。
-2. 若尚无定义，建议候选为多表合并流程和样本筛选流程。
-3. 用真实处理顺序和各步样本数制作。
+**Deliverable:** A content confirmation note, two source diagrams and Chapter 4 locations.
 
-**工具与库**：pandas核对处理结果；PowerPoint流程图或Graphviz绘制。
+**Acceptance:** The two topics are new proposals; do not estimate sample counts from images.
 
-**交付物**：两张图的内容确认单、源文件和第四章位置。
+**Discussion:** The source does not name the two diagrams. What should they show?
 
-**验收标准**：候选内容明确标为本次建议；样本数来自脚本，不能从截图估计。
+### [T29: Visualize the order clusters](https://github.com/Fuyulin-hub/kanban/issues/29)
 
-**建议讨论**：原文没有列出两图名称，需确认后再制作。
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T29 制作订单分群的可视化图](https://github.com/Fuyulin-hub/kanban/issues/29)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Obtain the same-version Weka output and sample definition.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：先取得同版本Weka输出和实际样本口径。
+1. Read the saved cluster assignments and feature definitions.
+2. Show cluster sizes and feature profiles.
+3. If a PCA view is needed, identify it as a display projection only.
 
-**怎么做**：
+**Tools and libraries:** Reuse the existing Weka SimpleKMeans results; summarize with pandas and plot with Matplotlib.
 
-1. 读取已有订单聚类结果与特征说明。
-2. 展示各簇规模和特征差异。
-3. 需要二维投影时标清PCA仅用于展示。
+**Deliverable:** An order-cluster figure, profile table and result reference.
 
-**工具与库**：沿用Weka SimpleKMeans结果；pandas汇总、Matplotlib绘图；不为美化重训模型。
+**Acceptance:** Cluster sizes sum to the analysis population; do not infer causes from the projection.
 
-**交付物**：订单分群图、簇画像表及数据来源。
+**Discussion:** Are features, scaling and the random seed recorded?
 
-**验收标准**：簇大小合计与分析样本一致；投影重叠不被解释为模型失效或因果关系。
+### [T30: Visualize category co-purchases](https://github.com/Fuyulin-hub/kanban/issues/30)
 
-**建议讨论**：聚类用的特征、标准化方式和随机种子是否已记录？
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T30 制作类别联购的可视化图](https://github.com/Fuyulin-hub/kanban/issues/30)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Obtain the real basket data and rule output.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：取得真实篮子数据和原始规则输出。
+1. Read the actual association-rule output.
+2. Check co-purchase counts, support, confidence and lift separately.
+3. Draw a readable bar chart and state multi-category-basket coverage.
 
-**怎么做**：
+**Tools and libraries:** Reuse the existing Weka association output; verify with pandas and plot with Matplotlib.
 
-1. 读取实际使用的关联分析输出。
-2. 分别校验共购次数、support、confidence与lift。
-3. 画可读的条形图并注明多品类篮子覆盖范围。
+**Deliverable:** A co-purchase chart and rule-metric table.
 
-**工具与库**：沿用现有Weka关联分析结果；pandas核对指标、Matplotlib绘图。
+**Acceptance:** State the support denominator; frequency is not lift; explain sparse multi-category coverage and weak associations.
 
-**交付物**：类别联购图与规则指标表。
+**Discussion:** Which algorithm actually ran? Use the log rather than assuming Apriori.
 
-**验收标准**：support分母明确；高频不等于高lift；弱关联和稀少多品类篮子需说明。
+### [T31: Visualize the Portuguese review analysis](https://github.com/Fuyulin-hub/kanban/issues/31)
 
-**建议讨论**：算法是实际运行的Apriori还是其他方法？以日志为准。
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T31 制作葡语评论分析的可视化图](https://github.com/Fuyulin-hub/kanban/issues/31)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Confirm the actual model and grouping; do not automatically retrain.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：先核对实际模型与分组口径，不预设重新训练。
+1. Confirm the text-bearing review sample and rating groups.
+2. Read the existing text-model output and select representative words.
+3. Preserve the meaning of negation and explain sample limitations.
 
-**怎么做**：
+**Tools and libraries:** Reuse the saved Weka TF-IDF/Naive Bayes pipeline; confirm the exact filter/classifier from its configuration. Use pandas and Matplotlib.
 
-1. 核对有正文的葡语评论样本与评分分组。
-2. 读取现有词向量/分类结果并展示代表词。
-3. 保留否定词语义和样本限制。
+**Deliverable:** A Portuguese word figure, sample description and result index.
 
-**工具与库**：沿用已保存的Weka TF-IDF/朴素贝叶斯流程，具体过滤器和分类器变体以实际配置为准；pandas、Matplotlib整理图表。
+**Acceptance:** Do not infer causes from word frequency or use post-review analysis as pre-review prediction.
 
-**交付物**：葡语评论词图、样本说明和模型结果索引。
+**Discussion:** Does the figure show frequency, distinguishing words or model weights?
 
-**验收标准**：不从词频推断因果；训练/评估划分一致；评论分析不混作评论出现前预测。
+### [T38: Create the missingness visualization](https://github.com/Fuyulin-hub/kanban/issues/38)
 
-**建议讨论**：展示词频、区分词还是模型权重？图标题要准确对应。
+Recorded status: Not started. Recorded owner: Zhang Xinyue.
 
-### [T38 制作缺失率的可视化](https://github.com/Fuyulin-hub/kanban/issues/38)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Resolve T06 definitions and keep wording consistent with T08.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：T06口径确认；与T08保持一致。
+1. Read the verified missingness table.
+2. Plot field-level missingness and show basket coverage separately.
+3. Explain the practical effect beside each chart.
 
-**怎么做**：
+**Tools and libraries:** Use pandas for calculation and a Matplotlib horizontal bar chart; no extra charting framework.
 
-1. 先读取经核对的缺失率表。
-2. 按字段画缺失比例图，另行展示多品类篮子覆盖率。
-3. 在图旁说明对分析的实际影响。
+**Deliverable:** Missingness and coverage figures with reproducible tables.
 
-**工具与库**：pandas计算；Matplotlib横向条形图即可，无需额外图表框架。
+**Acceptance:** Different denominators remain separate; do not copy historical percentages into another report version.
 
-**交付物**：缺失率图、覆盖率图及可复算数表。
+**Discussion:** Does the current report use the same denominator as the earlier chat figures?
 
-**验收标准**：两个不同分母不能合并成同一比例；不直接沿用不同报告阶段的58.73%或0.76%。
+## Formatting & Compilation
 
-**建议讨论**：当前报告版本的分母与群图是否相同？
+### [T09: Complete the first report compilation](https://github.com/Fuyulin-hub/kanban/issues/9)
 
-## 文档排版与编译
+Recorded status: Completed. Recorded owner: Zhang Xinyue.
 
-### [T09 完成报告的首次编译](https://github.com/Fuyulin-hub/kanban/issues/9)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi.
 
-原文状态：已完成；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：张馨月牵头；协作：王思琦。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Retain the record of the first successful build.
+2. Open its output PDF in the existing environment.
+3. Check fonts, figures and equations.
 
-**怎么做**：
+**Tools and libraries:** Use the actual TeX compiler; PyMuPDF is optional for page rendering.
 
-1. 保留首次成功编译记录。
-2. 在现有环境打开输出PDF。
-3. 复核字体、图片和公式是否正常。
+**Deliverable:** An output/log index for this completed task.
 
-**工具与库**：沿用实际TeX编译器；PyMuPDF可选用于逐页渲染检查。
+**Acceptance:** A first successful build does not prove final pagination or contents are correct.
 
-**交付物**：首次编译输出与日志索引（已完成任务的复核）。
+**Discussion:** Does the first build use the same source as the final English version?
 
-**验收标准**：不将首次编译等同于目录与最终排版全部完成。
+### [T24: Improve the report formatting](https://github.com/Fuyulin-hub/kanban/issues/24)
 
-**建议讨论**：首次编译用的源文件与最终英文版是否一致？
+Recorded status: In progress. Recorded owner: Xu Jiale.
 
-### [T24 美化并排版整份报告](https://github.com/Fuyulin-hub/kanban/issues/24)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：进行中；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Use a stable integrated English draft from T14/T23.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：T14、T23形成稳定主稿。
+1. Unify body text, headings, headers, footers and captions.
+2. Fix large blank areas, floating figures and awkward page breaks.
+3. Export and inspect every PDF page.
 
-**怎么做**：
+**Tools and libraries:** Keep the existing TeX or Word/WPS workflow; PyMuPDF is optional for rendering.
 
-1. 统一正文、标题、页眉页脚与图注格式。
-2. 先修空白页、浮动图和跨页断裂。
-3. 导出PDF逐页核对。
+**Deliverable:** A formatted source, PDF and unresolved-issues list.
 
-**工具与库**：沿用TeX或Word/WPS排版；PyMuPDF可选用于PDF渲染检查。
+**Acceptance:** Do not remove content or figures to eliminate whitespace; check cover, contents and fonts.
 
-**交付物**：排版主稿、PDF与未解决问题列表。
+**Discussion:** Should large blank areas or background consistency be fixed first?
 
-**验收标准**：不删段落或图表来消除空白；封面、目录、字体都需检查后才能确认完成。
+### [T25: Reinsert the cover into the English report](https://github.com/Fuyulin-hub/kanban/issues/25)
 
-**建议讨论**：优先解决大块空白还是统一背景？
+Recorded status: Not started. Recorded owner: Zhang Xinyue.
 
-### [T25 在英文报告中重新插入封面](https://github.com/Fuyulin-hub/kanban/issues/25)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Xu Jiale.
 
-原文状态：待开始；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the English title in T23.
 
-**建议分工**：张馨月牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：T23英文标题确定。
+1. Confirm the English title, course and group details.
+2. Insert the selected cover asset.
+3. Check proportions, resolution and page-number continuity.
 
-**怎么做**：
+**Tools and libraries:** Use the current editor's image tools; no additional library.
 
-1. 核对英文标题、课程和组别信息。
-2. 使用确认的封面素材重新放置。
-3. 检查比例、清晰度和页码衔接。
+**Deliverable:** The source with its English cover and a first-page preview.
 
-**工具与库**：原编辑器插图功能；无需新增库。
+**Acceptance:** Use the four confirmed names; a shared cover image alone is not proof of insertion.
 
-**交付物**：插入英文封面的主稿及首屏预览。
+**Discussion:** Which cover version is approved for the final report?
 
-**验收标准**：姓名使用四人确认全名；封面文字与报告一致；不凭已发图片认定已插入。
+### [T34: Fix the English table of contents](https://github.com/Fuyulin-hub/kanban/issues/34)
 
-**建议讨论**：候选封面哪一版是最终授权使用的版本？
+Recorded status: In progress. Recorded owner: Unassigned.
 
-### [T34 处理英文报告的目录生成问题](https://github.com/Fuyulin-hub/kanban/issues/34)
+Proposed lead: Wang Siqi. Proposed collaborators: Xu Jiale.
 
-原文状态：进行中；原文负责人：未指派。
+**Prerequisites:** Use the English titles and complete source from T23/T35.
 
-**建议分工**：王思琦牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：T23英文标题及T35源码可用。
+1. Establish whether the master source is TeX or Word.
+2. Use the source's heading structure and automatic contents mechanism.
+3. Check English titles, levels and page numbers.
 
-**怎么做**：
+**Tools and libraries:** For TeX use the actual compiler/latexmk; for Word/WPS use heading styles and refresh the contents.
 
-1. 确定英文主稿是TeX还是Word。
-2. 用标题结构和自动目录生成机制处理。
-3. 检查英文章名、层级与页码。
+**Deliverable:** A correct English contents page and reproducible instructions.
 
-**工具与库**：TeX用原编译器/latexmk；Word/WPS用标题样式和更新目录；不手打目录。
+**Acceptance:** Every entry matches a heading; do not mix Word-generated and TeX-generated contents.
 
-**交付物**：正确的英文目录和可复现操作说明。
+**Discussion:** Which output is the final submission master?
 
-**验收标准**：目录条目与正文标题逐项对应；不混用WPS目录与TeX源文件的生成过程。
+### [T35: Provide the English report LaTeX source](https://github.com/Fuyulin-hub/kanban/issues/35)
 
-**建议讨论**：最终提交以TeX编译版还是Word导出版为准？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T35 提供英文报告的LaTeX源码](https://github.com/Fuyulin-hub/kanban/issues/35)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue, Xu Jiale.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：王思琦牵头；协作：张馨月、徐佳乐。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Collect the matching tex, figures, bibliography and required dependencies.
+2. Identify the entry file and build command.
+3. Verify that the source corresponds to the shared PDF.
 
-**怎么做**：
+**Tools and libraries:** Use pathlib, zipfile and hashlib if an automated inventory is useful; no third-party package is required.
 
-1. 收集同一版本tex、图片和参考文献等必要依赖。
-2. 标明入口文件与编译方式。
-3. 核对源码和发出的PDF是否对应。
+**Deliverable:** A buildable source package and file inventory.
 
-**工具与库**：Python pathlib/zipfile/hashlib可选做清单与校验；无需新增第三方库。
+**Acceptance:** Do not omit figures or required dependencies; exclude chat files and credentials.
 
-**交付物**：可编译源码包及文件清单。
+**Discussion:** Does the shared tex file have all its dependencies, and who has the full version?
 
-**验收标准**：不只提供单个tex却遗漏图片；不上传原始聊天或凭据。
+### [T36: Recompile to resolve the table of contents](https://github.com/Fuyulin-hub/kanban/issues/36)
 
-**建议讨论**：群中已发tex是否包含全部依赖，谁保存了完整版本？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T36 进行二次编译以生成报告目录](https://github.com/Fuyulin-hub/kanban/issues/36)
+Proposed lead: Wang Siqi. Proposed collaborators: Xu Jiale.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Complete the contents configuration and source package in T34/T35.
 
-**建议分工**：王思琦牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：T34目录配置与T35源码包就绪。
+1. Run the appropriate build command in the current environment.
+2. Continue as required until contents and references stabilize.
+3. Review warnings and PDF page numbers.
 
-**怎么做**：
+**Tools and libraries:** Use the existing MiKTeX/TeX Live setup and optional latexmk; follow warnings rather than assuming two passes always suffice.
 
-1. 在现有环境运行正确的编译命令。
-2. 按日志继续编译至引用与目录稳定。
-3. 检查警告和最终PDF页码。
+**Deliverable:** A final PDF, build log and contents check record.
 
-**工具与库**：现有MiKTeX/TeX Live及latexmk；手动编译时按日志补足轮次，不固定两遍必成功。
+**Acceptance:** No unresolved references or missing figures; record enough environment details to reproduce the build.
 
-**交付物**：最终PDF、编译日志与目录检查记录。
+**Discussion:** Are bibliography or cross-reference passes still needed?
 
-**验收标准**：无未解析引用或丢图；在清楚记录的环境可以复现。
+### [T42: Shorten captions for the new figures](https://github.com/Fuyulin-hub/kanban/issues/42)
 
-**建议讨论**：是否还有参考文献或交叉引用需要额外编译？
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T42 精简新增图表的图注](https://github.com/Fuyulin-hub/kanban/issues/42)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Confirm the additions list in T22.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：T22新增图列表确定。
+1. Identify the new captions rather than deleting notes globally.
+2. Keep the explanation, sample, units and essential limitations.
+3. Remove repetition and review each figure again.
 
-**怎么做**：
+**Tools and libraries:** Use the current editor; no additional library.
 
-1. 定位新增图注而非批量删所有注释。
-2. 保留图解释、样本、单位和必要限制。
-3. 压缩重复正文后逐图复核。
+**Deliverable:** A caption comparison and revised PDF.
 
-**工具与库**：原编辑器即可，无需新增库。
+**Acceptance:** A reader can understand the figure and its denominator without losing essential limitations.
 
-**交付物**：图注修改对照表及新版PDF。
+**Discussion:** Which two edits were referenced, and were all new captions covered?
 
-**验收标准**：读者单看图和图注仍知道画的是什么；不能删掉关键分母与限制。
+### [T43: Remove the four indicated parenthetical passages](https://github.com/Fuyulin-hub/kanban/issues/43)
 
-**建议讨论**：“那俩改了”具体是哪两项，是否覆盖全部新图注？
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T43 删除报告中所指的四个括号](https://github.com/Fuyulin-hub/kanban/issues/43)
+Proposed lead: Xu Jiale. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：徐佳乐牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Locate the four specific passages in the source image.
+2. Distinguish explanatory notes from equations or citations.
+3. Change only those four and check the resulting grammar.
 
-**怎么做**：
+**Tools and libraries:** Use tracked changes or the original TeX editor; do not globally remove parentheses.
 
-1. 先定位原图指出的四个括号和对应文字。
-2. 逐处确认只是说明性括注还是公式/引用。
-3. 仅修改这四处并检查语法。
+**Deliverable:** A four-location before/after comparison.
 
-**工具与库**：Word/WPS修订或TeX原编辑器；禁止全局删除括号，无需新增库。
+**Acceptance:** Keep citations, formulas, intervals and unrelated parentheses intact.
 
-**交付物**：四处修改的位置与前后对照。
+**Discussion:** Which four locations were indicated, and do they still exist in the current version?
 
-**验收标准**：不误删参考文献、公式、统计区间或其他括号。
+### [T44: Choose a report background that matches the cover](https://github.com/Fuyulin-hub/kanban/issues/44)
 
-**建议讨论**：截图指的是哪四处？现版本仍存在吗？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T44 寻找并选择与封面协调的报告背景图](https://github.com/Fuyulin-hub/kanban/issues/44)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：徐佳乐牵头；协作：王思琦、张馨月。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Review the shared candidates and permission to use them.
+2. Compare pale teal/white or similarly light options.
+3. Test them on a body-text page for contrast and distraction.
 
-**怎么做**：
+**Tools and libraries:** Use the existing editor's preview; no new library or generated image is required.
 
-1. 收集已发候选并核对使用权。
-2. 按封面风格选择浅蓝绿或浅色背景。
-3. 放在正文样页比较文字对比与视觉干扰。
+**Deliverable:** A candidate comparison and final selection record.
 
-**工具与库**：原编辑器预览即可，无需新增库或必须生成图片。
+**Acceptance:** Do not obstruct text or treat a shared candidate as an adopted background.
 
-**交付物**：背景候选对比与最终选择记录。
+**Discussion:** Who approves the final choice, and how should cover consistency balance readability?
 
-**验收标准**：不挡字；不用背景填满所有空白；不据候选图发出认定已采用。
+### [T45: Test candidate backgrounds in the report](https://github.com/Fuyulin-hub/kanban/issues/45)
 
-**建议讨论**：更重视与封面一致还是正文清晰？候选由谁最后确认？
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T45 将候选背景插入报告试排](https://github.com/Fuyulin-hub/kanban/issues/45)
+Proposed lead: Xu Jiale. Proposed collaborators: Wang Siqi.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Select candidates in T44 first.
 
-**建议分工**：徐佳乐牵头；协作：王思琦。
+**Steps**
 
-**前置条件**：T44确定候选后试排。
+1. Insert a candidate in a copy or background layer.
+2. Test dense text, figure and contents pages.
+3. Export and check the PDF for obstruction and file size.
 
-**怎么做**：
+**Tools and libraries:** Use Word/WPS page backgrounds or the existing TeX background mechanism.
 
-1. 在副本或页面背景层插入候选。
-2. 测试文字密集页、图表页和目录页。
-3. 导出PDF检查遮挡与文件大小。
+**Deliverable:** A trial PDF and comparable sample pages.
 
-**工具与库**：Word/WPS页面背景或现有TeX背景机制；无需新增库。
+**Acceptance:** Keep every original figure complete and preserve text readability.
 
-**交付物**：带背景的试排PDF与对照样页。
+**Discussion:** Would backgrounds on divider pages alone work better?
 
-**验收标准**：每张原图仍完整；背景不改变内容区域和可读性。
+## Slides & Presentation
 
-**建议讨论**：是否只在分隔页用背景更适合当前报告？
+### [T10: Create the group presentation slides](https://github.com/Fuyulin-hub/kanban/issues/10)
 
-## PPT与答辩
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T10 制作小组汇报PPT](https://github.com/Fuyulin-hub/kanban/issues/10)
+Proposed lead: Fu Yulin. Proposed collaborators: Zhang Xinyue, Xu Jiale.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Use the reviewed report and figure inventory from T02/T03.
 
-**建议分工**：付玉琳牵头；协作：张馨月、徐佳乐。
+**Steps**
 
-**前置条件**：T02正文、T03图表目录基本稳定。
+1. Structure the story around questions, methods, evidence and limitations.
+2. Use verified text and figures from the report.
+3. Give each slide one main point and add speaker notes.
 
-**怎么做**：
+**Tools and libraries:** Prefer PowerPoint/WPS; use python-pptx only for repetitive generation or checks.
 
-1. 按研究问题→方法→证据→限制确定讲述顺序。
-2. 从已核对报告提取结论和图。
-3. 每页写一个核心信息并加讲稿备注。
+**Deliverable:** An editable slide deck and exported PDF.
 
-**工具与库**：优先PowerPoint/WPS；批量生成才考虑python-pptx；无需换整套演示工具。
+**Acceptance:** Numbers match the report and charts retain axes, legends and essential notes.
 
-**交付物**：可编辑PPT及导出PDF。
+**Discussion:** What is the official time limit and which content must be shown?
 
-**验收标准**：图表、数字与报告一致；正文可读；保留原图的坐标轴、图例和必要注释。
+### [T11: Explain the division of work in the slides](https://github.com/Fuyulin-hub/kanban/issues/11)
 
-**建议讨论**：正式汇报时长、页数和必须展示的内容是什么？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T11 在PPT中说明人员分工](https://github.com/Fuyulin-hub/kanban/issues/11)
+Proposed lead: Fu Yulin. Proposed collaborators: Zhang Xinyue, Xu Jiale, Wang Siqi.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Use members.md and ask all four members to review it.
 
-**建议分工**：付玉琳牵头；协作：张馨月、徐佳乐、王思琦。
+**Steps**
 
-**前置条件**：参考board/members.md并由四人核对。
+1. Create a work-allocation slide using the four confirmed names.
+2. Separate documented work from proposed next steps.
+3. Ask each member to verify their entry before presenting it.
 
-**怎么做**：
+**Tools and libraries:** A PowerPoint/WPS table is sufficient; no additional library.
 
-1. 用四人全名建立分工页。
-2. 分别列已证实参与、尚未确认事项和本次建议。
-3. 由本人核对后再写进正式汇报。
+**Deliverable:** A verified contribution and next-step slide.
 
-**工具与库**：PowerPoint/WPS表格即可，无需新增库。
+**Acceptance:** Do not present recommendations as completed work or infer GitHub accounts.
 
-**交付物**：四人贡献与后续分工页。
+**Discussion:** Which follow-up tasks will each member actually accept?
 
-**验收标准**：不把本次建议写成已经完成；没有GitHub用户名映射时不设置assignee。
+### [T15: Refine and format the presentation slides](https://github.com/Fuyulin-hub/kanban/issues/15)
 
-**建议讨论**：每人愿意认领哪些后续任务？哪些别名仍需确认？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T15 细化并排版汇报PPT](https://github.com/Fuyulin-hub/kanban/issues/15)
+Proposed lead: Fu Yulin. Proposed collaborators: Xu Jiale, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Start after T10 has a complete draft.
 
-**建议分工**：付玉琳牵头；协作：徐佳乐、张馨月。
+**Steps**
 
-**前置条件**：T10形成初稿后进行。
+1. Unify type sizes, fonts and colors.
+2. Balance text density and chart size.
+3. Check long titles and legends on the actual presentation device.
 
-**怎么做**：
+**Tools and libraries:** Use the PowerPoint/WPS master; python-pptx is optional for repetitive checks.
 
-1. 统一PPT字体、字号与配色。
-2. 调整文字密度和图表占比。
-3. 在实际播放设备上检查长标题与图例。
+**Deliverable:** A formatted editable deck and playback check record.
 
-**工具与库**：PowerPoint/WPS母版；python-pptx仅用于批量检查时可选。
+**Acceptance:** Keep data visible and text readable at the projected aspect ratio.
 
-**交付物**：排版后的可编辑PPT与播放检查记录。
+**Discussion:** Who gives the final content, figure and speaker-note checks?
 
-**验收标准**：不因排版裁掉数据；所有页在投影比例下可读。
+### [T20: Prepare the presentation script](https://github.com/Fuyulin-hub/kanban/issues/20)
 
-**建议讨论**：正文、图表、讲稿分别由谁最后把关？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T20 准备课堂汇报稿](https://github.com/Fuyulin-hub/kanban/issues/20)
+Proposed lead: Fu Yulin. Proposed collaborators: Zhang Xinyue, Xu Jiale, Wang Siqi.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Stabilize the slide order in T10/T15 first.
 
-**建议分工**：付玉琳牵头；协作：张馨月、徐佳乐、王思琦。
+**Steps**
 
-**前置条件**：T10与T15的页序稳定后编写。
+1. Write natural spoken notes for each slide's main point.
+2. Explain the data, method and limitations.
+3. Rehearse with timing and clear handover sentences.
 
-**怎么做**：
+**Tools and libraries:** Use slide notes or a text document; no additional library.
 
-1. 按每页核心信息写自然口语稿。
-2. 逐项解释数据、方法和限制。
-3. 试讲计时并标出交接句。
+**Deliverable:** A slide-by-slide script, timing record and handover plan.
 
-**工具与库**：PowerPoint备注或普通文档，无需新增库。
+**Acceptance:** Do not turn associations into causal claims; acknowledge unverified results.
 
-**交付物**：逐页讲稿、计时与交接表。
+**Discussion:** How many people will speak and which section will each cover?
 
-**验收标准**：不把相关性讲成因果；遇到未验证结果明确说明。
+### [T32: Adapt the figures to the slide layout](https://github.com/Fuyulin-hub/kanban/issues/32)
 
-**建议讨论**：最终由几人讲，每人负责哪一段？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T32 裁切图表以适配PPT版面](https://github.com/Fuyulin-hub/kanban/issues/32)
+Proposed lead: Fu Yulin. Proposed collaborators: Xu Jiale.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Obtain complete figures from T29–T31.
 
-**建议分工**：付玉琳牵头；协作：徐佳乐。
+**Steps**
 
-**前置条件**：T29—T31有完整图后进行。
+1. Determine the available slide area.
+2. Prefer re-exporting at a suitable aspect ratio or splitting across slides.
+3. If cropping is necessary, retain axes, legends, titles and sample notes.
 
-**怎么做**：
+**Tools and libraries:** Prefer the original plotting tool or PowerPoint crop tools; no additional image library.
 
-1. 先确定PPT图框尺寸。
-2. 优先从源图调整长宽比或拆成多页。
-3. 必要裁切时保留坐标轴、图例、标题和样本注释。
+**Deliverable:** Slide-ready figures with references to the complete originals.
 
-**工具与库**：优先原绘图库重新导出或PowerPoint裁剪；无需新增图像库。
+**Acceptance:** Do not crop data or limitations; labels must be readable in playback.
 
-**交付物**：PPT适配图及完整原图索引。
+**Discussion:** Would splitting three figures across slides be clearer?
 
-**验收标准**：不截断数值、坐标或限制说明；实际播放时标签可读。
+### [T46: Prepare evidence-based answers using the slides](https://github.com/Fuyulin-hub/kanban/issues/46)
 
-**建议讨论**：一页放三图还是拆页更清楚？
+Recorded status: Not started. Recorded owner: Xu Jiale.
 
-### [T46 用汇报PPT准备辅助答疑](https://github.com/Fuyulin-hub/kanban/issues/46)
+Proposed lead: Xu Jiale. Proposed collaborators: Fu Yulin, Zhang Xinyue, Wang Siqi.
 
-原文状态：待开始；原文负责人：徐佳乐（小蛋糕）。
+**Prerequisites:** Use the stable slides and review results from T10/T37.
 
-**建议分工**：徐佳乐牵头；协作：付玉琳、张馨月、王思琦。
+**Steps**
 
-**前置条件**：T10最终PPT、T37内容核对可用。
+1. List likely questions for each slide.
+2. Link each answer to a report page, figure or experiment record.
+3. Practice explaining the limits of unverified results.
 
-**怎么做**：
+**Tools and libraries:** Use the existing chat tool or a plain document; no API integration or Q&A system is required.
 
-1. 按PPT每页列可能问题。
-2. 每个回答指向报告页码、图或实验记录。
-3. 练习回答未验证结果时说明边界。
+**Deliverable:** A question–answer–evidence index.
 
-**工具与库**：现有对话工具或普通文档即可；无需接入API或搭建问答系统。
+**Acceptance:** Generated answers are not evidence and must not create results.
 
-**交付物**：问题—回答—证据索引表。
+**Discussion:** Which questions can be answered from evidence and which remain unverified?
 
-**验收标准**：辅助回答不能创造结果；不把模型生成答案当证据。
+### [T47: Add the dashboard link to the slides](https://github.com/Fuyulin-hub/kanban/issues/47)
 
-**建议讨论**：哪些问题最可能被问到，哪些只能承认尚未验证？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T47 将网页链接加入汇报PPT](https://github.com/Fuyulin-hub/kanban/issues/47)
+Proposed lead: Fu Yulin. Proposed collaborators: Wang Siqi.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Confirm the site URL and deck version in T33/T15.
 
-**建议分工**：付玉琳牵头；协作：王思琦。
+**Steps**
 
-**前置条件**：T33站点地址和T15演示版本确认。
+1. Insert the confirmed final URL on the appropriate slide.
+2. Test it in slideshow mode.
+3. Prepare offline screenshots or a backup demonstration.
 
-**怎么做**：
+**Tools and libraries:** Use PowerPoint/WPS hyperlinks and browser checks; no additional library.
 
-1. 将最终确认的网址加入合适页面。
-2. 在播放模式点击测试。
-3. 准备离线截图或演示备份并记明线上版本。
+**Deliverable:** A deck with a tested link and offline backup.
 
-**工具与库**：PowerPoint/WPS超链接；浏览器测试即可，无需新增库。
+**Acceptance:** The URL targets the approved version and contains no local path; network availability remains a separate check.
 
-**交付物**：带可用链接的PPT及离线备用页。
+**Discussion:** What will be shown if the venue has no usable network?
 
-**验收标准**：链接指向已确认站点；不因有链接就认为网络稳定；不泄露本地路径。
+### [T48: Arrange and deliver the group presentation](https://github.com/Fuyulin-hub/kanban/issues/48)
 
-**建议讨论**：演示现场网络不通时展示哪一份备用内容？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T48 安排并参加课堂小组汇报](https://github.com/Fuyulin-hub/kanban/issues/48)
+Proposed lead: Fu Yulin. Proposed collaborators: Zhang Xinyue, Xu Jiale, Wang Siqi.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Resolve presenter count in T39 and prepare T20/T46/T47.
 
-**建议分工**：付玉琳牵头；协作：张馨月、徐佳乐、王思琦。
+**Steps**
 
-**前置条件**：T39展示人数明确；T20/T46/T47准备完成。
+1. Confirm the presenter list against the formal requirements.
+2. Assign opening, content, demonstration and handovers.
+3. Rehearse with timing and check equipment, files and backups.
 
-**怎么做**：
+**Tools and libraries:** Use the slides, a timer and a checklist; no additional library.
 
-1. 按正式要求确认上台名单。
-2. 安排开场、内容、演示和交接。
-3. 试讲计时并确认设备、文件与备用方案。
+**Deliverable:** A presenter list, segment allocation and demonstration checklist.
 
-**工具与库**：PPT、计时器和普通清单即可，无需新增库。
+**Acceptance:** Do not assume all four must present; actual attendance/presentation evidence is needed for completion.
 
-**交付物**：上台名单、分段安排和演示检查表。
+**Discussion:** What was the final arrangement after the messages about three presenters and an individual volunteer?
 
-**验收标准**：不自动认为四人都要上台；实际出席与汇报记录才证明完成。
+## Website & Deployment
 
-**建议讨论**：群里“三个上去”与“我上”的最终安排是什么？
+### [T13: Design a dashboard prototype and share screenshots](https://github.com/Fuyulin-hub/kanban/issues/13)
 
-## 网页与部署
+Recorded status: Not started. Recorded owner: Unassigned (original alias unresolved).
 
-### [T13 为计划提交物设计可视化前端网页并提供截图](https://github.com/Fuyulin-hub/kanban/issues/13)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue, Fu Yulin.
 
-原文状态：待开始；原文负责人：@秋雨。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：王思琦牵头；协作：张馨月、付玉琳。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Confirm whether the page is a proposed interface or a display of existing results.
+2. Reuse the current HTML structure.
+3. Add questions, figures and limitations and capture desktop/mobile previews.
 
-**怎么做**：
+**Tools and libraries:** Use existing HTML/CSS/JavaScript; add Chart.js only if interactive charts are needed.
 
-1. 先确认网页是预期效果展示还是已有分析结果页。
-2. 沿用现有HTML结构。
-3. 补齐研究问题、图表及限制说明并截图反馈。
+**Deliverable:** An accessible local prototype and preview screenshots.
 
-**工具与库**：HTML/CSS/JavaScript；只有需要交互图时才加Chart.js，不默认引入React。
+**Acceptance:** Mark mock content clearly and use the report's result version; keep website deployment files out of this tracking repository.
 
-**交付物**：可打开的网页草稿与电脑/手机截图。
+**Discussion:** Confirm the original assignee and whether this is a prototype or a results page.
 
-**验收标准**：示意内容有标识；真实数据与报告同版本；本看板仓库不混入网页部署文件。
+### [T19: Update the dashboard layout and colors](https://github.com/Fuyulin-hub/kanban/issues/19)
 
-**建议讨论**：@秋雨身份未映射；先确认原任务认领人和网页用途。
+Recorded status: Completed. Recorded owner: Zhang Xinyue.
 
-### [T19 修改可视化网页及配色](https://github.com/Fuyulin-hub/kanban/issues/19)
+Proposed lead: Zhang Xinyue. Proposed collaborators: Wang Siqi, Fu Yulin.
 
-原文状态：已完成；原文负责人：张馨月（果果5.14）。
+**Prerequisites:** Confirm the current working version before starting.
 
-**建议分工**：张馨月牵头；协作：王思琦、付玉琳。
+**Steps**
 
-**前置条件**：无硬性依赖；先核对当前版本。
+1. Check the modified page against the report theme.
+2. Verify text contrast and the meaning of chart colors.
+3. Open it on both desktop and mobile.
 
-**怎么做**：
+**Tools and libraries:** Use the current HTML/CSS and browser tools; no frontend rebuild is required.
 
-1. 复核已修改网页的配色与报告主题。
-2. 检查文字对比和图表配色含义。
-3. 分别在电脑和手机上打开。
+**Deliverable:** A review record for the completed page/color update.
 
-**工具与库**：现有HTML/CSS与浏览器开发工具；不要求重建前端。
+**Acceptance:** Keep the completed status; a color change does not prove public deployment is complete.
 
-**交付物**：网页配色复核记录（已完成任务的复核）。
+**Discussion:** Which local or hosted version is the editing master?
 
-**验收标准**：保持已有完成状态；不以配色修改证明网站已经正式部署。
+### [T33: Publish the dashboard for external access](https://github.com/Fuyulin-hub/kanban/issues/33)
 
-**建议讨论**：后续修改以本地文件还是线上版本为准？
+Recorded status: Not started. Recorded owner: Unassigned (original alias unresolved).
 
-### [T33 将可视化网页部署为他人可访问的网站](https://github.com/Fuyulin-hub/kanban/issues/33)
+Proposed lead: Wang Siqi. Proposed collaborators: Fu Yulin, Zhang Xinyue.
 
-原文状态：待开始；原文负责人：@秋雨。
+**Prerequisites:** Confirm the page and English content versions in T13/T19/T23.
 
-**建议分工**：王思琦牵头；协作：付玉琳、张馨月。
+**Steps**
 
-**前置条件**：T13/T19网页版本与T23英文内容确认。
+1. Confirm the source files and hosting account.
+2. Use an existing approved hosting workflow with the correct entry file.
+3. Check desktop, mobile and a signed-out browser and save the results.
 
-**怎么做**：
+**Tools and libraries:** Use the existing static HTML/CSS/JavaScript and confirmed hosting platform, such as the existing Cloudflare Pages setup.
 
-1. 确认现有网站源文件和托管账号。
-2. 沿用可用托管方案发布正确入口。
-3. 电脑、手机及未登录浏览器分别测试并保存结果。
+**Deliverable:** A site URL, deployed-version reference and access-check record.
 
-**工具与库**：现有静态HTML/CSS/JS；沿用已确认的Cloudflare Pages或其他现有平台；无需后端框架。
+**Acceptance:** External access and resources work; posting a URL alone is not full acceptance.
 
-**交付物**：站点地址、部署版本与访问检查表。
+**Discussion:** The original assigned alias is unresolved. Who controls the hosting account and source?
 
-**验收标准**：能从外部网络打开；链接和资源无缺失；不把群中发URL直接当作全部验收完成。
+## Submission & Delivery
 
-**建议讨论**：@秋雨仍未确认；谁有实际托管账号和源文件？
+### [T40: Submit the Project Proposal by email](https://github.com/Fuyulin-hub/kanban/issues/40)
 
-## 提交与交付
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T40 通过邮件提交Project Proposal](https://github.com/Fuyulin-hub/kanban/issues/40)
+Proposed lead: Wang Siqi. Proposed collaborators: Zhang Xinyue.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Confirm T16/T39 and validate the final files in T36.
 
-**建议分工**：王思琦牵头；协作：张馨月。
+**Steps**
 
-**前置条件**：T16/T39要求确认，T36最终文件验收。
+1. Verify the official email requirement and final package.
+2. Confirm the actual sender and recipient.
+3. After actual sending, record timestamp, attachment version and evidence.
 
-**怎么做**：
+**Tools and libraries:** Use the existing email client; zipfile/hashlib are optional for package checks.
 
-1. 先核对正式邮件提交要求和最终包。
-2. 确认实际发送人及收件地址。
-3. 发送后记录发送时间、附件版本和可核对回执。
+**Deliverable:** A pre-send checklist; add submission evidence only after sending.
 
-**工具与库**：现有邮箱客户端；zipfile/hashlib可选检查附件；无需邮件自动发送库。
+**Acceptance:** Do not mark complete before actual sending; this plan does not send email.
 
-**交付物**：待发送检查单；实际发送后才补提交凭据。
+**Discussion:** Who sends it, who is copied, and what subject/filename is required?
 
-**验收标准**：未实际发送前不得改成已完成；本次只制定方案，不代发邮件。
+### [T41: Confirm and follow the Moodle submission process](https://github.com/Fuyulin-hub/kanban/issues/41)
 
-**建议讨论**：由谁发、抄送谁、邮件标题和附件命名是什么？
+Recorded status: Not started. Recorded owner: Unassigned.
 
-### [T41 确认并执行Moodle提交流程](https://github.com/Fuyulin-hub/kanban/issues/41)
+Proposed lead: Wang Siqi. Proposed collaborators: Fu Yulin.
 
-原文状态：待开始；原文负责人：未指派。
+**Prerequisites:** Resolve channels and submitter count in T16/T39.
 
-**建议分工**：王思琦牵头；协作：付玉琳。
+**Steps**
 
-**前置条件**：T16/T39先解决渠道和人数。
+1. Check whether Moodle is still required by the current official notice.
+2. If required, verify the entry, package and confirmation screen.
+3. Record the platform's success evidence after submitting.
 
-**怎么做**：
+**Tools and libraries:** Use the browser and Moodle; no additional library.
 
-1. 先查当前正式要求是否仍需Moodle。
-2. 如需要再核对入口、文件和确认页面。
-3. 提交后记录平台成功凭据。
+**Deliverable:** A channel decision and, if applicable, platform submission evidence.
 
-**工具与库**：浏览器/Moodle即可，无需新增库。
+**Acceptance:** A suggestion to use both channels is not an official dual-submission requirement.
 
-**交付物**：渠道确认记录；如适用则附平台提交凭据。
-
-**验收标准**：不因“两个都交得了”自动要求双渠道；没有平台凭据不判完成。
-
-**建议讨论**：后来通知邮件提交后，Moodle是否仍为必选？
+**Discussion:** Does the later email instruction supersede Moodle or supplement it?

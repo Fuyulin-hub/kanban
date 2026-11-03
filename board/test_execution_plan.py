@@ -5,25 +5,25 @@ from import_board import merge_execution_plan, desired_labels
 
 class PlanPreservationTests(unittest.TestCase):
     def test_changed_evidence_keeps_plan_and_member_notes(self):
-        suffix = ('<!-- execution-plan:start -->\n成员审阅的方案\n'
-                  '<!-- execution-plan:end -->\n成员追加说明')
-        old = '旧判定\n\n' + suffix
-        self.assertEqual(merge_execution_plan('新判定', old), '新判定\n\n' + suffix)
-        self.assertEqual(merge_execution_plan('新判定', merge_execution_plan('新判定', old)),
-                         '新判定\n\n' + suffix)
+        suffix = ('<!-- execution-plan:start -->\nMember-reviewed plan\n'
+                  '<!-- execution-plan:end -->\nAdditional member note')
+        old = 'Old evidence\n\n' + suffix
+        self.assertEqual(merge_execution_plan('New evidence', old), 'New evidence\n\n' + suffix)
+        self.assertEqual(merge_execution_plan('New evidence', merge_execution_plan('New evidence', old)),
+                         'New evidence\n\n' + suffix)
 
     def test_malformed_markers_stop_instead_of_losing_content(self):
-        for body in ('<!-- execution-plan:start -->没有结束',
+        for body in ('<!-- execution-plan:start -->No end marker',
                      '<!-- execution-plan:end --><!-- execution-plan:start -->',
                      '<!-- execution-plan:start --><!-- execution-plan:start --><!-- execution-plan:end -->'):
             with self.subTest(body=body), self.assertRaises(ValueError):
-                merge_execution_plan('新判定', body)
+                merge_execution_plan('New evidence', body)
 
     def test_enrichment_labels_survive_source_status_update(self):
-        old = {'labels': ['source:群聊', 'status:未完成', 'module:资料与需求核对', '建议执行人:王思琦']}
-        row = {'labels': 'source:群聊,status:已完成'}
+        old = {'labels': ['source:wechat', 'status:unfinished', 'module:requirements', 'suggested-lead:wang-siqi']}
+        row = {'labels': 'source:wechat,status:completed'}
         self.assertEqual(desired_labels(old, row),
-                         {'source:群聊', 'status:已完成', 'module:资料与需求核对', '建议执行人:王思琦'})
+                         {'source:wechat', 'status:completed', 'module:requirements', 'suggested-lead:wang-siqi'})
 
 
 if __name__ == '__main__':

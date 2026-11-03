@@ -8,7 +8,7 @@ elif command -v python3 >/dev/null 2>&1; then
 elif command -v python >/dev/null 2>&1; then
   PYTHON_BIN=python
 else
-  printf '%s\n' '需要 Python 3。安装后重试，或设置 PYTHON 为解释器路径。' >&2
+  printf '%s\n' 'Python 3 is required. Install it or set PYTHON to the interpreter path.' >&2
   exit 1
 fi
 exec "$PYTHON_BIN" "$SCRIPT_DIR/import_board.py" "$@"

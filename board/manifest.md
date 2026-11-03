@@ -1,285 +1,163 @@
-# 群聊任务看板导入清单
+# Group Task Board
 
-目标仓库为 [Fuyulin-hub/kanban](https://github.com/Fuyulin-hub/kanban)。本批48项任务已导入[GitHub原生看板](https://github.com/users/Fuyulin-hub/projects/2/views/2)。每条任务对应一个真实Issue，清单与执行日志通过独立功能分支PR交付；初始环境缺少gh，后经官方浏览器登录完成授权。
+[Open the board](https://github.com/users/Fuyulin-hub/projects/2/views/2) | [Change review](https://github.com/Fuyulin-hub/kanban/pull/49)
 
-## 范围与状态
+The board contains 48 tasks extracted from nine WeChat screenshots. Every task has one issue, translated source excerpts and a proposed execution plan. The user requested an English interface and removal of the screenshot-style identity metadata on 2026-11-03.
 
-输入为9张微信聊天截图；消息可见日期覆盖10月12日至10月13日16:55之后。消息年份没有显示，不使用截图文件名中的2026年补全年份。未提供昵称到GitHub账号对照，所有Issue均不自动设置assignee。
+## Status and evidence
 
-共48项任务候选，按原文状态已完成4项、未完成44项；其中36项需要确认。待确认与完成状态是不同维度，不将两者相加当作任务总数。
+Source messages cover October 12–13; their year is not visible. Screenshot filenames are capture identifiers, not evidence of the message year. English excerpts are translations, not original-language quotations. Stable message IDs, source filenames and nearby time anchors remain available in each issue.
 
-| 看板列 | 数量 | 含义 |
+| Column | Count | Meaning |
 | --- | --- | --- |
-| Todo | 6 | 负责人和意图明确，仅承诺或尚未开始 |
-| In Progress | 2 | 有明确正在处理的描述 |
-| Done | 4 | 有主语明确的完成汇报 |
-| 待确认 | 36 | 存在负责人、范围、引用归并或状态歧义 |
+| Todo | 6 | Clear task, not started |
+| In Progress | 2 | Explicit work in progress without a review flag |
+| Done | 4 | Explicit completion evidence |
+| Needs Review | 36 | Ownership, scope or completion needs confirmation |
 
-若无法添加待确认Status选项，脚本按模板使用needs-review标签加Todo列，并记录降级原因。
+There are four completed and 44 unfinished tasks. The 36 review flags overlap with source status and must not be added as a separate task population. GitHub assignees remain empty because no account mapping was supplied.
 
-## 任务清单
+## Workstreams
+
+| Workstream | Tasks | View |
+| --- | --- | --- |
+| Requirements & References | 4 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/3) |
+| Report & Translation | 8 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/4) |
+| Data & Figures | 13 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/5) |
+| Formatting & Compilation | 10 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/6) |
+| Slides & Presentation | 8 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/7) |
+| Website & Deployment | 3 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/8) |
+| Submission & Delivery | 2 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/9) |
+
+## Members and proposed allocations
+
+| Member | Suggested lead tasks | Personal view |
+| --- | --- | --- |
+| Zhang Xinyue | 11 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/10) |
+| Xu Jiale | 17 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/11) |
+| Wang Siqi | 13 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/12) |
+| Fu Yulin | 7 | [Open](https://github.com/users/Fuyulin-hub/projects/2/views/13) |
+
+All roles are proposals, not accepted assignments or a contribution ranking. Completed items appear only as review checks. See [members](members.md), [task playbook](task_playbook.md), [tools](tools.md) and [structured plans](execution_plans.json).
+
+## Task inventory
 
 <!-- TASK_TABLE_START -->
-| 编号 | 任务 | Issue | 状态 | 看板列 | 负责人 |
+| ID | Task | Issue | Source status | Column | Recorded owner |
 | --- | --- | --- | --- | --- | --- |
-| T01 | [群聊] 获取上一年的参考报告 | https://github.com/Fuyulin-hub/kanban/issues/1 | 待开始 | 待确认 | @秋雨 |
-| T02 | [群聊] 核对报告正文内容 | https://github.com/Fuyulin-hub/kanban/issues/2 | 进行中 | 待确认 | 未指派 |
-| T03 | [群聊] 规划并细化报告图表 | https://github.com/Fuyulin-hub/kanban/issues/3 | 进行中 | In Progress | 果果5.14 |
-| T04 | [群聊] 修订报告前三章 | https://github.com/Fuyulin-hub/kanban/issues/4 | 进行中 | 待确认 | 果果5.14 |
-| T05 | [群聊] 标注报告图表的插入位置 | https://github.com/Fuyulin-hub/kanban/issues/5 | 已完成 | Done | 果果5.14 |
-| T06 | [群聊] 核查真实数据的缺失率 | https://github.com/Fuyulin-hub/kanban/issues/6 | 待开始 | 待确认 | 王sq |
-| T07 | [群聊] 在报告前三章补充相关元素的图 | https://github.com/Fuyulin-hub/kanban/issues/7 | 待开始 | 待确认 | 未指派 |
-| T08 | [群聊] 调整报告中数据缺失的表述 | https://github.com/Fuyulin-hub/kanban/issues/8 | 待开始 | Todo | 果果5.14 |
-| T09 | [群聊] 完成报告的首次编译 | https://github.com/Fuyulin-hub/kanban/issues/9 | 已完成 | Done | 果果5.14 |
-| T10 | [群聊] 制作小组汇报PPT | https://github.com/Fuyulin-hub/kanban/issues/10 | 待开始 | 待确认 | 未指派 |
-| T11 | [群聊] 在PPT中说明人员分工 | https://github.com/Fuyulin-hub/kanban/issues/11 | 待开始 | 待确认 | 未指派 |
-| T12 | [群聊] 绘制第七章项目实施计划甘特图 | https://github.com/Fuyulin-hub/kanban/issues/12 | 待开始 | Todo | @Xx-LE |
-| T13 | [群聊] 为计划提交物设计可视化前端网页并提供截图 | https://github.com/Fuyulin-hub/kanban/issues/13 | 待开始 | 待确认 | @秋雨 |
-| T14 | [群聊] 整合各章形成完整报告 | https://github.com/Fuyulin-hub/kanban/issues/14 | 进行中 | In Progress | 果果5.14 |
-| T15 | [群聊] 细化并排版汇报PPT | https://github.com/Fuyulin-hub/kanban/issues/15 | 待开始 | 待确认 | 未指派 |
-| T16 | [群聊] 查找老师规定的具体提交时间 | https://github.com/Fuyulin-hub/kanban/issues/16 | 待开始 | 待确认 | @秋雨 |
-| T17 | [群聊] 美化已讨论的鱼骨图 | https://github.com/Fuyulin-hub/kanban/issues/17 | 待开始 | Todo | 果果5.14 |
-| T18 | [群聊] 在报告中补充第七章 | https://github.com/Fuyulin-hub/kanban/issues/18 | 已完成 | Done | 果果5.14 |
-| T19 | [群聊] 修改可视化网页及配色 | https://github.com/Fuyulin-hub/kanban/issues/19 | 已完成 | Done | 果果5.14 |
-| T20 | [群聊] 准备课堂汇报稿 | https://github.com/Fuyulin-hub/kanban/issues/20 | 待开始 | 待确认 | 未指派 |
-| T21 | [群聊] 再次人工检查并改写报告的AI式表达 | https://github.com/Fuyulin-hub/kanban/issues/21 | 待开始 | 待确认 | 未指派 |
-| T22 | [群聊] 检查报告还需要哪些图表并补入 | https://github.com/Fuyulin-hub/kanban/issues/22 | 待开始 | Todo | 小蛋糕 |
-| T23 | [群聊] 按老师课件措辞将报告翻译为英文 | https://github.com/Fuyulin-hub/kanban/issues/23 | 进行中 | 待确认 | 未指派 |
-| T24 | [群聊] 美化并排版整份报告 | https://github.com/Fuyulin-hub/kanban/issues/24 | 进行中 | 待确认 | 小蛋糕 |
-| T25 | [群聊] 在英文报告中重新插入封面 | https://github.com/Fuyulin-hub/kanban/issues/25 | 待开始 | 待确认 | 果果5.14 |
-| T26 | [群聊] 美化所指的风险评分流程图 | https://github.com/Fuyulin-hub/kanban/issues/26 | 待开始 | 待确认 | 果果5.14 |
-| T27 | [群聊] 修正鱼骨图内容并调整至第四章 | https://github.com/Fuyulin-hub/kanban/issues/27 | 待开始 | 待确认 | 小蛋糕 |
-| T28 | [群聊] 在第四章补充两张数据预处理图 | https://github.com/Fuyulin-hub/kanban/issues/28 | 待开始 | 待确认 | 未指派 |
-| T29 | [群聊] 制作订单分群的可视化图 | https://github.com/Fuyulin-hub/kanban/issues/29 | 待开始 | 待确认 | 小蛋糕 |
-| T30 | [群聊] 制作类别联购的可视化图 | https://github.com/Fuyulin-hub/kanban/issues/30 | 待开始 | 待确认 | 小蛋糕 |
-| T31 | [群聊] 制作葡语评论分析的可视化图 | https://github.com/Fuyulin-hub/kanban/issues/31 | 待开始 | 待确认 | 小蛋糕 |
-| T32 | [群聊] 裁切图表以适配PPT版面 | https://github.com/Fuyulin-hub/kanban/issues/32 | 待开始 | 待确认 | 未指派 |
-| T33 | [群聊] 将可视化网页部署为他人可访问的网站 | https://github.com/Fuyulin-hub/kanban/issues/33 | 待开始 | 待确认 | @秋雨 |
-| T34 | [群聊] 处理英文报告的目录生成问题 | https://github.com/Fuyulin-hub/kanban/issues/34 | 进行中 | 待确认 | 未指派 |
-| T35 | [群聊] 提供英文报告的LaTeX源码 | https://github.com/Fuyulin-hub/kanban/issues/35 | 待开始 | 待确认 | 未指派 |
-| T36 | [群聊] 进行二次编译以生成报告目录 | https://github.com/Fuyulin-hub/kanban/issues/36 | 待开始 | 待确认 | 未指派 |
-| T37 | [群聊] 在美化前检查英文报告及源码 | https://github.com/Fuyulin-hub/kanban/issues/37 | 待开始 | 待确认 | 未指派 |
-| T38 | [群聊] 制作缺失率的可视化 | https://github.com/Fuyulin-hub/kanban/issues/38 | 待开始 | 待确认 | 果果5.14 |
-| T39 | [群聊] 核实小组作业由几人提交 | https://github.com/Fuyulin-hub/kanban/issues/39 | 待开始 | 待确认 | 未指派 |
-| T40 | [群聊] 通过邮件提交Project Proposal | https://github.com/Fuyulin-hub/kanban/issues/40 | 待开始 | 待确认 | 未指派 |
-| T41 | [群聊] 确认并执行Moodle提交流程 | https://github.com/Fuyulin-hub/kanban/issues/41 | 待开始 | 待确认 | 未指派 |
-| T42 | [群聊] 精简新增图表的图注 | https://github.com/Fuyulin-hub/kanban/issues/42 | 待开始 | 待确认 | 小蛋糕 |
-| T43 | [群聊] 删除报告中所指的四个括号 | https://github.com/Fuyulin-hub/kanban/issues/43 | 待开始 | 待确认 | 小蛋糕 |
-| T44 | [群聊] 寻找并选择与封面协调的报告背景图 | https://github.com/Fuyulin-hub/kanban/issues/44 | 待开始 | 待确认 | 未指派 |
-| T45 | [群聊] 将候选背景插入报告试排 | https://github.com/Fuyulin-hub/kanban/issues/45 | 待开始 | Todo | 小蛋糕 |
-| T46 | [群聊] 用汇报PPT准备辅助答疑 | https://github.com/Fuyulin-hub/kanban/issues/46 | 待开始 | Todo | 小蛋糕 |
-| T47 | [群聊] 将网页链接加入汇报PPT | https://github.com/Fuyulin-hub/kanban/issues/47 | 待开始 | 待确认 | 未指派 |
-| T48 | [群聊] 安排并参加课堂小组汇报 | https://github.com/Fuyulin-hub/kanban/issues/48 | 待开始 | 待确认 | 未指派 |
+| T01 | [WeChat] Obtain a previous-year reference report | https://github.com/Fuyulin-hub/kanban/issues/1 | Not started | Needs Review | Unassigned (original alias unresolved) |
+| T02 | [WeChat] Review the report content | https://github.com/Fuyulin-hub/kanban/issues/2 | In progress | Needs Review | Unassigned |
+| T03 | [WeChat] Plan and refine the report figures | https://github.com/Fuyulin-hub/kanban/issues/3 | In progress | In Progress | Zhang Xinyue |
+| T04 | [WeChat] Revise the first three report chapters | https://github.com/Fuyulin-hub/kanban/issues/4 | In progress | Needs Review | Zhang Xinyue |
+| T05 | [WeChat] Mark figure insertion points in the report | https://github.com/Fuyulin-hub/kanban/issues/5 | Completed | Done | Zhang Xinyue |
+| T06 | [WeChat] Verify missingness in the real data | https://github.com/Fuyulin-hub/kanban/issues/6 | Not started | Needs Review | Unassigned (original alias unresolved) |
+| T07 | [WeChat] Add relevant illustrations to the first three chapters | https://github.com/Fuyulin-hub/kanban/issues/7 | Not started | Needs Review | Unassigned |
+| T08 | [WeChat] Clarify the report wording about missing data | https://github.com/Fuyulin-hub/kanban/issues/8 | Not started | Todo | Zhang Xinyue |
+| T09 | [WeChat] Complete the first report compilation | https://github.com/Fuyulin-hub/kanban/issues/9 | Completed | Done | Zhang Xinyue |
+| T10 | [WeChat] Create the group presentation slides | https://github.com/Fuyulin-hub/kanban/issues/10 | Not started | Needs Review | Unassigned |
+| T11 | [WeChat] Explain the division of work in the slides | https://github.com/Fuyulin-hub/kanban/issues/11 | Not started | Needs Review | Unassigned |
+| T12 | [WeChat] Draw the Chapter 7 implementation Gantt chart | https://github.com/Fuyulin-hub/kanban/issues/12 | Not started | Todo | Unassigned (original alias unresolved) |
+| T13 | [WeChat] Design a dashboard prototype and share screenshots | https://github.com/Fuyulin-hub/kanban/issues/13 | Not started | Needs Review | Unassigned (original alias unresolved) |
+| T14 | [WeChat] Integrate the report chapters | https://github.com/Fuyulin-hub/kanban/issues/14 | In progress | In Progress | Zhang Xinyue |
+| T15 | [WeChat] Refine and format the presentation slides | https://github.com/Fuyulin-hub/kanban/issues/15 | Not started | Needs Review | Unassigned |
+| T16 | [WeChat] Verify the official submission deadline | https://github.com/Fuyulin-hub/kanban/issues/16 | Not started | Needs Review | Unassigned (original alias unresolved) |
+| T17 | [WeChat] Improve the discussed fishbone diagram | https://github.com/Fuyulin-hub/kanban/issues/17 | Not started | Todo | Zhang Xinyue |
+| T18 | [WeChat] Add Chapter 7 to the report | https://github.com/Fuyulin-hub/kanban/issues/18 | Completed | Done | Zhang Xinyue |
+| T19 | [WeChat] Update the dashboard layout and colors | https://github.com/Fuyulin-hub/kanban/issues/19 | Completed | Done | Zhang Xinyue |
+| T20 | [WeChat] Prepare the presentation script | https://github.com/Fuyulin-hub/kanban/issues/20 | Not started | Needs Review | Unassigned |
+| T21 | [WeChat] Review and clarify AI-style wording | https://github.com/Fuyulin-hub/kanban/issues/21 | Not started | Needs Review | Unassigned |
+| T22 | [WeChat] Identify and add missing report figures | https://github.com/Fuyulin-hub/kanban/issues/22 | Not started | Todo | Xu Jiale |
+| T23 | [WeChat] Translate the report using the course terminology | https://github.com/Fuyulin-hub/kanban/issues/23 | In progress | Needs Review | Unassigned |
+| T24 | [WeChat] Improve the report formatting | https://github.com/Fuyulin-hub/kanban/issues/24 | In progress | Needs Review | Xu Jiale |
+| T25 | [WeChat] Reinsert the cover into the English report | https://github.com/Fuyulin-hub/kanban/issues/25 | Not started | Needs Review | Zhang Xinyue |
+| T26 | [WeChat] Improve the risk-scoring workflow diagram | https://github.com/Fuyulin-hub/kanban/issues/26 | Not started | Needs Review | Zhang Xinyue |
+| T27 | [WeChat] Correct the fishbone diagram and move it to Chapter 4 | https://github.com/Fuyulin-hub/kanban/issues/27 | Not started | Needs Review | Xu Jiale |
+| T28 | [WeChat] Add two preprocessing diagrams to Chapter 4 | https://github.com/Fuyulin-hub/kanban/issues/28 | Not started | Needs Review | Unassigned |
+| T29 | [WeChat] Visualize the order clusters | https://github.com/Fuyulin-hub/kanban/issues/29 | Not started | Needs Review | Xu Jiale |
+| T30 | [WeChat] Visualize category co-purchases | https://github.com/Fuyulin-hub/kanban/issues/30 | Not started | Needs Review | Xu Jiale |
+| T31 | [WeChat] Visualize the Portuguese review analysis | https://github.com/Fuyulin-hub/kanban/issues/31 | Not started | Needs Review | Xu Jiale |
+| T32 | [WeChat] Adapt the figures to the slide layout | https://github.com/Fuyulin-hub/kanban/issues/32 | Not started | Needs Review | Unassigned |
+| T33 | [WeChat] Publish the dashboard for external access | https://github.com/Fuyulin-hub/kanban/issues/33 | Not started | Needs Review | Unassigned (original alias unresolved) |
+| T34 | [WeChat] Fix the English table of contents | https://github.com/Fuyulin-hub/kanban/issues/34 | In progress | Needs Review | Unassigned |
+| T35 | [WeChat] Provide the English report LaTeX source | https://github.com/Fuyulin-hub/kanban/issues/35 | Not started | Needs Review | Unassigned |
+| T36 | [WeChat] Recompile to resolve the table of contents | https://github.com/Fuyulin-hub/kanban/issues/36 | Not started | Needs Review | Unassigned |
+| T37 | [WeChat] Review the English report and source before formatting | https://github.com/Fuyulin-hub/kanban/issues/37 | Not started | Needs Review | Unassigned |
+| T38 | [WeChat] Create the missingness visualization | https://github.com/Fuyulin-hub/kanban/issues/38 | Not started | Needs Review | Zhang Xinyue |
+| T39 | [WeChat] Verify how many members must submit the assignment | https://github.com/Fuyulin-hub/kanban/issues/39 | Not started | Needs Review | Unassigned |
+| T40 | [WeChat] Submit the Project Proposal by email | https://github.com/Fuyulin-hub/kanban/issues/40 | Not started | Needs Review | Unassigned |
+| T41 | [WeChat] Confirm and follow the Moodle submission process | https://github.com/Fuyulin-hub/kanban/issues/41 | Not started | Needs Review | Unassigned |
+| T42 | [WeChat] Shorten captions for the new figures | https://github.com/Fuyulin-hub/kanban/issues/42 | Not started | Needs Review | Xu Jiale |
+| T43 | [WeChat] Remove the four indicated parenthetical passages | https://github.com/Fuyulin-hub/kanban/issues/43 | Not started | Needs Review | Xu Jiale |
+| T44 | [WeChat] Choose a report background that matches the cover | https://github.com/Fuyulin-hub/kanban/issues/44 | Not started | Needs Review | Unassigned |
+| T45 | [WeChat] Test candidate backgrounds in the report | https://github.com/Fuyulin-hub/kanban/issues/45 | Not started | Todo | Xu Jiale |
+| T46 | [WeChat] Prepare evidence-based answers using the slides | https://github.com/Fuyulin-hub/kanban/issues/46 | Not started | Todo | Xu Jiale |
+| T47 | [WeChat] Add the dashboard link to the slides | https://github.com/Fuyulin-hub/kanban/issues/47 | Not started | Needs Review | Unassigned |
+| T48 | [WeChat] Arrange and deliver the group presentation | https://github.com/Fuyulin-hub/kanban/issues/48 | Not started | Needs Review | Unassigned |
 <!-- TASK_TABLE_END -->
 
-## 待确认项
+## Items requiring confirmation
 
-- **T01 获取上一年的参考报告**：指派后出现‘那算了’，可能已撤销；不擅自标为完成或删除。
-- **T02 核对报告正文内容**：原文既有个人正在核对，也要求三人共同检查；没有唯一负责人，不将多人任务指派给一人。
-- **T04 修订报告前三章**：先称前三章已改，随后说明基本只改第一章；保留这一范围冲突，不把前三章全部记为完成。
-- **T06 核查真实数据的缺失率**：王sq与含姓名手机号的群昵称未做身份映射；‘缺失率没什么问题’没有明确说明由谁完成核查，完成状态待确认。
-- **T07 在报告前三章补充相关元素的图**：原文提出补图，但没有明确唯一认领者；‘行’不等于明确认领或已经完成。
-- **T10 制作小组汇报PPT**：右侧发言者未直接显示昵称；‘她’和fyl未与群昵称或GitHub账号映射。发送PPT文件不单独作为制作完成证明。
-- **T11 在PPT中说明人员分工**：这是经回应的建议，但没有明确唯一负责人或完成汇报。
-- **T13 为计划提交物设计可视化前端网页并提供截图**：原指派仍保留@秋雨。随后由另一可见昵称发来文件，因未确认两者身份关系，不将文件发送者或后续修改者当作原任务负责人。
-- **T15 细化并排版汇报PPT**：原文安排‘咱们三个’共同处理，未说明单一负责人。
-- **T16 查找老师规定的具体提交时间**：后文‘今晚交好像’含不确定措辞，不能代替明确查证完成；23:59仅保留为聊天线索，不设为正式截止日期。
-- **T20 准备课堂汇报稿**：消息在右侧，昵称未直接显示。虽然有本人准备意向，但不能据此猜测群昵称。
-- **T21 再次人工检查并改写报告的AI式表达**：原文将四项工作交给两名被@者分配，后有不同成员参与意向，未形成唯一负责人；‘我能改一下吗’是询问，不能当完成。
-- **T23 按老师课件措辞将报告翻译为英文**：最初要求两人自行分配；‘其他已经是英文了’主语及制作人不明确，且目录仍有问题，不能认定整份翻译完成。
-- **T24 美化并排版整份报告**：认领语出现在引用中，原始消息不在截图内；后续本人称封面未处理、空白待检查，保守记为进行中，不以PDF附件判定完成。
-- **T25 在英文报告中重新插入封面**：后续只见封面图片和‘封面’说明，未见明确‘已插入’或‘已完成’汇报。
-- **T26 美化所指的风险评分流程图**：具体对象由相邻图片中的Risk score文字定位；图片不作为完成依据，最终交付状态仍需确认。
-- **T27 修正鱼骨图内容并调整至第四章**：‘位置更换，新增’是简略变更说明，未使用明确完成语；不把随后发送的压缩包或PDF自动算作完成。
-- **T28 在第四章补充两张数据预处理图**：可见发言只说‘新增两个’，未明确由谁完成，也没有两图名称。保留数量与章节，不猜测图的具体内容或完成者。
-- **T29 制作订单分群的可视化图**：所指三项内容来自相邻图片OCR的RQ2标签；按三种不同分析拆成独立任务，不以发送图像或‘可以么’判定完成。
-- **T30 制作类别联购的可视化图**：所指内容来自相邻图片OCR的RQ3标签；不把图像发送当成明确完成汇报。
-- **T31 制作葡语评论分析的可视化图**：所指内容来自相邻图片OCR的RQ4标签；不把图像发送当成明确完成汇报。
-- **T32 裁切图表以适配PPT版面**：右侧仅说‘我试试’，既非完成，也没有明确可核实的昵称；原文‘放下部’所指版面位置不清。
-- **T33 将可视化网页部署为他人可访问的网站**：原指派为@秋雨，后续可见昵称与其关系未确认；有访问反馈和不同托管链接，但没有明确部署者的完成汇报，不能自动列Done。
-- **T34 处理英文报告的目录生成问题**：有WPS生成目录的本人操作描述及转英文失败说明，但没有明确认领这项修复的唯一人员，不仅凭发言者推断负责人。
-- **T35 提供英文报告的LaTeX源码**：请求通过回复指向某成员，但没有昵称→身份映射；仅见.tex附件，不按文件发送推定任务完成。
-- **T36 进行二次编译以生成报告目录**：原文说明目录需两次编译，但没有唯一负责人；首次编译只在T09记录，不等同于此项已完成。
-- **T37 在美化前检查英文报告及源码**：明确说由两人一起看，没有单一负责人；姓名已脱敏，不将其映射到任何群昵称。
-- **T38 制作缺失率的可视化**：后续图片按规则跳过，未见明确完成汇报。所指第二项指标未从图片补成新任务。
-- **T39 核实小组作业由几人提交**：‘好像’及‘下午去问问’均非确认完成；提问和回复未形成明确唯一认领。
-- **T40 通过邮件提交Project Proposal**：没有明确提交人，也没有‘已发送’等完成汇报；‘通过邮件发送’在此是提交要求，不是已发送的事实。
-- **T41 确认并执行Moodle提交流程**：‘两个都交了得了’是建议；后续只明确邮件要求，Moodle是否仍需提交及由谁提交均待确认。
-- **T42 精简新增图表的图注**：‘我再改一下’和‘我先把那俩改了’均可能表示接下来去改，没有明确‘已经改好’，保守不记Done。
-- **T43 删除报告中所指的四个括号**：四处位置仅由原截图定位，未抄入图片文字；‘先把那俩改了’完成时态不确定。
-- **T44 寻找并选择与封面协调的报告背景图**：先点名一位成员，后要求‘你俩’，另有多人找图；按多人参与规则不指派唯一负责人。最后‘我都试试’不表示已选定。
-- **T47 将网页链接加入汇报PPT**：本人明确说忘记加入，但右侧昵称没有直接显示；引用可提示昵称，但暂不自动归并。
-- **T48 安排并参加课堂小组汇报**：原文先安排三人，后有‘我上’的个人承诺，人数和实际出场是否调整待确认；没有已完成汇报的明确记录。
+- [T01](https://github.com/Fuyulin-hub/kanban/issues/1): A later message may cancel the assignment. Confirm its scope before closing or deleting it.
+- [T02](https://github.com/Fuyulin-hub/kanban/issues/2): The messages include both an individual review and a request for three people to check; no sole owner is established.
+- [T04](https://github.com/Fuyulin-hub/kanban/issues/4): The initial claim covers three chapters, but a later clarification mainly covers Chapter 1. Full completion is not established.
+- [T06](https://github.com/Fuyulin-hub/kanban/issues/6): The assigned alias has not been linked to a confirmed member. The later statement does not identify who performed the check.
+- [T07](https://github.com/Fuyulin-hub/kanban/issues/7): The suggestion has no explicit sole claimant. Agreement alone does not establish ownership or completion.
+- [T10](https://github.com/Fuyulin-hub/kanban/issues/10): There is an intention to make slides, but the allocation and final completion are not established. Shared files alone are insufficient.
+- [T11](https://github.com/Fuyulin-hub/kanban/issues/11): The suggestion received a response but no sole owner or completion report is established.
+- [T13](https://github.com/Fuyulin-hub/kanban/issues/13): The originally assigned alias remains unresolved. A later file sender or editor is not automatically the original task owner.
+- [T15](https://github.com/Fuyulin-hub/kanban/issues/15): Three people were asked to collaborate; the source does not establish a sole owner.
+- [T16](https://github.com/Fuyulin-hub/kanban/issues/16): The later deadline statement is uncertain. Keep 23:59 as a clue rather than an official deadline.
+- [T20](https://github.com/Fuyulin-hub/kanban/issues/20): None identified in the original extraction.
+- [T21](https://github.com/Fuyulin-hub/kanban/issues/21): Several tasks were offered for two people to divide, followed by others expressing interest. No sole owner or completion is established.
+- [T23](https://github.com/Fuyulin-hub/kanban/issues/23): The initial allocation is unresolved. A statement that other parts are English has no clear producer, and contents problems remain.
+- [T24](https://github.com/Fuyulin-hub/kanban/issues/24): The offer appears in a quoted message; later messages say the cover and whitespace still need work. A PDF attachment is not completion evidence.
+- [T25](https://github.com/Fuyulin-hub/kanban/issues/25): Only a cover image and a short caption appear later; no explicit insertion/completion report is present.
+- [T26](https://github.com/Fuyulin-hub/kanban/issues/26): The adjacent image identifies the risk-score diagram, but the image itself is not completion evidence.
+- [T27](https://github.com/Fuyulin-hub/kanban/issues/27): The brief change note and later files do not provide an explicit completion report under the original extraction rules.
+- [T28](https://github.com/Fuyulin-hub/kanban/issues/28): The source mentions two additional diagrams without naming them or clearly establishing their producer/completion.
+- [T29](https://github.com/Fuyulin-hub/kanban/issues/29): The adjacent RQ2 label identifies the analysis. Shared figures and approval questions alone are not completion reports.
+- [T30](https://github.com/Fuyulin-hub/kanban/issues/30): The adjacent RQ3 label identifies the analysis. Sending a figure alone does not establish completion.
+- [T31](https://github.com/Fuyulin-hub/kanban/issues/31): The adjacent RQ4 label identifies the analysis. Sending a figure alone does not establish completion.
+- [T32](https://github.com/Fuyulin-hub/kanban/issues/32): An offer to try is not completion; the intended placement is unclear. No sole owner was established in the original extraction.
+- [T33](https://github.com/Fuyulin-hub/kanban/issues/33): The original assigned alias is unresolved. Links and access feedback exist, but no explicit deployer completion report is established.
+- [T34](https://github.com/Fuyulin-hub/kanban/issues/34): Messages describe WPS attempts and the English contents problem, but do not establish a sole owner of the repair.
+- [T35](https://github.com/Fuyulin-hub/kanban/issues/35): The reply context and a tex attachment do not establish a sole owner or completion of a complete source handover.
+- [T36](https://github.com/Fuyulin-hub/kanban/issues/36): The source says another compilation is needed but establishes no sole owner. T09 only records the first build.
+- [T37](https://github.com/Fuyulin-hub/kanban/issues/37): Two people are to review together; no sole owner is established.
+- [T38](https://github.com/Fuyulin-hub/kanban/issues/38): Later images are excluded from completion inference. The second metric is not invented as a separate source task.
+- [T39](https://github.com/Fuyulin-hub/kanban/issues/39): Uncertain wording and a plan to ask later do not establish that the requirements were verified.
+- [T40](https://github.com/Fuyulin-hub/kanban/issues/40): No sender or explicit sent confirmation is recorded. The email statement is an instruction, not proof of submission.
+- [T41](https://github.com/Fuyulin-hub/kanban/issues/41): Dual submission is suggested, while a later notice mentions email only. Whether Moodle is required and who submits remain unresolved.
+- [T42](https://github.com/Fuyulin-hub/kanban/issues/42): Statements about changing the captions are ambiguous promises rather than explicit finished-work reports.
+- [T43](https://github.com/Fuyulin-hub/kanban/issues/43): The four locations must be found in the source screenshot; the later wording does not unambiguously confirm completion.
+- [T44](https://github.com/Fuyulin-hub/kanban/issues/44): Several people searched for backgrounds. Trying candidates does not establish a final selection or sole owner.
+- [T47](https://github.com/Fuyulin-hub/kanban/issues/47): The omission is explicit, but there is no later confirmation that the link was added.
+- [T48](https://github.com/Fuyulin-hub/kanban/issues/48): The messages mention three presenters and a later individual offer. The final arrangement and actual presentation are unconfirmed.
 
-## 去重与引用归并
+## Parsing and exclusions
 
-- S5与S6开头为相同聊天段落。S5-M001至S5-M006分别与S6-M001至S6-M006相同，共6条重复消息，统一引用更完整的S6，不重复提任务。
-- 右侧消息中的相同头像只用于定位消息，不据此推断群昵称。多处被引用为“(-1, 0)”提示可能的身份对应，但尚未确认，相关任务负责人仍为未指派。
-- @Xx-LE、@秋雨、王sq均保留为原文指派称呼，不擅自归并成其他可见群昵称。
-- 小蛋糕的“我美化图 排版啥的吧”只在回复引用中出现。它与后续本人关于排版剩余问题的描述合并讨论，但在T24保留needs-review。
-- T17是鱼骨图美化，T27是内容纠错及位置调整；不同工作不并成一条。第七章是否仍需鱼骨图，原文已说明有甘特图时不用另放；不新增第七章鱼骨图的完成记录。
-- 三项可视化请求按相邻图片OCR的RQ2、RQ3、RQ4标签拆为T29、T30、T31。图片标签只用于识别“这三个”指向，不把发送图片当成完成信号；范围仍列待确认。
-- “前六章好了”只作阶段进度；没有把它当成全文核对、翻译或排版全部完成。
+There were 412 unique inspected items: 85 message bubbles were used as task evidence, 93 media messages were skipped, 224 other text messages did not form separate tasks, and 10 system notifications were excluded. The total skipped count is 327. Six overlapping screenshot messages were deduplicated separately. Attachments alone did not establish completion.
 
-## 隐私与证据限制
+The four clipped edge messages were tracked separately during extraction. Source screenshots and complete OCR/chat records are not committed to the repository. Phone numbers and unrelated numeric identifiers remain excluded.
 
-- 原始截图和OCR全文仅在本地处理，不加入本包，不提交仓库；Issue只保留必要短句、来源文件名和定位。
-- 含真实姓名、手机号及尾随数字的群昵称，按隐私要求统一写为“王＊＊[手机号及尾随数字已脱敏]”。这是一处为保护隐私而偏离原样昵称的处理，未自动映射账号。
-- 引文中的其他真实姓名以[姓名已脱敏]替换；果果5.14、小蛋糕和@称呼按可见形式保留。
-- 每条证据的时间是最近的可见聊天时间锚点，明确标为之前或之后；不伪造每条消息的精确时间。年份缺失并不改变已有的任务动作表述，故不单因缺少年份给所有任务打needs-review。
-- “我试试”“今晚应该能改完”“我再改一下”不记为完成；“两个都交了得了”是建议，不是已提交；“好像”不作为截止时间或提交人数已经核实的证据。
-- 只有附件、截图、网页链接或别人说“图没问题”，不满足本次严格完成标准。已有访问反馈保留为线索，没有擅自升级部署任务为Done。
+## Judgments and limits
 
-## 未单独生成Issue的内容
+- Grouping tasks into seven workstreams, proposing leads/collaborators, selecting tools, and writing steps, deliverables, acceptance checks, dependencies and questions were added recommendations. They are not invented past group decisions.
+- Unresolved original aliases remain unassigned; no account or identity mapping was guessed. The user confirmed the four names and permitted using them; this version displays their pinyin forms.
+- The suggested topics for T28 are candidates, not names found in the original messages. Keep conceptual diagrams distinct from evidence, and projections distinct from fitted models.
+- Keep original sample definitions and the report version when checking missingness or basket coverage. Do not transfer historical percentages to another dataset version.
+- No experiment, report edit, website deployment, email sending or assignment submission was performed in this board-maintenance task.
 
-- “稍微做一下后面的东西”“我来打一下杂”等没有具体对象，未补造任务范围。
-- “那个字体大小一直有问题”只说明问题，没有明确的修复指派，列为信息线索，不补造修复负责人。
-- “还有5min提醒铃”缺少明确动作与负责人，未扩写成已经设置提醒。
-- “这是图片版ppt”和附件不单独证明由谁导出，未新建“已完成导出PPT”事项。
-- “这是去年我美化的报告”明确是上一年成果，不计入当前项目的完成项。
-- 无法看到正文的语音、文件内容、撤回消息及接龙不补读、不猜测。
-
-## 跳过统计
-
-| 口径 | 条数 |
-| --- | --- |
-| 截图带完整头像气泡 | 404 |
-| 边缘裁切但可定位气泡 | 4 |
-| 重复气泡 | 6 |
-| 去重后气泡 | 402 |
-| 采用为任务依据的不同气泡 | 85 |
-| 跳过的媒体附件表情气泡 | 93 |
-| 未单独建任务的其他文本气泡 | 224 |
-| 撤回通知 | 9 |
-| 拍一拍通知 | 1 |
-| 跳过的不同条目合计 | 327 |
-| 去重后可定位条目总数 | 412 |
-
-统计按本次能定位的消息气泡和系统通知进行：完整头像气泡加4条边缘片段后去除6条截图重叠；引用块不另算一条消息。未采用的其他文本包括闲聊、确认词、问题讨论，以及未提供独立动作或有效归属的新信息。截图之外缺少多少消息无法推断，不将此数称为完整群聊总量。重复6条另外报告，不再计入去重后的跳过合计。
-
-## 原图索引
-
-| 来源编号 | 文件名 | SHA256 |
-| --- | --- | --- |
-| S1 | Screenshot_2026-11-03-09-57-34-904_com.tencent.m.jpg | b57a1b1280f78bae491cbe81f0a85852df5982e481e31d378b543b06f0a116fd |
-| S2 | Screenshot_2026-11-03-09-58-54-191_com.tencent.m.jpg | 256a7a9bf7541f584ecca902dc6e96f940d0a74a55c52ddfd4287e74f32a354b |
-| S3 | Screenshot_2026-11-03-10-00-10-943_com.tencent.m.jpg | 338eeda91751d96c0c38aa39892fdd0ab4863ce34ceb4bbc8fef1094f0d7b7a5 |
-| S4 | Screenshot_2026-11-03-10-00-51-753_com.tencent.m.jpg | 2623552988a0ca1d9172de0617690ebd8dcf67e83c1ab452fd290bef67b2d2ff |
-| S5 | Screenshot_2026-11-03-10-01-26-682_com.tencent.m.jpg | a96193cc2fa867bf50bd4a7b57093045f4d6dc0ac1a5e88f35edb8be5f31f7e1 |
-| S6 | Screenshot_2026-11-03-10-01-29-754_com.tencent.m.jpg | 0704d738c23c1278e75ef10347f0cdcea3ffe8f6029c30b29a545bfce8996304 |
-| S7 | Screenshot_2026-11-03-10-02-18-689_com.tencent.m.jpg | c75fbe7bcaa0e47720d94734ab59686c6e3e8885ba69ae051f3ab170f54a1ec6 |
-| S8 | Screenshot_2026-11-03-10-03-16-500_com.tencent.m.jpg | a4ec1718fcad518da6717b307cf8546c60d5557be02da1883d2fa4b4e9277358 |
-| S9 | Screenshot_2026-11-03-10-04-06-128_com.tencent.m.jpg | 34d0c2e45035a7a1220f4de48d524fdfa040a4eddffd8f31790be43ef70baaf4 |
-
-## 所有主观判定与规则解释
-
-1. 将“未完成”细分为待开始和进行中，疑义另用待确认列表达；没有把待确认直接当作完成状态。
-2. T01中“那算了”可能撤销原指派，因没有取消列而保留待确认，未删除或标Done。
-3. T04后续范围说明弱于此前“前三章已改”，因此不宣称全部修订完成。
-4. T05的“标了一下图的位置”、T09的“我就编译了一次”、T18同一说话人连续说明第七章“我加上了”、T19的“我把网页改了一下”视为明确事后汇报。完成范围严格限定于各自动作。
-5. 带有“再”“先”“一下”的将来安排不自动当作正在进行；T42、T43的时态有歧义，保守待确认。
-6. T28保留“新增两张图”的对象和数量，但不从发言者、附件或省略主语的文字推断完成者。
-7. 对T29至T31，只用OCR后的相邻图片确认请求的指向，不以图中文字推导新工作要求；仍标待确认以供复核。
-8. 相同事项的重复讨论、范围说明与后续进度归到同一任务；网页初始设计和后续修改、鱼骨美化和纠错、首次编译和二次目录编译是不同动作，分别记录。
-9. 所有未指派项均有needs-review；多人协作不强行挑一个负责人。群昵称、聊天账号及GitHub账号三者不互相推断。
-10. 仅提取截图里的任务，未利用本聊天前面已经完成的PDF润色结果倒推微信群任务的完成状态。
-
-## 在已登录的机器导入
-
-最初截图显示空仓库。本次经用户明确批准，已仅用README完成一次main初始化；后续任务文件均通过功能分支和PR交付，无需再次初始化。随后准备GitHub CLI、git、Python 3，运行：
-
-```bash
-gh --version
-gh auth login
-gh auth refresh -s project
-bash board/setup.sh --repo Fuyulin-hub/kanban
-```
-
-Windows也可直接用Python运行：
-
-```powershell
-py -3 board/import_board.py --repo Fuyulin-hub/kanban
-```
-
-只检查数据、不访问GitHub：
+## Import and incremental maintenance
 
 ```bash
 python3 board/import_board.py --validate-only
 ```
 
-脚本先重做规定预检；空仓库、权限不足或重复同名Issue均停止。它在新建的临时克隆中创建功能分支，按标题精确查重并保留非本脚本管理的标签，状态不变不移列，最后只提交board内的5个交付文件并创建PR。不会上传截图、OCR全文或自动设置assignee。
+The CSV contains English source-task records; execution_plans.json stores the proposed plans separately. The importer matches the [WeChat] title prefix, retains unrelated labels and existing plan blocks/member notes, skips manually confirmed items and only moves a card if its status changed. It checks gh/auth/project access first and stops on a preflight failure.
 
-Status追加选项前读取当前ID，并保留原选项ID；若服务端不支持安全保留或权限不足，则采用needs-review加Todo。脚本按GitHub官方的[项目字段接口](https://docs.github.com/en/graphql/reference/projects)和[项目条目修改命令](https://cli.github.com/manual/gh_project_item-edit)编写；已完成真实登录态导入，并已按任务正文、标签、assignee和Status逐项读回核对。
+The importer creates a feature branch and PR; it does not initialize or push changes to main. It imports evidence/status records, not the custom workstream/person views into a different project. Existing custom fields and views on this project are retained. Assign the matching workstream/proposed-lead metadata when adding future tasks.
 
-## 人工确认保护
-
-以后可以给已确认Issue添加manual-confirmed或人工确认标签，或在正文加入`<!-- manual-confirmed -->`。也可将完整标题加入下面的JSON数组；再次导入时这些条目保持原样。新增记录应另开PR，不能覆盖人工确认事实。
+Protect confirmed issues with a manual-confirmed label, the marker <!-- manual-confirmed -->, or an exact title in the list below.
 
 <!-- confirmed-titles: [] -->
-
-
-## 实际导入结果
-
-Project：https://github.com/users/Fuyulin-hub/projects/2
-
-账号：Fuyulin-hub；仓库：Fuyulin-hub/kanban。
-
-待确认独立列可用：True。
-
-人工确认而保持不变的条目：无。
-
-
-看板视图：https://github.com/users/Fuyulin-hub/projects/2/views/2
-
-实际列数：Todo 6，In Progress 2，Done 4，待确认36。
-
-
-记录与脚本PR：https://github.com/Fuyulin-hub/kanban/pull/49
-
-
-<!-- ENRICHMENT_SUMMARY_START -->
-
-## 2026-11-03补充：板块、四人身份与执行建议
-
-用户已确认四人完整姓名并允许公开使用。原始任务表和待确认理由保留首轮提取措辞；右侧发言者身份已由本次补充解决，但不据此自动认定任务完成。
-
-[四人成员及工作记录](members.md) · [48项执行手册](task_playbook.md) · [工具与库](tools.md) · [机器可读建议](execution_plans.json)
-
-新增字段：工作板块、建议执行人、原文负责人、证据发言者。建议执行人与真实GitHub指派分开，所有assignee仍为空。
-
-| 工作板块 | 任务数 | 原生看板视图 |
-| --- | --- | --- |
-| 资料与需求核对 | 4 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/3) |
-| 报告正文与翻译 | 8 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/4) |
-| 数据图表与实验 | 13 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/5) |
-| 文档排版与编译 | 10 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/6) |
-| PPT与答辩 | 8 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/7) |
-| 网页与部署 | 3 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/8) |
-| 提交与交付 | 2 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/9) |
-
-### 四人建议视图
-
-| 建议执行人 | 建议牵头数 | 个人视图 |
-| --- | --- | --- |
-| 张馨月 | 11 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/10) |
-| 徐佳乐 | 17 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/11) |
-| 王思琦 | 13 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/12) |
-| 付玉琳 | 7 | [打开](https://github.com/users/Fuyulin-hub/projects/2/views/13) |
-
-### 本次主观判断和待确认项
-
-1. 将48项归为7个工作板块是本次整理，不是原群聊的栏目设置。
-
-2. 四人的角色、建议牵头人、协作人、步骤、工具、交付物、验收、依赖关系及讨论题均由Codex补充，尚未由成员认领；未伪造四人对话或发布评论。
-
-3. 个人视图包含已完成任务的复核建议，不等于新增待办量。建议数量不是工时、贡献或能力排名。
-
-4. @秋雨、@Xx-LE、王sq与四人的映射仍待确认；不按缩写、姓氏、仓库名自动推断。
-
-5. T28的两种预处理图只是候选；鱼骨图、风险图和PCA图的解释边界是本次给出的制作建议。
-
-6. 未新增源消息或群聊任务，跳过统计仍为327条（重复6条另计）；48个Issue与原状态分布保持。needs-review仍为36，身份确认后是否解除需按每项剩余疑点再审。
-
-7. 未重跑实验、编辑报告、发送邮件、提交作业或部署网站；本次交付是可讨论和验收的任务方案。
-
-<!-- ENRICHMENT_SUMMARY_END -->
